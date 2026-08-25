@@ -1,0 +1,1855 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>pivotCE</title>
+	<atom:link href="https://pivotce.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://pivotce.com</link>
+	<description>webOS News, Tips, and Tricks</description>
+	<lastBuildDate>Thu, 19 Dec 2024 16:08:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1</generator>
+
+<image>
+	<url>https://i0.wp.com/pivotce.com/files/2014/05/cropped-Logo_invers_square.png?fit=32%2C32&#038;ssl=1</url>
+	<title>pivotCE</title>
+	<link>https://pivotce.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">46310364</site>	<item>
+		<title>Guide: Create an &#8220;Original Barrel&#8221; Charging Wire for your HP TouchPad</title>
+		<link>https://pivotce.com/2024/12/05/guide-create-an-original-barrel-charging-wire-for-your-hp-touchpad/</link>
+		
+		<dc:creator><![CDATA[Alan Morford]]></dc:creator>
+		<pubDate>Thu, 05 Dec 2024 22:56:08 +0000</pubDate>
+				<category><![CDATA[Tutorial]]></category>
+		<category><![CDATA[featured]]></category>
+		<category><![CDATA[modding]]></category>
+		<category><![CDATA[Touchpad]]></category>
+		<category><![CDATA[usb]]></category>
+		<category><![CDATA[wire]]></category>
+		<guid isPermaLink="false">https://pivotce.com/?p=4721</guid>
+
+					<description><![CDATA[<p>I&#8217;m pretty sure it&#8217;s safe to say there are more HP TouchPads left in the world than there are their matching original barrel chargers. This means if you have a &#8230; <a href="https://pivotce.com/2024/12/05/guide-create-an-original-barrel-charging-wire-for-your-hp-touchpad/" class="more-link">Continue reading <span class="screen-reader-text">Guide: Create an &#8220;Original Barrel&#8221; Charging Wire for your HP TouchPad</span> <span class="meta-nav">&#8594;</span></a></p>
+The post <a href="https://pivotce.com/2024/12/05/guide-create-an-original-barrel-charging-wire-for-your-hp-touchpad/">Guide: Create an “Original Barrel” Charging Wire for your HP TouchPad</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/" rel="bookmark" title="Guide: Converting the TouchPad&#8217;s Micro USB Port to USB C">Guide: Converting the TouchPad&#8217;s Micro USB Port to USB C</a></li>
+<li><a href="https://pivotce.com/2014/11/23/putting-a-touchstone-in-my-car-a-walk-through-my-process/" rel="bookmark" title="Putting a Touchstone in My Car: A Walk Through My Process">Putting a Touchstone in My Car: A Walk Through My Process</a></li>
+<li><a href="https://pivotce.com/2014/12/02/guide-saving-apps-from-the-app-catalog-part-1-nodeleteipk-patch/" rel="bookmark" title="Guide: Saving Apps From The App Catalog Part 1: nodeleteipk patch">Guide: Saving Apps From The App Catalog Part 1: nodeleteipk patch</a></li>
+</ol>
+</div>
+]]></description>
+										<content:encoded><![CDATA[<p class="wp-block-paragraph">I&#8217;m pretty sure it&#8217;s safe to say there are more HP TouchPads left in the world than there are their matching original barrel chargers. This means if you have a TouchPad today, you&#8217;re probably using a TouchStone, a computer, or any other random USB A charging brick to (very slowly) charge your 13 year old device. And it means you&#8217;ve seen the error message in the image above every time you&#8217;ve plugged it into anything other than the original barrel charger or a computer. Fun fact, you can trick the TouchPad into charging normally and not feeding you the message by creating your own custom micro USB or USB C cable if you&#8217;ve <a href="https://pivotce.com/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/" target="_blank" rel="noopener" title="Guide: Converting the TouchPad’s Micro USB Port to USB C">modified your TouchPad</a>. </p>
+
+
+
+<span id="more-4721"></span>
+
+
+
+<h2 class="wp-block-heading">Stuff You&#8217;ll Need</h2>
+
+
+
+<p class="wp-block-paragraph">Assuming you have a micro USB (ie. non USB C modified TouchPad) you&#8217;ll need:<br>1. A 4-wire micro USB to USB A cable<br>2. <a href="https://www.ebay.com/itm/395668581460?var=664409417315" title="">250k</a> and <a href="https://www.amazon.com/gp/product/B00CVZ4ORM/" title="">300k</a> 1/4 watt resistors (1 each per cable)<br>3. Soldering iron and solder<br>4. Heat shrink or electrical tape</p>
+
+
+
+<p class="wp-block-paragraph">If you&#8217;re making a USB C cable but only want to use it with a USB A charger then you&#8217;ll need:<br>1. A 4 wire USB C to USB A cable<br>2. Items 2-4 above</p>
+
+
+
+<p class="wp-block-paragraph">If you&#8217;re making a true USB C to USB C cable that you plan to use with a USB C 3.1 charger you&#8217;ll need:<br>1. <a href="https://www.amazon.com/gp/product/B0CRKKH5T1" title="">A 4-wire USB C cable</a><br>2. <a href="https://www.amazon.com/gp/product/B07T97LC9L" title="">A USB C board with 5.1k resistor and the housing for it</a><br>3. Any 2-wire cable or a 4-wire cable that you&#8217;ll cut the data wires out of (green and white typically) and that you&#8217;ll cut the ends from<br>4. Items 2-4 from the first section above</p>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8201c461&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8201c461" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" fetchpriority="high" decoding="async" width="800" height="451" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" src="https://i0.wp.com/pivotce.com/files/2024/12/chargers.jpg?resize=800%2C451&#038;ssl=1" alt="" class="wp-image-4723" srcset="https://i0.wp.com/pivotce.com/files/2024/12/chargers-scaled.jpg?resize=1024%2C577&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/12/chargers-scaled.jpg?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/12/chargers-scaled.jpg?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/12/chargers-scaled.jpg?resize=1536%2C865&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/12/chargers-scaled.jpg?resize=2048%2C1153&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/12/chargers-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/12/chargers-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="(max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<h2 class="wp-block-heading">Prepare the Wires</h2>
+
+
+
+<p class="wp-block-paragraph">Regardless of which cable you&#8217;re making, the end that goes to the TouchPad will need all 4 wires and the resistors. So grab the 4-wire cable of your choice and strip the ends, and I recommend pre-tinning them with some solder.</p>
+
+
+
+<h2 class="wp-block-heading">Build the TouchPad Side of the Cable</h2>
+
+
+
+<p class="wp-block-paragraph">See the image below for how to arrange the resistors. If you&#8217;re making a USB A cable, go ahead and cut into two pieces, set aside the USB A side, and grab the micro or USB C for this part.. It doesn&#8217;t matter how far away from either end you go, it&#8217;s your choice. Strip the wires back so you have enough bare wire to work with.</p>
+
+
+
+<p class="wp-block-paragraph">1. Solder the ground (black) wire to one side of the 300k resistor.<br>2. Solder data- (green), data+ (white), the other side of the 300k resistor, and one side of the 250k resistor together.<br>3. Then solder the other end of the 250k resistor to the red (power) wire.</p>
+
+
+
+<figure data-wp-context="{&quot;galleryId&quot;:&quot;6a8de8201ca34&quot;}" data-wp-interactive="core/gallery" class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8201cf0d&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8201cf0d" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" decoding="async" width="599" height="1024" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4731" src="https://i0.wp.com/pivotce.com/files/2024/12/Touchpad-wire.png?resize=599%2C1024&#038;ssl=1" alt="" class="wp-image-4731" srcset="https://i0.wp.com/pivotce.com/files/2024/12/Touchpad-wire.png?resize=599%2C1024&amp;ssl=1 599w, https://i0.wp.com/pivotce.com/files/2024/12/Touchpad-wire.png?resize=175%2C300&amp;ssl=1 175w, https://i0.wp.com/pivotce.com/files/2024/12/Touchpad-wire.png?resize=768%2C1313&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/12/Touchpad-wire.png?w=769&amp;ssl=1 769w" sizes="(max-width: 599px) 100vw, 599px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8201d786&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8201d786" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" decoding="async" width="800" height="451" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4724" src="https://i0.wp.com/pivotce.com/files/2024/12/Micro.jpg?resize=800%2C451&#038;ssl=1" alt="" class="wp-image-4724" srcset="https://i0.wp.com/pivotce.com/files/2024/12/Micro-scaled.jpg?resize=1024%2C577&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/12/Micro-scaled.jpg?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/12/Micro-scaled.jpg?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/12/Micro-scaled.jpg?resize=1536%2C865&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/12/Micro-scaled.jpg?resize=2048%2C1153&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/12/Micro-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/12/Micro-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="(max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+</figure>
+
+
+
+<h2 class="wp-block-heading">Build the Charger Side of the Cable</h2>
+
+
+
+<p class="wp-block-paragraph">If you&#8217;re making a USB A cable, then all you have left to do is reconnect power (red) and ground (black) to their corresponding colors on the TouchPad side of the cable, trim off the data lines from the USB A side, clean it all up with some heat shrink or electrical tape and you&#8217;re done!</p>
+
+
+
+<p class="wp-block-paragraph">If you&#8217;re making a USB C to USB C cable grab the USB C board I linked above and your 2-wire cable (or 4-wire that you&#8217;ve trimmed the data lines from). You&#8217;ll also have to cut the end off to make room for the new connector.</p>
+
+
+
+<p class="wp-block-paragraph">1. Pre-tin the board on the two outside pads marked as VCC and Gnd in the image below.<br>2. Solder on the red (power) wire to VCC and then black (ground) to Gnd. If you bought the housing and boards together, don&#8217;t forget to put the housing on the wire before you start soldering. You also may need some super glue to keep the plastic housing from coming apart.<br>3. Back at the TouchPad side of the wire, take the other end of your 2-wire cable and attach red and black to their corresponding ends, clean it up with some heat shrink or electrical tape and you&#8217;re done!</p>
+
+
+
+<figure data-wp-context="{&quot;galleryId&quot;:&quot;6a8de8201e861&quot;}" data-wp-interactive="core/gallery" class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-2 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8201eca2&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8201eca2" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="335" height="738" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4738" src="https://i0.wp.com/pivotce.com/files/2024/12/usb-c-connector.jpg?resize=335%2C738&#038;ssl=1" alt="" class="wp-image-4738" srcset="https://i0.wp.com/pivotce.com/files/2024/12/usb-c-connector.jpg?w=335&amp;ssl=1 335w, https://i0.wp.com/pivotce.com/files/2024/12/usb-c-connector.jpg?resize=136%2C300&amp;ssl=1 136w" sizes="auto, (max-width: 335px) 100vw, 335px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8201f12a&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8201f12a" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="573" height="1024" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4726" src="https://i0.wp.com/pivotce.com/files/2024/12/5.1k-end-573x1024.jpg?resize=573%2C1024&#038;ssl=1" alt="" class="wp-image-4726" srcset="https://i0.wp.com/pivotce.com/files/2024/12/5.1k-end-scaled.jpg?resize=573%2C1024&amp;ssl=1 573w, https://i0.wp.com/pivotce.com/files/2024/12/5.1k-end-scaled.jpg?resize=168%2C300&amp;ssl=1 168w, https://i0.wp.com/pivotce.com/files/2024/12/5.1k-end-scaled.jpg?resize=768%2C1371&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/12/5.1k-end-scaled.jpg?resize=860%2C1536&amp;ssl=1 860w, https://i0.wp.com/pivotce.com/files/2024/12/5.1k-end-scaled.jpg?resize=1147%2C2048&amp;ssl=1 1147w, https://i0.wp.com/pivotce.com/files/2024/12/5.1k-end-scaled.jpg?w=1434&amp;ssl=1 1434w" sizes="auto, (max-width: 573px) 100vw, 573px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8201f5b4&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8201f5b4" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="573" height="1024" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4725" src="https://i0.wp.com/pivotce.com/files/2024/12/USB-C-wire.jpg?resize=573%2C1024&#038;ssl=1" alt="" class="wp-image-4725" srcset="https://i0.wp.com/pivotce.com/files/2024/12/USB-C-wire-scaled.jpg?resize=573%2C1024&amp;ssl=1 573w, https://i0.wp.com/pivotce.com/files/2024/12/USB-C-wire-scaled.jpg?resize=168%2C300&amp;ssl=1 168w, https://i0.wp.com/pivotce.com/files/2024/12/USB-C-wire-scaled.jpg?resize=768%2C1371&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/12/USB-C-wire-scaled.jpg?resize=860%2C1536&amp;ssl=1 860w, https://i0.wp.com/pivotce.com/files/2024/12/USB-C-wire-scaled.jpg?resize=1147%2C2048&amp;ssl=1 1147w, https://i0.wp.com/pivotce.com/files/2024/12/USB-C-wire-scaled.jpg?w=1434&amp;ssl=1 1434w" sizes="auto, (max-width: 573px) 100vw, 573px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8201fa1d&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8201fa1d" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="451" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4727" src="https://i0.wp.com/pivotce.com/files/2024/12/micro-wire.jpg?resize=800%2C451&#038;ssl=1" alt="" class="wp-image-4727" srcset="https://i0.wp.com/pivotce.com/files/2024/12/micro-wire-scaled.jpg?resize=1024%2C577&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/12/micro-wire-scaled.jpg?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/12/micro-wire-scaled.jpg?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/12/micro-wire-scaled.jpg?resize=1536%2C865&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/12/micro-wire-scaled.jpg?resize=2048%2C1153&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/12/micro-wire-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/12/micro-wire-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+</figure>
+
+
+
+<h2 class="wp-block-heading">Final Thoughts</h2>
+
+
+
+<p class="wp-block-paragraph">You should now be able to use any charger you want to and the TouchPad will believe you&#8217;re plugged into a normal battery charger and will allow the normal charge rate flow through. </p>
+
+
+
+<p class="wp-block-paragraph">Note, you&#8217;ve effectively removed the ability to use this cable for Data since the data lines are no longer connected.</p>
+
+
+
+<p class="wp-block-paragraph">Also, for those who modded the TouchPad with USB C, the port already has 5.1k resistance but cannot communicate that to a USB C 3.1 charger with the added resistance on the data lines. This is why the TouchPad end of the USB C cable must be a &#8220;dumb&#8221; 4-wire USB C cable and the charger end needs the 5.1k resistance to tell the charger on that end to send power. This also means that you must remember which end is which, but don&#8217;t worry. Picking the wrong direction won&#8217;t hurt anything as the USB C charger won&#8217;t allow power since the wire doesn&#8217;t tell it to. I marked the TouchPad side of the USB C cable with a dab of orange paint pen.</p>
+
+
+
+<p class="wp-block-paragraph">Finally, I hope you found this helpful or at the very least entertaining! I had fun exploring the different ways of making this work and <a href="https://www.twitch.tv/radrepairs" title="">live streamed it on Twitch</a>.</p>
+
+
+
+<p class="wp-block-paragraph">#webos4ever</p>The post <a href="https://pivotce.com/2024/12/05/guide-create-an-original-barrel-charging-wire-for-your-hp-touchpad/">Guide: Create an “Original Barrel” Charging Wire for your HP TouchPad</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/" rel="bookmark" title="Guide: Converting the TouchPad&#8217;s Micro USB Port to USB C">Guide: Converting the TouchPad&#8217;s Micro USB Port to USB C</a></li>
+<li><a href="https://pivotce.com/2014/11/23/putting-a-touchstone-in-my-car-a-walk-through-my-process/" rel="bookmark" title="Putting a Touchstone in My Car: A Walk Through My Process">Putting a Touchstone in My Car: A Walk Through My Process</a></li>
+<li><a href="https://pivotce.com/2014/12/02/guide-saving-apps-from-the-app-catalog-part-1-nodeleteipk-patch/" rel="bookmark" title="Guide: Saving Apps From The App Catalog Part 1: nodeleteipk patch">Guide: Saving Apps From The App Catalog Part 1: nodeleteipk patch</a></li>
+</ol>
+</div>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">4721</post-id>	</item>
+		<item>
+		<title>Guide: Converting the TouchPad&#8217;s Micro USB Port to USB C</title>
+		<link>https://pivotce.com/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/</link>
+					<comments>https://pivotce.com/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/#comments</comments>
+		
+		<dc:creator><![CDATA[Alan Morford]]></dc:creator>
+		<pubDate>Wed, 25 Sep 2024 14:16:21 +0000</pubDate>
+				<category><![CDATA[Tutorial]]></category>
+		<category><![CDATA[guide]]></category>
+		<category><![CDATA[Touchpad]]></category>
+		<category><![CDATA[usb]]></category>
+		<guid isPermaLink="false">https://pivotce.com/?p=4616</guid>
+
+					<description><![CDATA[<p>Well, it&#8217;s 2024 and technology continues to advance. The TouchPad isn&#8217;t new by any means, but that doesn&#8217;t mean it can&#8217;t be slightly modernized to be more convenient today. Specifically, &#8230; <a href="https://pivotce.com/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/" class="more-link">Continue reading <span class="screen-reader-text">Guide: Converting the TouchPad&#8217;s Micro USB Port to USB C</span> <span class="meta-nav">&#8594;</span></a></p>
+The post <a href="https://pivotce.com/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/">Guide: Converting the TouchPad’s Micro USB Port to USB C</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2024/12/05/guide-create-an-original-barrel-charging-wire-for-your-hp-touchpad/" rel="bookmark" title="Guide: Create an &#8220;Original Barrel&#8221; Charging Wire for your HP TouchPad">Guide: Create an &#8220;Original Barrel&#8221; Charging Wire for your HP TouchPad</a></li>
+<li><a href="https://pivotce.com/2014/06/13/webos-ports-surprises-with-touchpad-port-namelogo-change/" rel="bookmark" title="UPDATE: webOS Ports surprises with TouchPad port, name/logo change, Nexus 4">UPDATE: webOS Ports surprises with TouchPad port, name/logo change, Nexus 4</a></li>
+<li><a href="https://pivotce.com/2014/10/21/guide-coming-back-to-webos-in-2014-part-1/" rel="bookmark" title="Guide: Coming (Back) to webOS in 2014, Part 1">Guide: Coming (Back) to webOS in 2014, Part 1</a></li>
+</ol>
+</div>
+]]></description>
+										<content:encoded><![CDATA[<p class="wp-block-paragraph">Well, it&#8217;s 2024 and technology continues to advance. The TouchPad isn&#8217;t new by any means, but that doesn&#8217;t mean it can&#8217;t be slightly modernized to be more convenient today. Specifically, it is entirely possible to convert the TouchPad&#8217;s Micro USB port to USB C for charging and USB storage access. I&#8217;ll show you how. </p>
+
+
+
+<p class="wp-block-paragraph">This is a tough mod which requires micro-soldering and modifying a PCB which you will have a hard time sourcing a replacement for without buying another TouchPad. Proceed at your own peril.</p>
+
+
+
+<span id="more-4616"></span>
+
+
+
+<h2 class="wp-block-heading"><strong>Tools for the Job</strong></h2>
+
+
+
+<p class="wp-block-paragraph">To do this mod you&#8217;ll need a few things for tools and parts. Here&#8217;s a list of what I used:<br>&#8211; Needle nose pliers/tweezers<br>&#8211; USB C boards with 5.1k resistors <a href="https://www.amazon.com/gp/product/B0CB2VFJ54" target="_blank" rel="noopener" title="">Amazon</a> <br>&#8211; Soldering iron, solder, flux and a hot air station<br>&#8211; Flush cuts <a href="https://www.amazon.com/Hakko-CHP-170-Micro-Cutter/dp/B00FZPDG1K">Amazon</a><br>&#8211; Dremel with cutting or sanding wheel<br>&#8211; 28 AWG wire or smaller. 30 AWG is pretty good but any wire around 0.25mm to 0.5mm should work.<br>&#8211; Small file and screwdriver set<br>&#8211; Painter&#8217;s and kapton tape<br>&#8211; Metal spudger</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Disassemble the TouchPad</strong></h2>
+
+
+
+<p class="wp-block-paragraph">This is where you&#8217;re going to want to get that metal spudger out and be very careful not to snap clips. I can&#8217;t explain it better than iFixit already did so go check out their <a href="https://www.ifixit.com/Guide/HP+TouchPad+USB+Connector+Board+Replacement/6077" target="_blank" rel="noopener" title="">disassembly guide for the USB connector board</a> and then come back here.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Modify the USB Connector Board by Removing the Micro Port</strong></h2>
+
+
+
+<p class="wp-block-paragraph">There are a few ways to remove the Micro USB port. I added a bunch of flux and coated all the connectors in fresh leaded solder and then used a hot air station set to 800 degrees while wiggling the port very slightly with needle nose pliers. You don&#8217;t have to be particularly careful here so if you want to cut the port off with the dremel or the flush cuts or just rip it off with the pliers, (I don&#8217;t recommend it but&#8230;) that&#8217;s fine. We&#8217;re not using the pads it&#8217;s soldered to anyway. You should STILL be careful not to crack the board. Go slow. Be patient.</p>
+
+
+
+<div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-4fc3f8e1 wp-block-group-is-layout-flex">
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de820249a4&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de820249a4" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="738" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" src="https://i0.wp.com/pivotce.com/files/2024/09/20240921_133333.jpg?resize=800%2C738&#038;ssl=1" alt="I used hot air to remove the micro port." class="wp-image-4656" style="aspect-ratio:16/9;object-fit:cover" srcset="https://i0.wp.com/pivotce.com/files/2024/09/20240921_133333.jpg?resize=1024%2C945&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/20240921_133333.jpg?resize=300%2C277&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/20240921_133333.jpg?resize=768%2C709&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/20240921_133333.jpg?w=1304&amp;ssl=1 1304w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+</div>
+
+
+
+<h2 class="wp-block-heading"><strong>Trim the USB C Board</strong></h2>
+
+
+
+<p class="wp-block-paragraph">We need to expose the USB C port a bit on this board so let&#8217;s cut it down. Grab the painter&#8217;s tape and flip the USB C board upside down. You&#8217;ll see a small trace between the front and rear anchor points on the right side, which we don&#8217;t want to cut. Mark the tape just on the other side of that trace like I did. Dremel along the tape line until you get to the port. You can then use needle nose pliers, a flat file, and/or flush cuts to remove the rest of the board from the bottom of the port.</p>
+
+
+
+<figure data-wp-context="{&quot;galleryId&quot;:&quot;6a8de82024c67&quot;}" data-wp-interactive="core/gallery" class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-3 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de82024fe3&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de82024fe3" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="600" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4666" src="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_225601_003.jpg?resize=800%2C600&#038;ssl=1" alt="Cover the trace with tape." class="wp-image-4666" srcset="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_225601_003-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_225601_003-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_225601_003-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_225601_003-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_225601_003-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_225601_003-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_225601_003-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8202545c&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8202545c" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="600" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4665" src="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230157_005.jpg?resize=800%2C600&#038;ssl=1" alt="A good clean cut." class="wp-image-4665" srcset="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230157_005-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230157_005-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230157_005-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230157_005-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230157_005-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230157_005-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230157_005-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de820258fe&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de820258fe" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="600" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4678" src="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230504_006.jpg?resize=800%2C600&#038;ssl=1" alt="It's ready." class="wp-image-4678" srcset="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230504_006-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230504_006-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230504_006-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230504_006-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230504_006-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230504_006-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_230504_006-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+</figure>
+
+
+
+<h2 class="wp-block-heading"><strong>Prepare the USB Connector Board for the USB C Port</strong></h2>
+
+
+
+<p class="wp-block-paragraph">We need to slide the port into the old space so grab the painter&#8217;s tape again and mark off the area I marked to make room for the USB C port. You can place the port up to it like I did and use that as a guide. Grab your dremel again or a similar tool and cut out what you marked off. When you&#8217;re done, the USB C port should slide easily into the groove. It will fit tighter when we add the kapton tape in a later step.</p>
+
+
+
+<figure data-wp-context="{&quot;galleryId&quot;:&quot;6a8de82025c25&quot;}" data-wp-interactive="core/gallery" class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-4 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de82025f96&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de82025f96" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="600" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4661" src="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231712_008.jpg?resize=800%2C600&#038;ssl=1" alt="Line it up" class="wp-image-4661" srcset="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231712_008-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231712_008-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231712_008-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231712_008-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231712_008-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231712_008-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231712_008-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de820263fb&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de820263fb" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="600" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4659" src="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232126_009.jpg?resize=800%2C600&#038;ssl=1" alt="Tape it off and cut it out" class="wp-image-4659" srcset="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232126_009-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232126_009-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232126_009-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232126_009-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232126_009-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232126_009-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232126_009-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de82026862&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de82026862" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="600" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4660" src="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232523_010.jpg?resize=800%2C600&#038;ssl=1" alt="Check that it fits." class="wp-image-4660" srcset="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232523_010-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232523_010-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232523_010-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232523_010-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232523_010-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232523_010-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232523_010-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+</figure>
+
+
+
+<h2 class="wp-block-heading"><strong>Make Room in the TouchPad for the Added Thickness of the USB C Board</strong></h2>
+
+
+
+<p class="wp-block-paragraph">The USB C board will sit underneath the USB connector board so we have to make room by trimming away the plastic underneath. For this you&#8217;ll need to use flush cuts or any other tool you have to chip away. You could use the dremel for this if you&#8217;d like. Be careful to not go beyond the first inner layer. Beyond that is the outer shell of the TouchPad. There&#8217;s no real method here, just cut out the screw posts and chip away. Use the pictures below as a guide.</p>
+
+
+
+<figure data-wp-context="{&quot;galleryId&quot;:&quot;6a8de82026b7a&quot;}" data-wp-interactive="core/gallery" class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-5 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de82026ecd&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de82026ecd" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="451" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4670" src="https://i0.wp.com/pivotce.com/files/2024/09/20240922_085618.jpg?resize=800%2C451&#038;ssl=1" alt="Before the layer removal." class="wp-image-4670" srcset="https://i0.wp.com/pivotce.com/files/2024/09/20240922_085618-scaled.jpg?resize=1024%2C577&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_085618-scaled.jpg?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_085618-scaled.jpg?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_085618-scaled.jpg?resize=1536%2C865&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_085618-scaled.jpg?resize=2048%2C1153&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_085618-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_085618-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8202732b&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8202732b" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="451" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4669" src="https://i0.wp.com/pivotce.com/files/2024/09/20240922_091303.jpg?resize=800%2C451&#038;ssl=1" alt="After the layer removal." class="wp-image-4669" srcset="https://i0.wp.com/pivotce.com/files/2024/09/20240922_091303-scaled.jpg?resize=1024%2C577&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_091303-scaled.jpg?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_091303-scaled.jpg?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_091303-scaled.jpg?resize=1536%2C865&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_091303-scaled.jpg?resize=2048%2C1153&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_091303-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_091303-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de820277b5&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de820277b5" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="600" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4679" src="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231230_007.jpg?resize=800%2C600&#038;ssl=1" alt="Like a glove." class="wp-image-4679" srcset="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231230_007-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231230_007-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231230_007-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231230_007-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231230_007-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231230_007-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_231230_007-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+</figure>
+
+
+
+<h2 class="wp-block-heading"><strong>Cut the USB C Hole from the Old Micro USB Hole</strong></h2>
+
+
+
+<p class="wp-block-paragraph">To open the micro USB hole enough to fit the USB C port, take a rounded file to the left and right of both sides and just file a little bit at at time. Use a small flat file to widen the top and bottom of the port. This process is just trial and error. File a little and then grab the USB C board to test. The port will need to fit inside the hole a bit so you can push it through from the outside to test the hole size if that&#8217;s easier. Note: the USB C board will likely not rest on the bottom of the TouchPad and will float a little. This is good because it makes room for your wires and a little kapton tape underneath.</p>
+
+
+
+<figure data-wp-context="{&quot;galleryId&quot;:&quot;6a8de82027aff&quot;}" data-wp-interactive="core/gallery" class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-6 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de82027e63&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de82027e63" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="451" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4672" src="https://i0.wp.com/pivotce.com/files/2024/09/20240922_082925.jpg?resize=800%2C451&#038;ssl=1" alt="This TouchPad was already cracked." class="wp-image-4672" srcset="https://i0.wp.com/pivotce.com/files/2024/09/20240922_082925-scaled.jpg?resize=1024%2C577&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_082925-scaled.jpg?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_082925-scaled.jpg?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_082925-scaled.jpg?resize=1536%2C865&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_082925-scaled.jpg?resize=2048%2C1153&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_082925-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_082925-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+</figure>
+
+
+
+<h2 class="wp-block-heading"><strong>Tape the USB C Board</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Since we hacked away at the USB connector board it&#8217;s possible we&#8217;ve provided the perfect environment for creating shorts! Oh no! So get out the kapton tape because we&#8217;re going to add a layer on both sides. You&#8217;ll see how I did it on one side below. Do it on both sides. You&#8217;ll also notice how I did not cover those two small square contacts just at the bottom of the tape. That&#8217;s because we need them.</p>
+
+
+
+<figure data-wp-context="{&quot;galleryId&quot;:&quot;6a8de82028119&quot;}" data-wp-interactive="core/gallery" class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-7 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8202846a&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8202846a" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="600" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4674" src="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232814_012.jpg?resize=800%2C600&#038;ssl=1" alt="Flip it over and do the same on the other side." class="wp-image-4674" srcset="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232814_012-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232814_012-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232814_012-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232814_012-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232814_012-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232814_012-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_232814_012-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+</figure>
+
+
+
+<h2 class="wp-block-heading"><strong>Where To Get Power and Data</strong></h2>
+
+
+
+<p class="wp-block-paragraph">You&#8217;ll see the diagrams below which I&#8217;ve marked with VBUS (power), data in, data out, and ground. Obviously the old port is gone and most if its pads, but I wanted to show that both sides of the board have the connections. You could possibly do this mod differently, and if you so choose, hopefully these help.</p>
+
+
+
+<p class="wp-block-paragraph">A quick note:  this mod can be done with a 4-pin USB C port. That would give you power and data just like with the USB C board I&#8217;m using in this guide, however, a 4-pin USB C board will not charge with a USB C charger (ie USB 3.1). The board I&#8217;m using in this guide provides the ability to use any charger because it comes pre-built with 5.1k resistors wired to CC1 and CC2 to ground. This is the trick that tells the USB C chargers to send power to the device.</p>
+
+
+
+<figure data-wp-context="{&quot;galleryId&quot;:&quot;6a8de82028765&quot;}" data-wp-interactive="core/gallery" class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-8 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de82028aa7&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de82028aa7" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="600" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4676" src="https://i0.wp.com/pivotce.com/files/2024/09/front-pcb.jpg?resize=800%2C600&#038;ssl=1" alt="The top of the USB connector board." class="wp-image-4676" srcset="https://i0.wp.com/pivotce.com/files/2024/09/front-pcb-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/front-pcb-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/front-pcb-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/front-pcb-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/front-pcb-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/front-pcb-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/front-pcb-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de82028efd&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de82028efd" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="600" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4677" src="https://i0.wp.com/pivotce.com/files/2024/09/rear-pcb.jpg?resize=800%2C600&#038;ssl=1" alt="The bottom of the USB connector board." class="wp-image-4677" srcset="https://i0.wp.com/pivotce.com/files/2024/09/rear-pcb-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/rear-pcb-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/rear-pcb-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/rear-pcb-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/rear-pcb-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/rear-pcb-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/rear-pcb-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+</figure>
+
+
+
+<h2 class="wp-block-heading"><strong>Solder the USB C Board into the USB Connector Board</strong></h2>
+
+
+
+<p class="wp-block-paragraph">This isn&#8217;t a &#8220;how to solder tutorial&#8221; so hit up youtube and find a good tutorial that works for you. In general though, use flux, pre-tin the VBUS, Ground, D-, and D+ pads on the USB C board as well as the points on the bottom of the USB connector board.</p>
+
+
+
+<p class="wp-block-paragraph">Now for the tricky part, I didn&#8217;t list it in the Tools section above, but it would really help to have magnification or a digital microscope for this. I have these things and I used both. You might have steadier hands and better eyes than me. The picture below was my first attempt of the three TouchPads I modded, and it&#8217;s not my best soldering work, but fundamentally, this is what yours should look like.</p>
+
+
+
+<figure data-wp-context="{&quot;galleryId&quot;:&quot;6a8de8202922c&quot;}" data-wp-interactive="core/gallery" class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-9 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de82029591&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de82029591" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="600" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4681" src="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_233035_013.jpg?resize=800%2C600&#038;ssl=1" alt="You don't do anything with CC1 or CC2." class="wp-image-4681" srcset="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_233035_013-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_233035_013-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_233035_013-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_233035_013-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_233035_013-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_233035_013-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_233035_013-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de820299f1&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de820299f1" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="600" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4680" src="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_220016_001.jpg?resize=800%2C600&#038;ssl=1" alt="Ignore the quality of my first attempt." class="wp-image-4680" srcset="https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_220016_001-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_220016_001-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_220016_001-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_220016_001-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_220016_001-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_220016_001-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0103_220016_001-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+</figure>
+
+
+
+<h2 class="wp-block-heading"><strong>Put the Pieces Together</strong></h2>
+
+
+
+<p class="wp-block-paragraph">You can use a bit of kapton tape to secure the wires in place a bit more if you&#8217;d like but it&#8217;s not required. It won&#8217;t short since it&#8217;s only plastic underneath. This is all press fit into place, but if you&#8217;re uncomfortable with that, you can add a little hot glue under the board as you put it back into the TouchPad. You don&#8217;t have to put the metal shield back into place if you don&#8217;t want to. It&#8217;s all a pretty tightly fit and if you find the TouchPad screen isn&#8217;t as flush as you want, just leave the metal shield off. A little kapton tape right on top would be fine instead.</p>
+
+
+
+<figure data-wp-context="{&quot;galleryId&quot;:&quot;6a8de82029ce6&quot;}" data-wp-interactive="core/gallery" class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-10 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8202a02b&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8202a02b" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="600" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4685" src="https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_000942_015.jpg?resize=800%2C600&#038;ssl=1" alt="Almost looks stock!" class="wp-image-4685" srcset="https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_000942_015-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_000942_015-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_000942_015-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_000942_015-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_000942_015-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_000942_015-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_000942_015-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8202a4cb&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8202a4cb" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="600" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4684" src="https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_001134_016.jpg?resize=800%2C600&#038;ssl=1" alt="A little kapton holds it in place." class="wp-image-4684" srcset="https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_001134_016-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_001134_016-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_001134_016-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_001134_016-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_001134_016-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_001134_016-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/2020_0104_001134_016-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8202a930&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8202a930" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="451" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4683" src="https://i0.wp.com/pivotce.com/files/2024/09/20240922_125730.jpg?resize=800%2C451&#038;ssl=1" alt="Fits pretty well." class="wp-image-4683" srcset="https://i0.wp.com/pivotce.com/files/2024/09/20240922_125730-scaled.jpg?resize=1024%2C577&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_125730-scaled.jpg?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_125730-scaled.jpg?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_125730-scaled.jpg?resize=1536%2C865&amp;ssl=1 1536w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_125730-scaled.jpg?resize=2048%2C1153&amp;ssl=1 2048w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_125730-scaled.jpg?w=1600&amp;ssl=1 1600w, https://i0.wp.com/pivotce.com/files/2024/09/20240922_125730-scaled.jpg?w=2400&amp;ssl=1 2400w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+</figure>
+
+
+
+<h2 class="wp-block-heading"><strong>Congrats, You Now Have USB C</strong></h2>
+
+
+
+<p class="wp-block-paragraph">I did this mod on three TouchPads and each one works fine with any USB charger I could find, including USB C port having USB 3.1 chargers. I can also confirm the data connection works just like it should to connect via USB mode on PC. Sadly, this doesn&#8217;t do anything to stop webOS from telling you the charger you&#8217;re using isn&#8217;t the original TouchPad barrel charger, but you can make a custom cable to stop that which I&#8217;ll cover in a future article on pivotCE.</p>
+
+
+
+<figure data-wp-context="{&quot;galleryId&quot;:&quot;6a8de8202ac73&quot;}" data-wp-interactive="core/gallery" class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-11 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8202aeff&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8202aeff" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="656" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4713" src="https://i0.wp.com/pivotce.com/files/2024/09/DHkCxMu3-1.jpg?resize=800%2C656&#038;ssl=1" alt="" class="wp-image-4713" srcset="https://i0.wp.com/pivotce.com/files/2024/09/DHkCxMu3-1.jpg?w=887&amp;ssl=1 887w, https://i0.wp.com/pivotce.com/files/2024/09/DHkCxMu3-1.jpg?resize=300%2C246&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/DHkCxMu3-1.jpg?resize=768%2C629&amp;ssl=1 768w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8202b295&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8202b295" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="606" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4714" src="https://i0.wp.com/pivotce.com/files/2024/09/5wpmePxM-1.jpg?resize=800%2C606&#038;ssl=1" alt="" class="wp-image-4714" srcset="https://i0.wp.com/pivotce.com/files/2024/09/5wpmePxM-1.jpg?w=859&amp;ssl=1 859w, https://i0.wp.com/pivotce.com/files/2024/09/5wpmePxM-1.jpg?resize=300%2C227&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/5wpmePxM-1.jpg?resize=768%2C582&amp;ssl=1 768w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+
+
+
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6a8de8202b658&quot;}" data-wp-interactive="core/image" data-wp-key="6a8de8202b658" class="wp-block-image size-large wp-lightbox-container"><img data-recalc-dims="1" loading="lazy" decoding="async" width="800" height="586" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on--click="actions.showLightbox" data-wp-on--load="callbacks.setButtonStyles" data-wp-on--pointerdown="actions.preloadImage" data-wp-on--pointerenter="actions.preloadImageWithDelay" data-wp-on--pointerleave="actions.cancelPreload" data-wp-on-window--resize="callbacks.setButtonStyles" data-id="4715" src="https://i0.wp.com/pivotce.com/files/2024/09/CNf2pkZ3-1.jpg?resize=800%2C586&#038;ssl=1" alt="" class="wp-image-4715" srcset="https://i0.wp.com/pivotce.com/files/2024/09/CNf2pkZ3-1.jpg?resize=1024%2C750&amp;ssl=1 1024w, https://i0.wp.com/pivotce.com/files/2024/09/CNf2pkZ3-1.jpg?resize=300%2C220&amp;ssl=1 300w, https://i0.wp.com/pivotce.com/files/2024/09/CNf2pkZ3-1.jpg?resize=768%2C563&amp;ssl=1 768w, https://i0.wp.com/pivotce.com/files/2024/09/CNf2pkZ3-1.jpg?w=1537&amp;ssl=1 1537w" sizes="auto, (max-width: 800px) 100vw, 800px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			data-wp-bind--aria-label="state.thisImage.triggerButtonAriaLabel"
+			data-wp-init="callbacks.initTriggerButton"
+			data-wp-on--click="actions.showLightbox"
+			data-wp-style--right="state.thisImage.buttonRight"
+			data-wp-style--top="state.thisImage.buttonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button></figure>
+</figure>
+
+
+
+<p class="wp-block-paragraph"><a href="https://forums.weboslives.eu/d/67-pivotce-guide-converting-the-touchpads-micro-usb-port-to-usb-c">Talk about it on the Legacy webOS Forum</a></p>
+
+
+
+<p class="wp-block-paragraph">#webOS4ever</p>The post <a href="https://pivotce.com/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/">Guide: Converting the TouchPad’s Micro USB Port to USB C</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2024/12/05/guide-create-an-original-barrel-charging-wire-for-your-hp-touchpad/" rel="bookmark" title="Guide: Create an &#8220;Original Barrel&#8221; Charging Wire for your HP TouchPad">Guide: Create an &#8220;Original Barrel&#8221; Charging Wire for your HP TouchPad</a></li>
+<li><a href="https://pivotce.com/2014/06/13/webos-ports-surprises-with-touchpad-port-namelogo-change/" rel="bookmark" title="UPDATE: webOS Ports surprises with TouchPad port, name/logo change, Nexus 4">UPDATE: webOS Ports surprises with TouchPad port, name/logo change, Nexus 4</a></li>
+<li><a href="https://pivotce.com/2014/10/21/guide-coming-back-to-webos-in-2014-part-1/" rel="bookmark" title="Guide: Coming (Back) to webOS in 2014, Part 1">Guide: Coming (Back) to webOS in 2014, Part 1</a></li>
+</ol>
+</div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://pivotce.com/2024/09/25/guide-converting-the-touchpads-micro-usb-port-to-usb-c/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">4616</post-id>	</item>
+		<item>
+		<title>webOS Talk at VCF East</title>
+		<link>https://pivotce.com/2024/03/30/webos-talk-at-vcf-east/</link>
+		
+		<dc:creator><![CDATA[preemptive]]></dc:creator>
+		<pubDate>Sat, 30 Mar 2024 02:56:02 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[LuneOS]]></category>
+		<category><![CDATA[Palm]]></category>
+		<category><![CDATA[Touchpad]]></category>
+		<category><![CDATA[webOS]]></category>
+		<guid isPermaLink="false">https://pivotce.com/?p=4596</guid>
+
+					<description><![CDATA[<p>The Vintage Computing Federation hold a number of events. This year&#8217;s VCF East festival will be of interest to fans of webOS phones, tablets and other computing devices of the &#8230; <a href="https://pivotce.com/2024/03/30/webos-talk-at-vcf-east/" class="more-link">Continue reading <span class="screen-reader-text">webOS Talk at VCF East</span> <span class="meta-nav">&#8594;</span></a></p>
+The post <a href="https://pivotce.com/2024/03/30/webos-talk-at-vcf-east/">webOS Talk at VCF East</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2013/12/11/calling-east-coast-usa-enyo-developers/" rel="bookmark" title="Calling East Coast (USA) Enyo Developers">Calling East Coast (USA) Enyo Developers</a></li>
+<li><a href="https://pivotce.com/2016/04/08/webos-meetup-chicago-17th-april/" rel="bookmark" title="webOS meetup, Chicago, 17th April">webOS meetup, Chicago, 17th April</a></li>
+<li><a href="https://pivotce.com/2018/05/10/webos-meetup-chicago-3rd-june/" rel="bookmark" title="webOS meetup, Chicago, 3rd June">webOS meetup, Chicago, 3rd June</a></li>
+</ol>
+</div>
+]]></description>
+										<content:encoded><![CDATA[<p class="wp-block-paragraph"><a href="https://vcfed.org" target="_blank" rel="noopener nofollow" title="The Vintage Computing Federation">The Vintage Computing Federation</a> hold a number of events. This year&#8217;s <a href="https://vcfed.org/events/vintage-computer-festival-east/" target="_blank" rel="noopener nofollow" title="VCF East festival">VCF East festival</a> will be of interest to fans of webOS phones, tablets and other computing devices of the past.</p>
+
+
+
+<p class="wp-block-paragraph">The festival is held at the <a href="https://vcfed.org/events/vintage-computer-festival-east/vcf-east-directions/" target="_blank" rel="noopener nofollow" title="InfoAge Science Center, 2201 Marconi Rd., Wall, New Jersey, 07719">InfoAge Science Center, 2201 Marconi Rd., Wall, New Jersey, 07719</a> and runs over three days from the 12th to 14th of April. The festival includes three elements:</p>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://vcfed.org/events/vintage-computer-festival-east/vcf-east-exhibits/" target="_blank" rel="noopener nofollow" title="Exhibition of various old computer systems">Exhibition of various old computer systems</a> &#8211; some with modifications to function in the modern environment.</li>
+
+
+
+<li><a href="https://vcfed.org/events/vintage-computer-festival-east/vcf-east-schedule/" target="_blank" rel="noopener nofollow" title="A programme of talks">A programme of talks</a> and <a href="https://vcfed.org/vcf-east-talks/" target="_blank" rel="noopener nofollow" title="discussion">discussion</a>.</li>
+
+
+
+<li><a href="https://vcfed.org/events/vintage-computer-festival-east/vcf-east-consignment/" target="_blank" rel="noopener nofollow" title="Sales of devices and other collectables">Sales of devices and other collectables</a>.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">For readers of this blog, representation of webOS devices will be in two of those areas. Jon W of the <a href="https://webosarchive.org/" target="_blank" rel="noopener nofollow" title="webOS Archive">webOS Archive</a> is attending over the weekend and will give a 50 minute talk at 900am on Saturday the 13th. The consignment shop will have a small selection of webOS devices for those who are interested.</p>
+
+
+
+<p class="wp-block-paragraph">So if you are in the area, why not go along?</p>
+
+
+
+<p class="wp-block-paragraph">If you can&#8217;t make it, you can follow along via the <a href="https://www.youtube.com/@vcfederation/videos" target="_blank" rel="noopener nofollow" title="VCF video channel">VCF video channel</a> and TouchPads are available remotely at <a href="https://www.tindie.com/stores/webosarchive/" target="_blank" rel="noopener nofollow" title="Tindie">Tindie</a></p>
+
+
+
+<p class="wp-block-paragraph">Discussion is at the <a href="https://forums.weboslives.eu/d/32-vcf-east-2024" target="_blank" rel="noopener nofollow" title="">VCF East forum thread</a>. You can read more <a href="https://www.infoage.org/" target="_blank" rel="noopener nofollow" title="">about the InfoAge museum</a>.</p>
+
+
+
+<p class="wp-block-paragraph">Picture Credit: <a href="https://commons.wikimedia.org/wiki/File:Camp_Evans_Historic_District_(38).JPG" target="_blank"  rel="lightbox[4596] noopener nofollow" title="">Apc106, Wikimedia Commons</a>.</p>The post <a href="https://pivotce.com/2024/03/30/webos-talk-at-vcf-east/">webOS Talk at VCF East</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2013/12/11/calling-east-coast-usa-enyo-developers/" rel="bookmark" title="Calling East Coast (USA) Enyo Developers">Calling East Coast (USA) Enyo Developers</a></li>
+<li><a href="https://pivotce.com/2016/04/08/webos-meetup-chicago-17th-april/" rel="bookmark" title="webOS meetup, Chicago, 17th April">webOS meetup, Chicago, 17th April</a></li>
+<li><a href="https://pivotce.com/2018/05/10/webos-meetup-chicago-3rd-june/" rel="bookmark" title="webOS meetup, Chicago, 3rd June">webOS meetup, Chicago, 3rd June</a></li>
+</ol>
+</div>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">4596</post-id>	</item>
+		<item>
+		<title>LuneOS February Stable release: Eiskaffee</title>
+		<link>https://pivotce.com/2024/02/15/luneos-february-stable-release-eiskaffee/</link>
+					<comments>https://pivotce.com/2024/02/15/luneos-february-stable-release-eiskaffee/#comments</comments>
+		
+		<dc:creator><![CDATA[webosports]]></dc:creator>
+		<pubDate>Thu, 15 Feb 2024 17:18:32 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Developer]]></category>
+		<category><![CDATA[LG]]></category>
+		<category><![CDATA[LG webOS OSE]]></category>
+		<category><![CDATA[LuneOS]]></category>
+		<category><![CDATA[Open webOS]]></category>
+		<category><![CDATA[webOS]]></category>
+		<category><![CDATA[webOS Ports]]></category>
+		<guid isPermaLink="false">https://pivotce.com/?p=4565</guid>
+
+					<description><![CDATA[<p>Sooo that was a really long time since a release, but webOS Ports are still around and active as ever! We have continued making updates and producing testing images. But &#8230; <a href="https://pivotce.com/2024/02/15/luneos-february-stable-release-eiskaffee/" class="more-link">Continue reading <span class="screen-reader-text">LuneOS February Stable release: Eiskaffee</span> <span class="meta-nav">&#8594;</span></a></p>
+The post <a href="https://pivotce.com/2024/02/15/luneos-february-stable-release-eiskaffee/">LuneOS February Stable release: Eiskaffee</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2017/02/24/luneos-february-stable-release-chai-latte/" rel="bookmark" title="LuneOS February Stable Release: Chai Latte">LuneOS February Stable Release: Chai Latte</a></li>
+<li><a href="https://pivotce.com/2018/11/28/luneos-november-stable-release-doppio/" rel="bookmark" title="LuneOS November Stable Release: Doppio">LuneOS November Stable Release: Doppio</a></li>
+<li><a href="https://pivotce.com/2019/10/24/luneos-october-stable-release-eggnog-latte/" rel="bookmark" title="LuneOS October Stable release: Eggnog Latte">LuneOS October Stable release: Eggnog Latte</a></li>
+</ol>
+</div>
+]]></description>
+										<content:encoded><![CDATA[<p class="wp-block-paragraph">Sooo that was a really long time since a release, but <a href="https://webos-ports.org" target="_blank" rel="noopener" title="">webOS Ports</a> are still around and active as ever!</p>
+
+
+
+<p class="wp-block-paragraph">We have continued making updates and producing testing images. But a lot happened that resulted in us not putting out a proper release out in the past few years.</p>
+
+
+
+<p class="wp-block-paragraph">Those who have stayed in touch with the community will know there has been some turmoil with the closure of the webOS Nation forums last year. Things stabilised over the last year as people converged around the <a href="https://www.webosarchive.org/" target="_blank" rel="noopener" title="">webOS Archive</a> and made plans on the associated <a href="https://docs.webosarchive.org/?/docs/community" target="_blank" rel="noopener" title="">Discord server</a>. Much of the old information from webOS Nation was preserved thanks to the <a href="http://forums.webosarchive.org/" target="_blank" rel="noopener" title="">internet archive</a> and can still be accessed, if imperfectly. We have now set up a <a href="https://forums.weboslives.eu" target="_blank" rel="noopener" title="">new community forum</a> that largely replicates the old layout and is ready for fresh content.</p>
+
+
+
+<p class="wp-block-paragraph">If you are eager to find out what we&#8217;ve been working on and to try out the new release, read on…</p>
+
+
+
+<span id="more-4565"></span>
+
+
+
+<p class="wp-block-paragraph">The (Jenkins) builder infrastructure we had available previously decided to have a number of malfunctions, leading it to be no longer available to us. So for now we&#8217;re back to our own builders for building all the images, which isn&#8217;t great, but at least we&#8217;re still building and providing images! We are now using <a href="https://www.yoctoproject.org/development/releases/" target="_blank" rel="noopener" title="">Yocto &#8220;kirkstone&#8221;</a>, which means newer base components like systemd, pulseaudio and wayland.</p>
+
+
+
+<p class="wp-block-paragraph">Since the last release LuneOS has gone through a major rework under the hood. To summarize:</p>
+
+
+
+<ul class="wp-block-list">
+<li>We moved from Qt5 to <a href="https://www.qt.io/product/qt6" target="_blank" rel="noopener" title="">Qt6</a> (6.5.2 included in this release).</li>
+
+
+
+<li>We have moved away from our own compositor (luna-next) to the one provided by LG in <a href="https://www.webosose.org/" target="_blank" rel="noopener" title="">webOS OSE</a> called luna-surfacemanager.</li>
+
+
+
+<li>We are now using LG&#8217;s WAM (WebAppManager) instead of our own custom one together with LG&#8217;s fork of Chromium (94).</li>
+
+
+
+<li>A major rebase of all components shared with webOS OSE to be based on the <a href="https://www.webosose.org/blog/2023/09/07/webos-ose-2-23-0-release/" target="_blank" rel="noopener" title="">webOS OSE release 2.23.0</a> now.</li>
+
+
+
+<li>This included a migration to Enhanced ACG which provides a lot tighter security for LS2 calls from apps and services.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">This all was an enormous amount of work behind the screens but little visible to the end user, however this does offer clear benefits going forward being:</p>
+
+
+
+<ul class="wp-block-list">
+<li>A shared code-base with LG, which means less custom components and maintenance.</li>
+
+
+
+<li>Years of field tested code on LG production devices which offers more stability.</li>
+
+
+
+<li>In this process we were able to keep backwards compatibility for apps and services.</li>
+
+
+
+<li>Easier to upgrade to latest OSE components, since we have migrated almost all remaining components that were still not based on the latest webOS OSE or on Open webOS. (125 components were migrated in total, 15 components are still to be migrated).</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">In the meanwhile we have also been working hard to support the newly released <a href="https://pine64.org/devices/#_phones_and_tablets" target="_blank" rel="noopener" title="">Pine64</a> devices such as the PinePhone, PinePhonePro and PineTab2 which are affordable devices which can run a very close to mainline kernel and a multitude of OS-es. We now support booting off <a href="https://pine64.org/documentation/PinePhone_Pro/Software/Bootloaders/" target="_blank" rel="noopener" title="">tow-boot</a> on Pinephone.</p>
+
+
+
+<p class="wp-block-paragraph">The new close to mainline kernel for the Pine64 devices allows them to run things like <a href="https://waydro.id/" target="_blank" rel="noopener" title="">Waydroid</a> out of the box!</p>
+
+
+
+<p class="wp-block-paragraph">All other supported Android devices are now based on <a href="https://halium.org/" target="_blank" rel="noopener" title="">Halium/Android</a> 9.0.</p>
+
+
+
+<p class="wp-block-paragraph">So what is ahead for the near future?</p>
+
+
+
+<p class="wp-block-paragraph">Our focus will be on the mainline devices and emulator (<a href="https://www.qemu.org/" target="_blank" rel="noopener" title="">qemux86-64</a>), however we will try to keep support for the Android/Halium based targets as well.</p>
+
+
+
+<ul class="wp-block-list">
+<li>Upgrade to latest Chromium 108 released by LG recently</li>
+
+
+
+<li>Work on audio &amp; multimedia infrastructure provided by webOS OSE to get it working in LuneOS</li>
+
+
+
+<li>Work on camera infrastructure</li>
+
+
+
+<li>Try to get a mainline kernel working for Tenderloin, Hammerhead, Mido and Tissot.</li>
+
+
+
+<li>Improve/add QML components and add new basic apps to be used such as Camera, Flashlight, Audio Player, Video Player</li>
+
+
+
+<li>Piggyback off some of the work done by the <a href="https://github.com/webosbrew/" target="_blank" rel="noopener" title="">LG TV homebrew community</a>.</li>
+
+
+
+<li>Provide a GSI image for newer Android (9.0+) based devices, this would allow a standard image to boot on most modern Android devices v.s. building a device specific one for each device.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity" />
+
+
+
+<p class="wp-block-paragraph"><strong>Known issues:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>Battery usage is on the high side</li>
+
+
+
+<li>No audio in webapps (we decided not to spend time on this, seeing we plan to update Chromium soon anyway)</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">The Usual:</p>
+
+
+
+<ol class="wp-block-list">
+<li>Sign up for<a href="https://github.com/webOS-ports/luneos-testing/issues" target="_blank" rel="noopener" title=""> the bug tracker</a>.</li>
+
+
+
+<li><a href="https://pivotce.com/2024/02/15/luneos-help-wanted-2024/" rel="sponsored ugc" title="">Get involved</a> and&#8230;</li>
+
+
+
+<li><a href="https://webos-ports.org/wiki/Devices" target="_blank" rel="noopener" title="">Download and Install</a></li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">Feel free to download the updated builds to get started. Currently supported targets: PinePhone, PinePhonePro, PineTab2, Qemux86-64 (Virtualbox), all with mainline kernel. Tenderloin, Hammerhead, Tissot, Mido, Rosy, Mako (Android 9.0/Halium based with their respective Android kernels (3.4 and newer)). RaspberryPi 3 and RaspberryPi4 might work too, however we haven&#8217;t tested this ourselves.</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://webos-ports.org/wiki/Devices" target="_blank" rel="noopener" title="">Installation instructions are on the wiki</a>. And remember we don’t do timelines.</p>
+
+
+
+<p class="wp-block-paragraph">Don’t forget to contact us with any questions and feel free to join the discussion on the <a href="https://forums.weboslives.eu/d/41-eiskaffee-luneos-stable-release-february-2024" target="_blank" rel="noopener nofollow" title="">webOS Lives forums</a>. Catch us on Twitter @webosports on IRC: Libera:#webos-ports, <a href="https://t.me/luneos_dev" target="_blank" rel="noopener" title="">Telegram</a> or email <a href="mailto:webos.ports@gmail.com">webos.ports@gmail.com</a>.</p>
+
+
+
+<p class="wp-block-paragraph">We will see you shortly again with a new release!</p>
+
+
+
+<p class="wp-block-paragraph">Picture credit: <a href="https://pixabay.com/users/rodesignment-733094/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3663166" target="_blank" rel="noopener" title="">roDesignment</a> from Pixabay</p>The post <a href="https://pivotce.com/2024/02/15/luneos-february-stable-release-eiskaffee/">LuneOS February Stable release: Eiskaffee</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2017/02/24/luneos-february-stable-release-chai-latte/" rel="bookmark" title="LuneOS February Stable Release: Chai Latte">LuneOS February Stable Release: Chai Latte</a></li>
+<li><a href="https://pivotce.com/2018/11/28/luneos-november-stable-release-doppio/" rel="bookmark" title="LuneOS November Stable Release: Doppio">LuneOS November Stable Release: Doppio</a></li>
+<li><a href="https://pivotce.com/2019/10/24/luneos-october-stable-release-eggnog-latte/" rel="bookmark" title="LuneOS October Stable release: Eggnog Latte">LuneOS October Stable release: Eggnog Latte</a></li>
+</ol>
+</div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://pivotce.com/2024/02/15/luneos-february-stable-release-eiskaffee/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">4565</post-id>	</item>
+		<item>
+		<title>LuneOS: Help Wanted 2024</title>
+		<link>https://pivotce.com/2024/02/15/luneos-help-wanted-2024/</link>
+					<comments>https://pivotce.com/2024/02/15/luneos-help-wanted-2024/#comments</comments>
+		
+		<dc:creator><![CDATA[webosports]]></dc:creator>
+		<pubDate>Thu, 15 Feb 2024 16:48:06 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Developer]]></category>
+		<category><![CDATA[LG]]></category>
+		<category><![CDATA[LuneOS]]></category>
+		<category><![CDATA[Palm]]></category>
+		<category><![CDATA[webOS]]></category>
+		<guid isPermaLink="false">https://pivotce.com/?p=4588</guid>
+
+					<description><![CDATA[<p>The webOS community may be a bit smaller these days but it’s no less devoted to the platform. WebOS Ports is a small team of developers. As you can imagine, &#8230; <a href="https://pivotce.com/2024/02/15/luneos-help-wanted-2024/" class="more-link">Continue reading <span class="screen-reader-text">LuneOS: Help Wanted 2024</span> <span class="meta-nav">&#8594;</span></a></p>
+The post <a href="https://pivotce.com/2024/02/15/luneos-help-wanted-2024/">LuneOS: Help Wanted 2024</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2017/01/25/a-future-javascript-framework-for-luneos-demos-wanted/" rel="bookmark" title="A future JavaScript framework for LuneOS &#8211; Demos wanted!">A future JavaScript framework for LuneOS &#8211; Demos wanted!</a></li>
+<li><a href="https://pivotce.com/2024/02/15/luneos-february-stable-release-eiskaffee/" rel="bookmark" title="LuneOS February Stable release: Eiskaffee">LuneOS February Stable release: Eiskaffee</a></li>
+<li><a href="https://pivotce.com/2014/09/22/webos-ports-help-wanted/" rel="bookmark" title="webOS Ports: Help Wanted">webOS Ports: Help Wanted</a></li>
+</ol>
+</div>
+]]></description>
+										<content:encoded><![CDATA[<p class="wp-block-paragraph">The webOS community may be a bit smaller these days but it’s no less devoted to the platform. WebOS Ports is a small team of developers. As you can imagine, it is a few people to maintain a full OS that consists of thousands of components. Things are starting to come together for LuneOS, with the current major rebase and stable release. But we still need your help.</p>
+
+
+
+<p class="wp-block-paragraph">As nice as it is to have some additional folk contributing, developing, and working on issues, we still need more developers to get involved to make this community project really take off.</p>
+
+
+
+<span id="more-4588"></span>
+
+
+
+<p class="wp-block-paragraph">“<strong>Our focus is core functionality”</strong></p>
+
+
+
+<p class="wp-block-paragraph">We cannot stress enough that we are building an OS focused on core app integration that is simple, beautiful, and user-centric. Right now, function comes first. If we had a penny for every developer that knew some web code and could make a beautiful static&nbsp;mock-up of an app that didn’t do a thing in the backend and then said “I did my&nbsp;part, it’s up to you to make it work”…well, we’d have a lot of pennies.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Developer requirements</strong></p>
+
+
+
+<p class="wp-block-paragraph">Once core app integration happens we will&nbsp;need HTML/CSS smart people. But to be an asset to the team, you need to have a good grasp on any or all of these technologies:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Javascript</li>
+
+
+
+<li>C</li>
+
+
+
+<li>node.js</li>
+
+
+
+<li>C++</li>
+
+
+
+<li>QML</li>
+
+
+
+<li>Qt</li>
+
+
+
+<li>Yocto</li>
+
+
+
+<li>Graphics design</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Are you decent at some of these, but might need help from time to time? That’s fine! &nbsp;We’re a community, remember? &nbsp;Hit up the <a href="https://web.libera.chat/#webos-ports" rel="sponsored ugc" title="">IRC</a> and/or <a href="https://t.me/luneos_dev" rel="sponsored ugc" title="">Telegram</a> channel and ask!</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Get the bugs out!</strong></p>
+
+
+
+<p class="wp-block-paragraph">We have several applications already available but many are placeholders or have basic functionality. Some of the apps are almost fully functional like Settings. But even Settings has bugs and can use refinement. &nbsp;OK there are bugs everywhere! (If only it were as easy as a can of Raid to fix them)! &nbsp;We’ve received lots of questions about how to get plugged into the project quickly. &nbsp;Easy! Head over to our&nbsp;<a href="https://github.com/webOS-ports/luneos-testing/issues" target="_blank" rel="noopener nofollow" title=""><u>Issue Tracker</u></a>&nbsp;to see current issues. Find an area where you think you can help and then find us on <a href="https://web.libera.chat/#webos-ports" rel="sponsored ugc" title="">IRC</a> or <a href="https://t.me/luneos_dev" rel="sponsored ugc" title="">Telegram</a> (see below) to talk about it.</p>
+
+
+
+<p class="wp-block-paragraph">Some examples of areas that need bug fixing are:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Email:&nbsp;Some minor bug fixes</li>
+
+
+
+<li>Settings:&nbsp;Add Settings when needed</li>
+
+
+
+<li>Phone: Further polishing</li>
+
+
+
+<li>Calendar: Google C+Dav integration needs updating to adopt for Google’s changes</li>
+
+
+
+<li>Browser:&nbsp;Rework UI to be more webOS/LuneOS like</li>
+
+
+
+<li>And more.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph"><strong>Core Apps/Features/Backend magic</strong></p>
+
+
+
+<p class="wp-block-paragraph">The Open webOS project released several core applications that were Enyo1 based. &nbsp;These apps are in LuneOS</p>
+
+
+
+<ul class="wp-block-list">
+<li>Messaging: Needs a rework or rewrite to give proper functionality similar to legacy webOS</li>
+
+
+
+<li>PDF needs converting to QML.</li>
+
+
+
+<li>LuneOS also needs a media player app (maybe reuse/rework the webOS OSE app for this?).</li>
+
+
+
+<li>The C+Dav connector is there, but it needs updating for various changes by Google. It also needs testing for other providers.</li>
+
+
+
+<li>Additional IM connectors would be good to implement (Telegram, Signal) etc, there are existing plugins exist for Pidgin/libpurple that can be used.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph"><strong>Looks aren’t everything</strong></p>
+
+
+
+<p class="wp-block-paragraph">As you can see, to really make stuff work first, most of what we need is in the backend. &nbsp;It’s the old battle between form and function. Which comes first? &nbsp;Designers will argue form! &nbsp;But Ports is focused on the core functionality that has to work first and look pretty later. It’s a hard pill to swallow and we get that, but when building an OS, it’s the most important thing. If it looks pretty but doesn’t work, the project loses potential users. If it works but doesn’t look pretty it will at least show promise and that encourages positive feedback. And with a community led project, if you don’t have good feedback you’ve already lost.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Additional help wanted</strong></p>
+
+
+
+<p class="wp-block-paragraph">Ports is looking to expand our public relations presence. If you are located outside of the United States or more specifically speak a different language than English and would like to help us advertise and direct interested people toward LuneOS and WebOS Ports, please let us know.</p>
+
+
+
+<p class="wp-block-paragraph">We are also looking for a WordPress “expert” for a new site we’ll be setting up soon. Are you good at making tutorials?</p>
+
+
+
+<p class="wp-block-paragraph">We have several “How to install LuneOS guides” on the wiki. If you’d like to make friendly guides, that’d be great! </p>
+
+
+
+<p class="wp-block-paragraph">And finally, we need a “wiki-meister”. Someone that really knows the ins and outs of running a mediawiki!</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Get involved</strong></p>
+
+
+
+<p class="wp-block-paragraph">Everyone can help in some way. We need testers and bug reports! Sign up on the&nbsp;<a href="https://github.com/webOS-ports/luneos-testing/issues" target="_blank" rel="noopener nofollow" title=""><u>WebOS-Ports Issue Tracker</u></a>, contact us to let us know that you signed up and what your username is, and we’ll upgrade your account so you can post issues.</p>
+
+
+
+<p class="wp-block-paragraph">Developers please join us on <a href="https://t.me/luneos_dev" rel="sponsored ugc" title="">Telegram</a> and/or drop by the IRC channel</p>
+
+
+
+<p class="wp-block-paragraph"><strong>How to Contact WebOS Ports</strong></p>
+
+
+
+<p class="wp-block-paragraph">Want to get involved? Have a question? Get in touch with us.</p>
+
+
+
+<p class="wp-block-paragraph">webos.ports@gmail.com<br>Twitter:&nbsp;<a href="https://twitter.com/webosports" target="_blank" rel="noopener nofollow" title=""><u>@webosports</u></a><br>IRC (Libera): <a href="https://web.libera.chat/#webos-ports" rel="sponsored ugc" title="">#webos-ports</a></p>
+
+
+
+<p class="wp-block-paragraph">Telegram: <a href="https://t.me/luneos_dev" rel="sponsored ugc" title=""><u>LuneOS Developer Community</u></a><br>Issue Tracker:&nbsp;<a href="https://github.com/webOS-ports/luneos-testing/issues" target="_blank" rel="noopener nofollow" title=""><u>WebOS-Ports Issue Tracker</u></a><br><a href="https://forums.weboslives.eu/d/40-help-wanted" target="_blank" rel="noopener nofollow" title=""><u>webOS Forum</u></a>&nbsp;User Support Forums<br>Join the forum&nbsp;<a href="https://forums.weboslives.eu/d/40-help-wanted" target="_blank" rel="noopener nofollow" title=""><u>conversation</u></a>.</p>The post <a href="https://pivotce.com/2024/02/15/luneos-help-wanted-2024/">LuneOS: Help Wanted 2024</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2017/01/25/a-future-javascript-framework-for-luneos-demos-wanted/" rel="bookmark" title="A future JavaScript framework for LuneOS &#8211; Demos wanted!">A future JavaScript framework for LuneOS &#8211; Demos wanted!</a></li>
+<li><a href="https://pivotce.com/2024/02/15/luneos-february-stable-release-eiskaffee/" rel="bookmark" title="LuneOS February Stable release: Eiskaffee">LuneOS February Stable release: Eiskaffee</a></li>
+<li><a href="https://pivotce.com/2014/09/22/webos-ports-help-wanted/" rel="bookmark" title="webOS Ports: Help Wanted">webOS Ports: Help Wanted</a></li>
+</ol>
+</div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://pivotce.com/2024/02/15/luneos-help-wanted-2024/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">4588</post-id>	</item>
+		<item>
+		<title>Sunset of the webOS Nation Forums</title>
+		<link>https://pivotce.com/2022/12/26/sunset-of-the-webos-nation-forums/</link>
+					<comments>https://pivotce.com/2022/12/26/sunset-of-the-webos-nation-forums/#comments</comments>
+		
+		<dc:creator><![CDATA[preemptive]]></dc:creator>
+		<pubDate>Mon, 26 Dec 2022 12:15:30 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[LuneOS]]></category>
+		<category><![CDATA[webOS]]></category>
+		<category><![CDATA[webOS Nation]]></category>
+		<guid isPermaLink="false">https://pivotce.com/?p=4548</guid>
+
+					<description><![CDATA[<p>(UPDATE: The webOS Nation disappeared from the web on Friday the 13th, 2023) It appears Future Publishing US have decided to &#8220;Sunset&#8221; the WebOS Nation forums. This term could mean &#8230; <a href="https://pivotce.com/2022/12/26/sunset-of-the-webos-nation-forums/" class="more-link">Continue reading <span class="screen-reader-text">Sunset of the webOS Nation Forums</span> <span class="meta-nav">&#8594;</span></a></p>
+The post <a href="https://pivotce.com/2022/12/26/sunset-of-the-webos-nation-forums/">Sunset of the webOS Nation Forums</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2017/12/24/forums-fix-for-webos-nation-communities-fix-forthcoming-hopefully/" rel="bookmark" title="UPDATE: Forums and Communities fixed (webOS 2.x and up) for webOS Nation browsing">UPDATE: Forums and Communities fixed (webOS 2.x and up) for webOS Nation browsing</a></li>
+<li><a href="https://pivotce.com/2016/11/29/report-bethesda-meetup/" rel="bookmark" title="Report: Bethesda Meetup">Report: Bethesda Meetup</a></li>
+<li><a href="https://pivotce.com/2015/11/19/webos-meetup-chicago-22nd-november/" rel="bookmark" title="webOS meetup, Chicago, 22nd November">webOS meetup, Chicago, 22nd November</a></li>
+</ol>
+</div>
+]]></description>
+										<content:encoded><![CDATA[<p class="wp-block-paragraph">(UPDATE: The webOS Nation disappeared from the web on Friday the 13th, 2023)</p>
+
+
+
+<p class="wp-block-paragraph">It appears Future Publishing US have decided to &#8220;Sunset&#8221; the WebOS Nation forums. This term could mean anything from ceasing product support, through archiving to full closure. Whatever the term means in this case, the process is due to begin in early January.</p>
+
+
+
+<p class="wp-block-paragraph">pivotCE was originally created some years ago to fill the gap in webOS news when <a href="https://web.archive.org/web/20230102011838/https://www.webosnation.com/" target="_blank" rel="noopener" title="">webOSNation.com</a> stopped publishing stories, but the forums continued until this day. Many of pivotCE&#8217;s stories were originally sourced from the forum. Both parts of webOS Nation contain a wealth of data and history about the webOS project and it&#8217;s successors. It&#8217;s hoped that this information can be preserved in some way.</p>
+
+
+
+<p class="wp-block-paragraph">If you have a comment or can offer help, <s><a href="https://web.archive.org/web/20230103003121/https://forums.webosnation.com/webosnation-com-site-news-feedback-help/332906-sunsetting-webos-nation-forums.html" target="_blank" rel="noopener" title="">head over to the thread</a></s>.</p>
+
+
+
+<p class="wp-block-paragraph">You may want to consider joining the discord instance at the <a href="https://www.webosarchive.org/docs/community" target="_blank" rel="noopener" title="">webOS Archive</a>.</p>The post <a href="https://pivotce.com/2022/12/26/sunset-of-the-webos-nation-forums/">Sunset of the webOS Nation Forums</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2017/12/24/forums-fix-for-webos-nation-communities-fix-forthcoming-hopefully/" rel="bookmark" title="UPDATE: Forums and Communities fixed (webOS 2.x and up) for webOS Nation browsing">UPDATE: Forums and Communities fixed (webOS 2.x and up) for webOS Nation browsing</a></li>
+<li><a href="https://pivotce.com/2016/11/29/report-bethesda-meetup/" rel="bookmark" title="Report: Bethesda Meetup">Report: Bethesda Meetup</a></li>
+<li><a href="https://pivotce.com/2015/11/19/webos-meetup-chicago-22nd-november/" rel="bookmark" title="webOS meetup, Chicago, 22nd November">webOS meetup, Chicago, 22nd November</a></li>
+</ol>
+</div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://pivotce.com/2022/12/26/sunset-of-the-webos-nation-forums/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">4548</post-id>	</item>
+		<item>
+		<title>LuneOS October Stable release: Eggnog Latte</title>
+		<link>https://pivotce.com/2019/10/24/luneos-october-stable-release-eggnog-latte/</link>
+		
+		<dc:creator><![CDATA[webosports]]></dc:creator>
+		<pubDate>Thu, 24 Oct 2019 06:28:03 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Developer]]></category>
+		<category><![CDATA[LG]]></category>
+		<category><![CDATA[LG webOS OSE]]></category>
+		<category><![CDATA[LuneOS]]></category>
+		<category><![CDATA[Open webOS]]></category>
+		<category><![CDATA[webOS]]></category>
+		<category><![CDATA[webOS Ports]]></category>
+		<guid isPermaLink="false">https://pivotce.com/?p=4477</guid>
+
+					<description><![CDATA[<p>Happy Halloween! The long wait is finally over #LuneOS and #webOS fans! We&#8217;re back with a new release called &#8220;Eggnog Latte&#8221; which is a milestone in terms of developments and &#8230; <a href="https://pivotce.com/2019/10/24/luneos-october-stable-release-eggnog-latte/" class="more-link">Continue reading <span class="screen-reader-text">LuneOS October Stable release: Eggnog Latte</span> <span class="meta-nav">&#8594;</span></a></p>
+The post <a href="https://pivotce.com/2019/10/24/luneos-october-stable-release-eggnog-latte/">LuneOS October Stable release: Eggnog Latte</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2017/02/24/luneos-february-stable-release-chai-latte/" rel="bookmark" title="LuneOS February Stable Release: Chai Latte">LuneOS February Stable Release: Chai Latte</a></li>
+<li><a href="https://pivotce.com/2015/10/07/luneos-october-stable-release-caffe-latte/" rel="bookmark" title="LuneOS October Stable Release: Caffè Latte">LuneOS October Stable Release: Caffè Latte</a></li>
+<li><a href="https://pivotce.com/2018/11/28/luneos-november-stable-release-doppio/" rel="bookmark" title="LuneOS November Stable Release: Doppio">LuneOS November Stable Release: Doppio</a></li>
+</ol>
+</div>
+]]></description>
+										<content:encoded><![CDATA[<p class="wp-block-paragraph">Happy Halloween! The long wait is finally over #LuneOS and #webOS fans! We&#8217;re back with a new release called &#8220;Eggnog Latte&#8221; which is a milestone in terms of developments and paves the way forward!</p>
+
+
+
+<p class="wp-block-paragraph">So you&#8217;re wondering what we&#8217;ve been up to since our previous stable release at the end of last year?</p>
+
+
+
+<span id="more-4477"></span>
+
+
+
+<p class="wp-block-paragraph">We have done many major upgrades to a large number of components of our stack being:</p>
+
+
+
+<ul class="wp-block-list"><li>Migration of Open webOS to webOS OSE components.<br><br>We are <a href="https://webos-ports.org/wiki/LuneOS-webOS-OSE_Migration_Status" target="_blank" rel="noreferrer noopener" aria-label="almost half way there (opens in a new tab)">almost half way there</a> in terms of the migration of old <a rel="noreferrer noopener" aria-label="Open webOS components (opens in a new tab)" href="https://github.com/openwebos/" target="_blank">Open webOS components</a> to their <a rel="noreferrer noopener" aria-label="webOS OSE replacements (opens in a new tab)" href="https://github.com/webosose" target="_blank">webOS OSE replacements</a>.<br><br>This was a monumental task due to the fact that webOS OSE code was released without any history. So every component needed to be analyzed to understand what was changed in the years of development inside of LG Electronics. Our custom changes needed to be re-assessed and re-implemented into the new components where applicable. A change of direction in certain aspects in terms of architecture made the whole exercise even more complicated. We do however believe that we&#8217;re in a good state now in terms of migration. There are still quite some components to migrate and we&#8217;ll get through that in the next releases.<br></li><li>Qt: <br><br>We migrated from Qt 5.11.3 to Qt 5.12.5 which included an update for Chromium from 65 to 69 amongst other improvements.<br></li><li>Yocto upgrade:<br><br>We upgraded from the no longer supported Yocto Pyro release, via the intermediary Rocko, Sumo and Thud releases to the latest Yocto release called Warrior. <br></li></ul>
+
+
+
+<p class="wp-block-paragraph">We have been working closely together with the Halium, Mer and PostMarketOS projects and have made further integrations between LuneOS and the various projects reducing duplication between the projects and using a single source where possible.&nbsp;This all to be more easily&nbsp;integrated, and to facilitate ports&nbsp;to newer and more devices. We have also worked on support for devices which use a mainline kernel instead of an Android based kernel.<a rel="noreferrer noopener" aria-label=" As you might have seen, we have been working on support for the Pinephone which uses a mainline kernel (opens in a new tab)" href="https://www.youtube.com/watch?v=G9lbXE_wWpQ" target="_blank"> As you might have seen, we have been working on support for the Pinephone which uses a mainline kernel</a>. We also have been testing with the Nexus 5 (hammerhead) using a mainline kernel. All our setup has now been adjusted so we can work with both Android based targets and kernels as well as mainline kernels. </p>
+
+
+
+<p class="wp-block-paragraph">LG has a very clear vision in mind for webOS OSE as can be read on <a rel="noreferrer noopener" aria-label="their blog (opens in a new tab)" href="https://www.webosose.org/blog/" target="_blank">their blog posts</a>. Since the initial release of webOS OSE 1.0 in March last year, there has been a total of 11 releases of webOS OSE already with a lot of improvements and added features added with each release. This month LG has released <a href="https://www.webosose.org/about/release-notes/webos-ose-2-0-0-release-notes/" target="_blank" rel="noreferrer noopener" aria-label="webOS OSE 2.0.0 (opens in a new tab)">webOS OSE 2.0.0</a> with a lot of new features and also <a rel="noreferrer noopener" aria-label="a new roadmap (opens in a new tab)" href="https://www.webosose.org/about/roadmap/roadmap/" target="_blank">a new roadmap</a>.</p>
+
+
+
+<p class="wp-block-paragraph">The following items on our to-do list will be where we focus next:</p>
+
+
+
+<ul class="wp-block-list"><li>Migration of remaining Open webOS components to the newer webOS OSE components and assess where further synergies could be achieved.</li><li>Migrate to Yocto Zeus release.</li><li>Update to Qt 5.13.</li><li>Migrate Nexus 5 (hammerhead) to use mainline kernel.</li><li>Finalize port for Pinephone.</li><li>Work on support for Halium 8/9/10 in order to support newer targets.</li><li>Messaging improvements.</li><li>Camera improvements.</li><li>Fix known issues on the various targets.</li><li>Bring back official support for Touchpad 4G (current build works on Touchpad 4G but only WiFi).</li></ul>
+
+
+
+<p class="wp-block-paragraph"><strong>Known issues:</strong></p>
+
+
+
+<ul class="wp-block-list"><li>Node-SQLite3 is currently not working. Components using Node-SQLite3 have switched to an alternative storage method for now.</li><li>Telephony not working on the Xiaomi Android 7 based targets. We have found the root cause, but haven&#8217;t been able to solve it yet.</li><li>Virtual Keyboard sometimes randomly doesn&#8217;t appear.</li></ul>
+
+
+
+<h3 class="wp-block-heading"><strong>Changelog</strong></h3>
+
+
+
+<p class="wp-block-paragraph"><strong>Applications:</strong></p>
+
+
+
+<ul class="wp-block-list"><li>Preware IPKG Service: use postinst_ontarget</li><li>Tweaks: Fix for LS2 from webOS OSE</li><li>Camera: Remove RDEPEND on libhybris</li><li>FirstUse: Fix for LS2 from webOS OSE</li><li>Maps: Fix Google API calls</li><li>Messwerk: Add testing app for various sensors</li><li>Phone: Fix calling</li><li>Settings: Fix displaying of device information, fix compatibility with LS2 from webOS OSE</li><li>Update: Fix parsing of JSON files with update information.</li><li>CDav: Fix issues after migration to webOS OSE</li></ul>
+
+
+
+<p class="wp-block-paragraph"><strong>User Interface:</strong></p>
+
+
+
+<ul class="wp-block-list"><li>Various minor fixes for status bar &amp; indicators in emulators</li></ul>
+
+
+
+<p class="wp-block-paragraph"><strong>System Level:</strong></p>
+
+
+
+<ul class="wp-block-list"><li>Yocto upgrade from 2.3 Pyro to 2.7 Warrior</li><li>Qt upgrade from 5.11 to 5.12</li><li>Pinephone support added</li><li>activitymanager: RDEPENDS on bootd</li><li>add meta-qt5-compat layer</li><li>Add VIRTUAL-RUNTIME_android-initramfs-scripts variable in machines conf</li><li>alsa-lib: update the patches for 1.1.8</li><li>alsa-utils: Rename bbappend to match new version from oe-core</li><li>anbox, ashmem, binder: bump SRCREV; add COMPATIBLE_MACHINE restriction;  Add elfutils to DEPENDS to solve QA issue; Add some RDEPENDS,RRECOMMENDS; fix build with boost 1.71.1; fix parallel build issue; restrict COMPATIBLE_MACHINE a bit more</li><li>anbox-data: add recipe for retrieving android image</li><li>android-headers: Add headers for Halium-7.1; common recipe for Halium-5.1 headers; make it possible to tweak android-config.h per machine; use Halium headers</li><li>android-headers-halium: set preferred version</li><li>android-headers-tenderloin: use API 22, patched to match tenderloin specific content; fix patches to match Halium&#8217;s</li><li>android-kernel-bootimg: append DTB when specified; dedicated recipe for creating boot.img; minimal support for A/B partitions</li><li>android-property-service, mtp-server, pulseaudio-modules-droid, qtubuntu-camera, qtvideo-node, qt5-qpa-hwcomposer-plugin, qtscenegraph-adaptation, qtsensors-sensorfw-plugin sensorfw, nyx-modules-hybris, org.webosports.app.camera: restrict to halium MACHINES; add dependency on virtual/android-headers</li><li>android-system: Add missing groups; also mount /persist when it exists; cleanup old hal-hybris overlay code; don&#8217;t manage ramdisk unpacking; fix lifecycle of lxc container; only start after main partitions are mounted; Remove installation of non-existing files; simplify usage of Halium; start sensorfwd after android container; use pre-start.sh from Halium; wait a bit for the sensors to be ready</li><li>android-system-image-<em>: bump to 20180311 Halium build; skip already-stripped QA android-system-image,base-files: use system.img directly android-system-image: Add symbolic link for wifi; Bump Halium images; bump mako,tenderloin,hammerhead; Change wop into luneos; convert the sparse image if needed; create /userdata; make \&#8221;symbols\&#8221; directory optional; Update halium bits to halium version numbers android-system-image-athene,onyx,mido,angler: bump PV android-system-image-mako: fix install; fix install script; fix typo android-system-image-rosy: use build from webos-ports android-system-image-tenderloin: bump PV; Fix checksums; Update Android image; Use a Haloum 5.1 based Android build android-system-image-tissot: bump PV; Bump PV to fix adb; Bump PV to kill qseeproxydaemon on Android side; bump to 20180302-18 android-tools: move the changes to meta-oe android-tools: remove android-tools-conf: provide whole android-gadget-setup instead of patching it in do_install; use backported recipe angler, hammerhead, mako, athene, onyx, mido, rosy, tissot: stop building ext4 images by default angler,athene,onyx,mako,hammerhead: systemd-machine-units: add rfkill unblock wifi app-services, configurator: Bump SRCREV; fix LS2 for webOS-OSE ashmem, binder: move udev rules to kernel-module-</em>-linux package and empty PN</li><li>base-files,android-system: Android partitions are now mounted by Halium&#8217;s initrd</li><li>base-files: add /system/lib64 in LD_LIBRARY_PATH</li><li>bootd: introduce recipe from webOS-OSE; Fix systemd service file</li><li>busybox: also build telnetd module; also create by-label entries with mdev; mdev: use /dev/disk/by-partlabel instead of by-partname; mdev-partname.sh, mdev.conf: drop trailing spaces; mdev-partname.sh: remove probablly unnecessary ACTION assignment; mdev-partname.sh: use 4 spaces for indentation instead of mix of tabs and spaces; provide busybox-mdev with custom partname symlinks; use 4 spaces for indentation instead of mix of tabs and spaces and BPN in FILESEXTRAPATHS</li><li>cmake-modules-webos-native: Add back PV; add missing quote; Bump PV</li><li>com.webos.service.pdm: Remove inherit webos_machine_impl_dep</li><li>configurator: Move to webOS OSE version; Bump SRCREV</li><li>connman: move PACKAGECONFIG modification to .bbappend, remove dependency on xl2tp in signature; refresh patches to apply cleanly; update to v1.36</li><li>cpushareholder-stub, luna-sysmgr-ipc-messages, luna-webkit-api, rdx-utils-stub: inherit allarch before webos_cmake</li><li>cpushareholder-stub: Migrate from OWO to OSE</li><li> db8, filecache: Bump SRCREV, app-services: Bump SRCREV and cleanup recipe</li><li>db8, nyx-modules: Minor fixes after OSE rebase</li><li>db8: Add back dropped PV; Bump SRCREV and drop patch now merged in repo; cleanup a bit; fix db8-tests runtime depends; fix LS2 for webOS-OSE; Update to latest revision and remove references to com.webos.service.attachedstoragemanager</li><li>dbus-cpp, process-cpp, properties-cpp: Switch to GitHub &amp; latest commits</li><li>dbus-cpp: fix compatiblity with boost 1.66.0</li><li>defaulttunes.inc: return accidentally dropped last line; use armv8a-crc-crypto for both raspberrypi[34]-64;use cortexa8thf-neon for currently supported 32bit arm MACHINEs;use different TUNE_PKGARCH_64 for raspberrypi3-64 MACHINE</li><li>directfb: Drop .bbappend</li><li>distro: luneos: switch release name to Eggnog Latte</li><li>downloadmanager: Remove recipe</li><li>event-monitor, event-monitor-network: Add recipes from OSE</li><li>exiv2: Update to 0.27.1</li><li>extra-cmake-modules: Bump to latest from upstream</li><li>filecache: Bump SRCREV</li><li>Fix meson bbappend</li><li>Fixup line endings</li><li>funyahoo-plusplus: Update to latest from upstream</li><li>Further work on webOS OSE migration; Further changes for webOS OSE; Further migration for webOS OSE</li><li>gcc: restore gcc-7.3 from Yocto 2.6 Thud</li><li>geoclue: backport gtk-doc.bbclass changes from Yocto 2.8 Zeus to make GTKDOC_MESON_OPTION work in Yocto 2.7 Warrior; Fix typo;fix unknown-configure-option QA issue; Rename .bbappend to be generic; Update to 2.5.3; use backported recipe; Add to meta-webos-ports for fixes &amp; upgrade</li><li>glib-2.0: Rename bbappend to match new version from oe-core; update 0001-gdbus-codegen-replace-plus-also-with-underscore.patch to apply on 2.58.0 version; update patch to apply on 2.54.2 version; add work around for broken ld-2.29.so when gold is used; drop bbappend; export LDFLAGS</li><li>glm: use 0.9.9.3 version from meta-oe</li><li>glmark2: disable wayland-gles2</li><li>GnuTLS: Fix missing system trust</li><li>gstreamer1.0-plugins-base: disable egl</li><li>gtest: don&#8217;t rdepend on ${PN} from ${PN}-dev; export LDFLAGS</li><li>hammerhead kernel: delay wifi init</li><li>hammerhead, mako, tenderloin: Use Halium image built with Ports repos; use WOP builds of Halium</li><li>hammerhead, mako: Add NFC as machine feature</li><li>hammerhead.conf: use initramfs-scripts-halium</li><li>hammerhead: temporarily disable gobject introspection</li><li>https-everywhere: Update to latest from upstream</li><li>hunspell-dictionaries: Update to latest from upstream; use backported recipe</li><li>icyque: Add recipe</li><li>Ignore generated pycache directory</li><li>iio-sensor-proxy: introduce recipe</li><li>imaccountvalidator, activitymanager, db8, filecache, sleepd, luna-service2: Bump SRCREV</li><li>imaccountvalidator, imlibpurpleservice: Add icyque plugin</li><li>imlibpurpleservice, org.webosports.service.messaging, webos-telephonyd, app-services, core-apps, nodejs-module-webos-sysbus: Bump SRCREV</li><li>Include android-kernel-bootimg for each MACHINE that needs it</li><li>Initial work for webOS OSE migration</li><li>initramfs-android-image: make it possible to add content; make sure that ANDROID_EXTRA_INITRAMFS_IMAGE_INSTALL is expanded</li><li>initramfs-android-recovery-tissot: skip file-rdeps QA as well</li><li>initramfs-boot-android: cosmetics; disable busybox extreme symlink checks; fix image identification for rootfs on partition; import Fix-userdata-mount-options.patch from meta-hp; init.sh: be less verbose for initial user data copy; mount /dev/pts for cases when enable_adb is used; put .firstboot_done in a rw folder; reset uevent_help when stopping mdev; split halium and generic version; use mdev instead of udev</li><li>initramfs-boot-android: fix tenderloin&#8217;s boot; Move initrd RDEPENDS from ANDROID_EXTRA_INITRAMFS_IMAGE_INSTALL to initramfs-boot-android recipe; put .firstboot_done in a rw folder; split halium and generic version; tenderloin: mount /boot as ro; tenderloin: use correct folder for media data</li><li>initramfs-scripts-android: improve init scripts; switch from RNDIS to CDC-ECM</li><li>initramfs-scripts-halium: move Fix-userdata-mount-options.patch to the right directory; specify needs through RDEPENDS</li><li>initrdscripts: fix tenderloin initial data (wallpaper)</li><li>jemalloc: Switch to OSE repo</li><li>kernel.bbclass: drop backported bbclass; remove backported bbclass; import from oe-core/pyro and backport one fix from oe-core/rocko</li><li>kernel: tenderloin, mako, hammerhead, onyx bump SRCREV for GCC8</li><li>kernel_android, android-kernel-bootimg: use pkg_postinst_ontarget</li><li>kernel_android.bbclass: fix path to the KERNEL_DEVICETREE; use ${KERNEL_PACKAGE_NAME}-image instead of kernel-image</li><li>kernel_android: update for new KERNEL_* variables from oe-core; use the bbclass again</li><li>keymanager: bump SRCREV</li><li>kf5bluezqt-mer: set QT.BluezQt.module to fix compatibility with Qt 5.12</li><li>layer.conf: Update to warrior release name series</li><li>leveldb: move bbappend to the matching directory</li><li>leveldb-tl: downgrade to gcc-4.7 branch; provide native version</li><li>libbson: Bump to latest upstream release</li><li>libcamera: introduce recipe</li><li>libdrm: add vboxvideo to tested modules; update the patch to apply for 2.4.96</li><li>libglibutil: fix LICENSE and LIC_FILES_CHKSUM</li><li>libhybris, wayland: use wayland-egl from libhybris again</li><li>libhybris: bump SRCREV and resolve the review comments; fix build with glibc-2.26; fix mido build flags; fix tenderloin build flags; provide also virtual/mesa and set PREFERRED_PROVIDER for all android devices; refresh patch; remove the already applied patch from SRC_URI; restrict COMPATIBLE_MACHINE to halium MACHINEs; use older SRCREV for tenderloin; don&#8217;t install wayland-egl; drop SRCREV</li><li>libpalmsocket: fix build with openssl-1.1.1</li><li>libpbnjson: restore PV and OECMAKE_GENERATOR fix</li><li>libpng: Bump to 1.6.37</li><li>librolegen: Add DEPENDS; Switch to OSE version + patches</li><li>libsandbox: Migrate from OWO to OSE</li><li>libsensmon: blacklist due to newer vala incompatibility</li><li>libshr-glib: blacklist because of random failures</li><li>libvpx: enable thumb to work around issue with -halium appended to TUNE_PKGARCH</li><li>linunx-lg-mako: bump SRCREV</li><li>linux-<em>: don&#8217;t use ANDROID_BOOTIMG_CMDLINE for built-in kernel cmdline linux-{oneplus-onyx,lg-mako}: fix branch parameter linux-hp-tenderloin: bump  SRCREV; use a 3.4 kernel linux-lg-{mako,hammerhead},linux-hp-tenderloin: backport 2 changes to fix build with gcc8 linux-lg-hammerhead: bump SRCREV; fix some minor defconfig values linux-lg-mako: send patches upstream and bump SRCREV; switch to old ubp-5.1 branch with just 1 fix for gcc-8 from cm-14.1 branch linux-oneplus-onyx: switch to old cm-14.1-los branch with just 1 fix for gcc-8 from luneos/cm-14.1-wip branch linux-xiaomi-rosy: bump SRCREV linux-xiaomi-tissot: bump SRCREV linux-yocto: add own defconfig; backport 5.0 from master and switch from linux-yocto-dev; drop backported fixes for compatibility with older Yocto; enable few more drm drivers; squashfs: add squash kernel module for anbox; use own virtio.cfg and reinclude kernel-module-virtio-gpu as a module linux-yocto-dev: add bbappend also for -dev version; enable vboxguest in the kernel and blacklist vboxguestdrivers again lsb: rename bbappend to match any version luna-applauncher: JustType: use a relative margin for main field (got broken after Qt 5.12.5 upgrade) luna-appmanager: Bump SRCREV; fix LS2 for webOS-OSE luna-downloadmgr, applicationinstallerutility: Add recipes luna-downloadmgr: Drop MACHINE specific configuration luna-next: Bump SRCREV; LS2 fix for webOS-OSE luna-next-cardshell: bump SRCREV; merge webosose branch to master luna-next-conf: fix possible conflict between evdevtouch and evdevkeyboard; fix VBoxTouch parameters for qemu; rosy: give input devices to evdevkeyboard; update VBoxTouch params and enable input and cursor; use drm+eglfs_kms for qemux86</em></li><li>luna-prefs-data.bb: Fix Lune OS name to LuneOS</li><li>luna-qml-launcher: fix LS2 for webOS-OSE</li><li>luna-service2: bump SRCREV; re-enable default LS2 security policy; remove webos_machine_impl_dep inherit imported from OSE</li><li>luna-service2-security-conf: Switch to own fork</li><li>luna-sysmgr: explicitely put RDEPENDS on powerd; Fix branch; fix LS2 for webOS-OSE</li><li>luna-sysmgr-common: Bump SRCREV</li><li>luna-sysmgr-conf, nyx-conf, nyx-modules, luna-next-conf: add support for raspberrypi4(-64)</li><li>luna-sysservice, nodejs-module-webos-sysbus, nyx-utils, luna-service2, nyx-lib, pmloglib, pmloglib-private: Bump SRCREV</li><li>luna-sysservice: Add back dropped PV; bump SRCREV; fix LS2 for webOS-OSE</li><li>luna-systemui: Bump SRCREV</li><li>luna-webappmanager: bump SRCREV; fix LS2 for webOS-OSE</li><li>luneos.inc: drop kernel-module-virtio-gpu; enable image-buildinfo; exclude DATETIME from IMAGE_NAME, KERNEL_IMAGE_BASE_NAME, MODULE_IMAGE_BASE_NAME vardeps; include all default WARN_QA in ERROR_QA; replace uvesafb with vboxvideo; set WEBOS_TARGET_MACHINE_IMPL only in webos_machine_impl_dep; simplify PREMIRROR configuration; use linux-yocto-dev also for qemux86-64; use new oe-core variable IMAGE_VERSION_SUFFIX</li><li>luneos: add rpi-sdimg.gz IMAGE_FSTYPE; reinclude luneos-recipe-blacklist-world.inc and update it for Yocto 2.7 Warrior; use linux-yocto-dev for qemux86</li><li>luneos_image.bbclass: remove the webos_swap_hook function</li><li>luneos-{package,emulator-appliance}.inc: remove extra dash in filenames</li><li>luneos-components: bump SRCREV and switch to qt-5.12 branch</li><li>luneos-dev-image, luneui-example-image: drop mesa</li><li>luneos-dev-image: add libdrm-tests; add more packages for testing</li><li>luneos-emulator.ovf: move to qemux86 subdirectory and restrict to qemux86<em>; refresh to ovf-2.0 format with VirtualBox-6.0.8; update OSType for qemux86-64 luneos-emulator-appliance.inc: include ${IMAGE_NAME_SUFFIX} in source VMDK filename; use pigz-native instead of zip-native; switch from default VBoxVGA to VBoxSVGA luneos-image: add WKS with syslinux config file without serial luneos-package.inc: bump android-update-package SRCREV; fix SRCREV; include ${IMAGE_NAME_SUFFIX} in source rootfs filename; work around tar being killed by OOMK; work around tar being killed by OOMK even harder luneos-preferred-providers.inc: remove VIRTUAL-RUNTIME_bash; use busybox as a provider for bash and stat luneos-preferred-versions.inc: downgrade gcc from default 8 to 7 luneos-recipe-blacklist-world.inc: blacklist remmina; use weak assignment luneui-example: add emulator-appliance and android package images luneui-example-image, packagegroup-luneos-extended: add Anbox for qemux86-64 luneui-example-image,luneos-dev-image: include glmark2 only for qemuall lxc: ignore stringop-overflow= errors with gcc8 make, hammerhead, tenderloin: use mesa-gl as virtual/mesa provider; use kernel sources from shr-distribution/linux.git and fix build with gcc-7; use our Halium image mako, hammerhead: Use upstream kernels which now have our patches included mako: Fix the kernel build maliit-framework-qt5: set QT_QPA_PLATFORM=wayland mediaindexer: Bump SRCREV; Switch back to master branch mesa: backport 19.0.5 and mesa-demos 8.4.0 from oe-core; drop backported PROVIDES; enable gallium only for target builds; update old recipe; use latest mesa from oe-core mesa-gl: remove ${includedir}/KHR/khrplatform.h when using libhybris meson: override 0003_native-bindir patch with a fixed version; drop backported fix, now in oe-core revision we&#8217;re using messaging-accounts: Bump SRCREV meta-</em>: add LAYERSERIES_COMPAT to layer.conf files</li><li>meta-<em>: add LAYERSERIES_COMPAT to layer.conf files; set PREFERRED_PROVIDER for libgl and libgbm for all android devices meta-{asus,hp,huawei,lg,motorola,oneplus,xiaomi}: remove fstab overload meta-acer, meta-asus, meta-aurora, meta-fso, meta-geeksphone, meta-htc, meta-nokia meta-openmoko, meta-osmocombb, meta-palm, meta-samsung, meta-shr-distro, meta-shr: Remove unsupported layers meta-android, meta-hp: respect IMAGE_NAME_SUFFIX variable meta-android: add FREESMARTPHONE_GIT; initramfs-android-recovery: add inc; remove leftover from android-tools removal; use separate PACKAGE_DIR for Halium-based packages meta-android-halium.inc: add halium OVERRIDE; blacklist virglrenderer, cogl-1.0, clutter-1.0, mx-1.0, clutter-gst-3.0, clutter-gtk-1.0 meta-hp: initramfs-boot-android: move Fix-userdata-mount-options.patch to meta-webos-ports; migrate tenderloin to use Halium&#8217;s init meta-luneos-backports-2.8: add layer for backports from Yocto 2.8 Zeus; Add pidgin 2.13 meta-motorola: Athene, use our own fork for now.; Fixes for athene target to make build work; Initial work for athene target meta-oneplus: Fixes for onyx target to make build work; Initial work on layer; linux-oneplus-onyx: Use herrie82 branch pending upstream merge; Update kernel for onyx (OnePlus X) meta-qt5-compat: remove meta-shr, meta-fso: remove blacklisted recipes meta-smartphone: Add meta-huawei layer with Angler target; udev-extraconf: Uniform naming scheme for device udev rules and update udev rules meta-webos-ports: Add pinephone machine meta-xiaomi: add initial support for rosy (Redmi 5); Further updates to make things work; Get image for Tissot building; Initial work for Xiaomi A1 (tissot); Initial work on layer; linux-xiaomi-mido: Fix incorrect RAM_BASE addresses; Mido enable WLAN as module; mido fix persist partition number in fstab; mido use correct wlan module name; rosy minor fixes; tissot: add initramfs-android-recovery; tissot: enable permissive SELinux; tissot: ignore other parameters from bootloader; tissot: switch to cm-14.1 kernel to fix wifi Migrate LuneOS targeted machines to using android-kernel-image mmsd: Bump SRCREV mobile-broadband-provider-info: Bump SRCREV module-base.bbclass: import from oe-core/pyro and backport the fix to support newer kernels; refresh from rocko module-base: remove backported bbclass mojo: Switch to webOS-ports/webOS-OSE branches mojomail, pmcertificatemgr: bump SRCREV mojoservicelauncher: bump SRCREV; temporary drop nodejs-module-webos-dynaload and nodejs-module-webos-sysbus mpeg2dec: ignore textrel QA issue in libmpeg2 mtp-server: bump SRCREV; fix build with glog-0.3.5 nemo-qml-plugin-dbus: Bump to latest from upstream node-gyp-native: upgrade to 4.0.0+git; fix branch parameter nodejs-enyo-dev-native: Bump SRCREV nodejs-module-webos-{dynaload,sysbus}: bump SRCREV nodejs-module-webos-dynaload: Move to OSE version nodejs-module-webos-pmlog: Add fix from upstream OSE nodejs-module-webos-service: Add recipe from OSE nodejs-module-webos-sysbus: Bump SRCREV; Fix installation of role files.; Fix work directory; Migrate to webOS OSE version; restore old security schema novacomd: Remove upstart init script; Switch to OSE version ntp: Add an empty ntp-kod file numptyphysics: fix file-rdeps QA nyx-conf: add pinephone power key config nyx-modules, nyx-conf: Fix pinephone setup nyx-modules: bump SRCREV; Changes for new nyx modules from OSE;&#8217;disable security and security2 modules and return to the image; fix build for tenderloin; fix rosy&#8217;s cmake; fixes for webOS-OSE rebase; qemux86(-64) update copyright and specify modules to build; reintroduce nyx-modules-hybris for Halium based targets; toro &amp; toroplus: Update copyright &amp; hybris modules; Update copyright nyx-modules-hybris: bump SRCREV for nyx-lib compatibility fixes ofono: Drop patches that are no longer used.; Update to latest from Mer; use more recent version omhacks: blacklist openssl</em>: update openssl.cnf u-a configuration</li><li>openssl, gtest, leveldb: drop EXTENDPRAUTO</li><li>openssl10: remove the bbappend and blacklist instead</li><li>opkg: Rename bbappend to match new version from oe-core</li><li>packagegroup: temoporary drop certmgrd, pmcertificatemgr, mojomail-imap, mojomail-pop, mojomail-smtp, nyx-modules</li><li>packagegroup-luneos-extended: add messwerk app; Drop downloadmanager in favor of luna-downloadmgr; include DISTRO_EXTRA_RDEPENDS to install necessary kernel modules; include rng-tools for qemu*; re-enable nyx-modules-hybris; replace wireless-tools with iw; Add event-monitor &amp; event-monitor-network</li><li>PATCH] athene, mido, onyx: Fix display size and add ANDROID_HEADERS_DEFINES</li><li>pdm &amp; pdm-plugin: Add various bits to build &amp; include in images.</li><li>phonesim: Bump to 1.21</li><li>pidgin, leveldb-tl, extra-cmake-modules, pmloglib-private: don&#8217;t rdepend on ${PN} from ${PN}-dev</li><li>pidgin: Make bbappend version independent; remove the backported recipes; update purple-OE-branding-25.patch to apply cleanly; Update to 2.13; use backported recipes</li><li>pidgin-sipe: Update to latest release from upstream</li><li>pmloglib: Add back PV</li><li>pmloglib-private: Add back PV</li><li>powerstat: Update to latest upstream</li><li>properties-cpp: add sha265sum, fix runtime dependencies</li><li>pulseaudio: rename bbappend to apply on new version from oe-core; update patches to apply on 11.1 version</li><li>pulseaudio-modules-droid: adapt folders for PulseAudio 11.1; bump SRCREV for 12.2 compatibility; update PULSEAUDIO_VERSION to 12.2</li><li>purple-skypeweb: Update to latest release from upstream</li><li>python-tz: Bump to 2019.1</li><li>qemu: don&#8217;t enable spice for target; drop virglrenderer from target qemu as well; enable sdl and virtfs as well; enable virglrenderer spice libusb usb-redir gtk+</li><li>qemux86: use wic.vmdk</li><li>qt5: refresh the patches for 5.12.3 version</li><li>qt5-plugin-generic-vboxtouch: bump SRCREV; switch to new version from Tofee</li><li>qt5-qpa-hwcomposer-plugin: bump SRCREV and fix build; fix compatibility with qtbase 5.12; remove unneeded patch</li><li>qtbase: allow to easily select different QPA; update PACKAGECONFIG xkbcommon-evdev -&gt; xkbcommon</li><li>qtlocation-luneos-plugin: replace qtlocation patch; Update plugins dir and PV</li><li>qtvideo-node, org.webosports.app.camera: fix PV</li><li>qtwayland: don&#8217;t use wayland-brcm; drop drm-egl-server and libhybris-egl-server PACKAGECONFIGs; fix QWaylandShellPrivate inheritance; Fix window properties; refresh patches for 5.12; fix the last patch filename in SRC_URI; update patches for 5.12.5</li><li>qtwebengine: enable wayland-brcm for rpi, drm-egl-server for qemuall and libhybris-egl-server for the rest; fix 0001-WebContents-provide-additional-features-from-window..patch; fix patch directory; fix Sync call patch; refresh patches for 5.12; refresh patches for 5.12.5</li><li>raspberrypi4-64: fix TUNE_PKGARCH_64</li><li>rdxd: Drop stub and add the real thing.; Add missing PROVIDES</li><li>README: update to depend on master branches</li><li>Remove AOL &amp; ICQ protocol plugins</li><li>Revert \&#8221;hammerhead: temporarily disable gobject introspection\&#8221;</li><li>Revert \&#8221;meta-hp: initramfs-boot-android: move Fix-userdata-mount-options.patch to meta-webos-ports\&#8221;</li><li>SANITY_TESTED_DISTROS: drop ubuntu-16.04</li><li>sdl2-opengles-test: build only sdl2_opengles2_test for all rpi MACHINEs; Fix typo in license file.; Switch to new repo and update to latest version</li><li>sensorfw: bump SRCREV and make it more generic; fix orientation matrix for pinephone</li><li>serviceinstaller: Switch to OSE version + our patch</li><li>shadow-sysroot: rename bbappend to match new version</li><li>sleepd: add powerd as RDEPENDS</li><li>snappy: import from OSE and add as a dependency to leveldb; use newer 1.1.7 version from meta-oe</li><li>storaged: Add PV</li><li>Switch from branch= to WEBOS_GIT_PARAM_BRANCH</li><li>systemd: disable networkd and resolved.; fix boot for old kernels; fix build without resolved; rebase patches to apply on 237 version; rebase patches to apply on 241; update Disable-ProtectHome-and-ProtectSystem-for-old-kernel.patch to apply on 239 version; Update mmc patch; update persistent-storage-rule-mmc-partname.patch to apply on 234 version</li><li>systemd-conf: disable key handling in logind.conf</li><li>systemd-machine-units: regroup xiaomi identical service files; fix bluetooth for hammerhead; fix bluetooth for mako; mido: fix Bluetooth; rosy: fix Bluetooth; rosy: fix wlan module loading; tissot: fix Bluetooth</li><li>systemd-serialgetty: disable SERIAL_CONSOLES on LuneOS&#8217;s qemu; drop weird bbappend</li><li>tzdata: rename bbappend to apply on renamed recipe</li><li>ubx-utils: fix file-rdeps QA</li><li>udev-extraconf: override automount.rules with empty rules file; tissot, rosy: add touchscreen0 rule</li><li>unused: remove long unused recipes and bbclasses</li><li>uriparser: Upgrade to 0.9.3</li><li>Various components: Move back to webOS-ports fork</li><li>Various fixes for systemd</li><li>vboxguestdrivers: backport 5.2.22 from meta-oe; unblacklist but install only vboxguest and vboxsf modules</li><li>VoiceCall: Bump SRCREV &amp; drop patch; Bump version to latest from upstream and refresh patches; Drop patches since our changes are merged upstream; fix DEVICELOCK handling</li><li>wayland: limit do_install_append only for target</li><li>webos_{lttng,pmlog_config}.bbclass: move to the right layer</li><li>webos_configure_manifest.bbclass, webos_system_bus.bbclass: replace some warnings with notes</li><li>webos_configure_manifest.bbclass: move to the right layer</li><li>webos_nyx_module_provider.bbclass: enable NYXMOD_OW_MSMMTP by default</li><li>webos_test_provider.bbclass: move to meta-luneui</li><li>webos-connman-adapter: bump SRCREV</li><li>webos-initscripts, org.webosports.cdav, app-services, bootd, com.webos.service.pdm, db8, enyo-1.0, mojoservice-framework, mojomail: Bump SRCREV</li><li>webos-initscripts.bb: Fix inherit</li><li>webos-initscripts: don&#8217;t include systemd-machine-units in sstate signature; fix startup sequence for webOS-OSE; Fix whitespace issues</li><li>webos-keyboard: fix LS2 for webOS-OSE; Bump SRCREV</li><li>wifi-module-load: fix sleep call in systemd service</li><li>luneos-components: Update Qt version to 5.12.5; Add stub for ieee8021x wifi network</li></ul>
+
+
+
+<h3 class="wp-block-heading">The usual</h3>
+
+
+
+<p class="wp-block-paragraph">1. <a href="http://issues.webos-ports.org/">Sign up for the bug tracker</a></p>
+
+
+
+<p class="wp-block-paragraph">2. <a href="http://pivotce.com/2014/09/22/webos-ports-help-wanted/" target="_blank" rel="noreferrer noopener">Get involved</a> and</p>
+
+
+
+<p class="wp-block-paragraph">3. <a href="http://lists.webos-ports.org/mailman/options/luneos-dev" target="_blank" rel="noreferrer noopener">Join the mailing list</a></p>
+
+
+
+<h3 class="wp-block-heading">Download and Install</h3>
+
+
+
+<p class="wp-block-paragraph">Feel free to <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="http://build.webos-ports.org/releases/eggnoglatte/" target="_blank">download the updated builds</a> to get started. Tenderloin, Hammerhead and Tissot remain our focus for now, but the emulators, Mako and Mido work too.</p>
+
+
+
+<p class="wp-block-paragraph"><em>Please note that in order to use the latest stable builds Nexus 4 (Mako) and Nexus 5 (Hammerhead) you need to flash the CM 12.1 images first using CWM/TWRP. In order to do so, you might be required to do a &#8220;factory reset&#8221; or at least &#8220;wipe cache&#8221;. CWM/TWRP will indicate when this is needed. After successfully flashing CM 12.1, make sure to boot it at least once before going back to CWM/TWRP to flash the latest LuneOS image! We have provided links to CM 12.1 for these 3 images on our device pages below.</em></p>
+
+
+
+<p class="wp-block-paragraph">Installation instructions for <a href="http://webos-ports.org/wiki/Install_LuneOS_for_Tenderloin" target="_blank" rel="noreferrer noopener">TouchPad (Tenderloin), </a><a href="http://webos-ports.org/wiki/Install_LuneOS_for_Mako" target="_blank" rel="noreferrer noopener">Nexus 4 (Mako)</a>, <a href="http://webos-ports.org/wiki/Install_LuneOS_for_Hammerhead" target="_blank" rel="noreferrer noopener">Nexus 5 (Hammerhead)</a>&nbsp;and&nbsp;<a href="http://webos-ports.org/wiki/Emulator">Emulator&nbsp;</a>are on the <a href="http://webos-ports.org/wiki/Main_Page" target="_blank" rel="noreferrer noopener">wiki</a>. And remember we <a href="http://webos-ports.org/wiki/ETA" target="_blank" rel="noreferrer noopener">don’t do timelines</a>.</p>
+
+
+
+<p class="wp-block-paragraph">Don’t forget to contact us with any questions and feel free to <a href="https://forums.webosnation.com/luneos/332533-pivotce-luneos-november-stable-release-eggnog-latte.html">join the discussion on the webOS Nation forums</a>. Catch us on Twitter <a rel="noreferrer noopener" href="https://twitter.com/webosports" target="_blank">@webosports</a> on IRC: Freenode:#webos-ports or email webos.ports@gmail.com.</p>
+
+
+
+<p class="wp-block-paragraph">We will see you shortly again with a new release!</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p>Picture credit: <a href="https://pxhere.com/en/photo/1537203">pxhere.com</a></p>
+
+
+
+<!--more-->
+
+
+
+<p class="wp-block-paragraph"></p>The post <a href="https://pivotce.com/2019/10/24/luneos-october-stable-release-eggnog-latte/">LuneOS October Stable release: Eggnog Latte</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2017/02/24/luneos-february-stable-release-chai-latte/" rel="bookmark" title="LuneOS February Stable Release: Chai Latte">LuneOS February Stable Release: Chai Latte</a></li>
+<li><a href="https://pivotce.com/2015/10/07/luneos-october-stable-release-caffe-latte/" rel="bookmark" title="LuneOS October Stable Release: Caffè Latte">LuneOS October Stable Release: Caffè Latte</a></li>
+<li><a href="https://pivotce.com/2018/11/28/luneos-november-stable-release-doppio/" rel="bookmark" title="LuneOS November Stable Release: Doppio">LuneOS November Stable Release: Doppio</a></li>
+</ol>
+</div>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">4477</post-id>	</item>
+		<item>
+		<title>LuneOS November Stable Release: Doppio</title>
+		<link>https://pivotce.com/2018/11/28/luneos-november-stable-release-doppio/</link>
+		
+		<dc:creator><![CDATA[webosports]]></dc:creator>
+		<pubDate>Wed, 28 Nov 2018 05:48:53 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Developer]]></category>
+		<category><![CDATA[LG]]></category>
+		<category><![CDATA[LG webOS OSE]]></category>
+		<category><![CDATA[LuneOS]]></category>
+		<category><![CDATA[Open webOS]]></category>
+		<category><![CDATA[webOS]]></category>
+		<category><![CDATA[webOS Ports]]></category>
+		<guid isPermaLink="false">https://pivotce.com/?p=4454</guid>
+
+					<description><![CDATA[<p>The very long wait is over #LuneOS and #webOS fans! We&#8217;re finally back with a new release called &#8220;Doppio&#8221; which we believe will be a milestone in terms of developments &#8230; <a href="https://pivotce.com/2018/11/28/luneos-november-stable-release-doppio/" class="more-link">Continue reading <span class="screen-reader-text">LuneOS November Stable Release: Doppio</span> <span class="meta-nav">&#8594;</span></a></p>
+The post <a href="https://pivotce.com/2018/11/28/luneos-november-stable-release-doppio/">LuneOS November Stable Release: Doppio</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2017/07/23/luneos-july-stable-release-cortado/" rel="bookmark" title="LuneOS July Stable Release: Cortado">LuneOS July Stable Release: Cortado</a></li>
+<li><a href="https://pivotce.com/2017/02/24/luneos-february-stable-release-chai-latte/" rel="bookmark" title="LuneOS February Stable Release: Chai Latte">LuneOS February Stable Release: Chai Latte</a></li>
+<li><a href="https://pivotce.com/2017/10/08/luneos-september-stable-release-decaf/" rel="bookmark" title="LuneOS September Stable Release: Decaf">LuneOS September Stable Release: Decaf</a></li>
+</ol>
+</div>
+]]></description>
+										<content:encoded><![CDATA[<p>The very long wait is over #LuneOS and #webOS fans! We&#8217;re finally back with a new release called &#8220;Doppio&#8221; which we believe will be a milestone in terms of developments and the way forward!</p>
+<p>So you&#8217;re wondering what we&#8217;ve been up to for the past year?</p>
+<p><span id="more-4454"></span></p>
+<p>Well, actually a whole lot to be honest! We have upgraded the bluetooth stack from BlueZ4 to BlueZ5 which required quite some work to the kernels. This&nbsp;has been successfully completed for the Nexus 4 (Mako) and Nexus 5 (Hammerhead); unfortunately&nbsp;to date we haven&#8217;t been able to get this to work on the Touchpad (4G) (Tenderloin).</p>
+<p>We have been working closely together with the Halium project and have made further integrations between LuneOS and Halium reducing duplication between the projects and using a single source where possible.&nbsp;This all to be more easily&nbsp;integrated, and to facilitate ports&nbsp;to newer devices. We have upstreamed our kernel patches (mainly to fix GCC 5/6/7/8 compatibility) to Halium so we can use a shared kernel for our targets.</p>
+<p>Talking about new devices we&#8217;ve been working on: Since Google dropped the (budget) Nexus line and launched the (premium) Pixel line, we&#8217;ve been looking for other targets that are easily available, budget friendly and have good community support. We quickly ended up with Xiaomi which makes phones with decent specs, unlockable bootloader (the process is a bit tedious, but it&#8217;s do-able) and the phones give very good value for money.</p>
+<p>This has resulted in us independently working on 3 different Xiaomi devices being the RedMi Note 4x (Mido), RedMi 5 (Rosy) and Mi A1 (Tissot).&nbsp; These are all Aarch64 devices using the Snapdragon 625 chipset. We didn&#8217;t have any Aarch64 devices before and also they are based upon Halium 7.1 (Android 7.1) while all our previous targets were based upon Halium 5.1 (Android 5.1), so this brought a whole bunch of new challenges. There are still a few rough edges, but audio, sensors, wifi and bluetooth are now working. There was also quite some porting work done for some of the other Halium supported targets such as the OnePlus X (onyx), Google/Huawei Nexus 6P (angler) and Motorola G4 (athene). These are currently in various stages of development, whereby OnePlus X is the most mature.</p>
+<p>The Xiaomi Mi A1 is a strategic device for us which we chose in cooperation with LG, to get LuneOS running on it and also as a target for LG&#8217;s webOS OSE (Open Source Edition).</p>
+<p><a href="https://pivotce.com/2018/03/19/open-source-webos-now-brought-to-you-by-lg/">LG&#8217;s release of webOS OSE</a> came as a surprise to us, however it has great potential. Though the initial release of webOS OSE was very limited and therefore limited use case for people not being very familiar with webOS, it does offer a lot of potential for us. webOS OSE is basically 5 years of development of the core webOS bits since Open webOS was released. It has been deployed in millions of LG TV&#8217;s since and offers great improvements in terms of reliability and functionality. The big downside however is that there&#8217;s no record of the changes between Open webOS and webOS OSE, so this is making the migration a bit more challenging.</p>
+<p>Early June the LuneOS team met with LG in Paris to discuss collaboration between our teams. As a result of this we have chosen the Xiaomi A1 as a device to port LuneOS to. This is now at a level similar to our other targets.</p>
+<p>After this release we will therefore focus on migrating our Open webOS components to the updated components provided by webOS OSE. This will bring quite some challenges and hurdles along the way, however we&#8217;re positive that we can complete this migration and it will bring a lot of improvements in terms of code quality, stability, functionality and reducing the need for maintaining a lot of these components ourselves since we can share a common codebase with LG&#8217;s webOS OSE going forward.</p>
+<p>LG has a very clear vision in mind for webOS. Since the initial release in March, a <a href="http://webosose.org/discover/webos-ose-roadmap/">roadmap has been published</a> and <a href="http://webosose.org/blog/about-webos-ose-releases/5th-release-2018-october-2018/">LG has pushed out 4 releases since&nbsp;the original release of webOS OSE.</a></p>
+<p><!--more--></p>
+<p>The following items on our to-do list will be where we focus next:</p>
+<ul>
+<li>Migration of Open webOS components to the newer webOS OSE components.</li>
+<li>Make the VirtualBox image work with a newer MESA.</li>
+<li>Migrate to Yocto Sumo/Thud release.</li>
+<li>Messaging improvements.</li>
+<li>Camera improvements.</li>
+<li>Fix known issues on the various targets.</li>
+<li>Bring back official support for Touchpad 4G (current build works on Touchpad 4G but only WiFi).</li>
+</ul>
+<p><strong>Known issues:</strong></p>
+<ul>
+<li>Node-SQLite3 is currently not working. Components using Node-SQLite3 have switched to an alternative storage method for now.</li>
+<li>Focus bug on input fields. You can work around this by hiding the virtual keyboard and pressing the input again.</li>
+<li>Random issue with virtual keyboard not showing on Aarch64 devices.</li>
+</ul>
+<h3><strong>Changelog</strong></h3>
+<p><strong>Applications:</strong></p>
+<ul>
+<li>Settings: Add QML variant, enable manual time and date in Setings.</li>
+<li>org.webosports.cdav: Add CLEANBROKEN</li>
+</ul>
+<p><strong>User Interface:</strong></p>
+<ul>
+<li>luna-{sysmgr,sysmgr-common,appmanager,next}, mediaindexer: fix build with Qt 5.11.</li>
+<li>luna-{webappmanager,qml-launcher} org.webosports.app.{browser,firstuse}: fix build with Qt 5.11.</li>
+<li>luna-next-cardshell: add runtime dependency on qtmultimedia-qmlplugins, luneos-components.</li>
+<li>luneos-components: drop build time dependency on qtwebengine, switch to Mer&#8217;s bluezqt</li>
+</ul>
+<p><strong>System Level:</strong></p>
+<ul>
+<li>luna-next: Add config for onyx,&nbsp;Add QT_OPENGL_NO_BGRA and remove QT_ENABLE_GLYPH_CACHE_WORKAROUND</li>
+<li>android-gadget-setup: fix functionfs test</li>
+<li>android-tools: fix compatibility with adb 5.1.1</li>
+<li>android-tools-conf: Fix the machine check, Don&#8217;t patch script for tenderloin</li>
+<li>base-files: provide a common fstab for all LuneOS devices</li>
+<li>bluez: switch from bluez4 to bluez5</li>
+<li>bluez5: Fix patch so it will work for RaspberryPi3, make firmware search case insensitive</li>
+<li>connman: Add connman-tools, connman-tests and connman-wait-online, Update to 1.35</li>
+<li>distro: luneos: switch release name to Doppio</li>
+<li>environment.conf: Add QT_ENABLE_GLYPH_CACHE_WORKAROUND=1</li>
+<li>fingerterm: Update to upstream and drop patch, use LiberationMono font</li>
+<li>funyahoo-plusplus: Bump SRCREV</li>
+<li>https-everywhere: Bump SRCREV</li>
+<li>hunspell-dictionaries: Update to latest version</li>
+<li>imaccountvalidator, imlibpurpleservice: Drop unsupported protocols</li>
+<li>initramfs-boot-android: add A/B partition support, boot into built-in recovery when no skip_initramfs, get Halium&#8217;s init script from GitHub, improve panic scenario in init.sh, use /userdata instead of /android/userdata, Various fixes to init.sh</li>
+<li>kf5bluezqt-mer: fix package content with empty QT_DIR_NAME</li>
+<li>libconnman-qt5: fix initial value of &#8220;connected&#8221; property</li>
+<li>libhybris, qtbase: don&#8217;t use += together with _append</li>
+<li>libhybris: Bump SRCREV, Set &#8211;enable-arch=arm64 for aarch64, Drop &#8211;with-default-hybris-ld-library-path and bump SRCREV</li>
+<li>libpbnjson: use Unix Makefils OECMAKE_GENERATOR</li>
+<li>lsb: fix luneos-version content</li>
+<li>luna-(web)appmanager: use /etc/luna-next/qtwebengine.conf</li>
+<li>luna-init, luna-sysmgr: Bump SRCREV and adjust file installs</li>
+<li>luna-init: Fix incorrect {, Install CustomerCareNumber.txt and cust-preferences.txt</li>
+<li>luna-prefs-data: Bump PV to be in sync with luna-prefs</li>
+<li>luna-sysmgr: Cleanup recipe</li>
+<li>luna-sysmgr-conf, nyx-modules: fix rosy values, Add initial files for athene and onyx target, Cleanup recipe and fixup defaultPreferences-platform.txt</li>
+<li>luna-universalsearchmgr: inherit webos_systemd</li>
+<li>luna-webappmanager: bump SRCREV</li>
+<li>luneos.inc, connman: Build &amp; deploy VPN plugins</li>
+<li>luneos: inherit remove-libtool</li>
+<li>luneos: update SANITY_TESTED_DISTROS</li>
+<li>luneos-dev-image: tell Halium to mount rootfs rw</li>
+<li>luneos-emulator-appliance: update a bit</li>
+<li>luneos-features, connman: Add support for NFC using neard</li>
+<li>luneui-example-image: add few more packages, add more packages for testing, add vboxguestdrivers, v86d, add very small (fast to build) test image</li>
+<li>maliit-framework-qt5: set XDG_RUNTIME_DIR in conf file</li>
+<li>meta*: enable gbm</li>
+<li>meta-webos-ports: Add configuration files for Tissot,&nbsp;Update classes with info from webOS OSE</li>
+<li>mido, tissot: Fix path for CHARGER_AC_SYSFS_PATH</li>
+<li>mido: Initial configuration files</li>
+<li>mobile-broadband-provider-info: Bump SRCREV</li>
+<li>mojomail: bump SRCREV to fix build with boost-1.67.0, Switch back to webOS-ports/master branch</li>
+<li>nemo-qml-plugin-dbus: Update to latest version from upstream, fix package content with empty QT_DIR_NAME</li>
+<li>node-sqlite3: Bump version</li>
+<li>nyx-conf: do not let keys module watch over the touchpanel</li>
+<li>nyx-modules: Fix devices names in cmake files</li>
+<li>ofono: Update to latest version from upstream and enable Python 3 tests</li>
+<li>onyx: Enable power button</li>
+<li>packagegroup-luneos-development: include QML settings app</li>
+<li>packagegroup-luneos-extended: add android-kernel-bootimg,</li>
+<li>Add qtconnectivity, Add WIP targets and more documentation,</li>
+<li>Build bluez5 for all targets, include libpci for qemux86, move android-kernel-bootimg</li>
+<li>phonesim: Fix build with empty QT_DIR_NAME, refresh patches with devtool, update to latest revision from git</li>
+<li>pidgin-sipe: backport a patch to fix build with gcc8</li>
+<li>pulseaudio-distro-conf: Add support for Xiaomi A1 (tissot), Add webos-system.pa for mido target</li>
+<li>pulseaudio-modules-droid: bump to 10.0.73, refresh patches with devtool, remove tenderloin CFLAGS</li>
+<li>purple-skypeweb: Bump SRCREV</li>
+<li>python-tz-native: Update to 2017.2, Fix typo in SRC_URI</li>
+<li>qt5: upgrade to 5.11, upgrade to 5.11.1</li>
+<li>qt5-qpa-hwcomposer-plugin: fix package content with empty QT_DIR_NAME, hwcomposer_backend.h: Fix cast from &#8216;void*&#8217; to &#8216;unsigned int&#8217;, remove tenderloin CFLAGS</li>
+<li>qtbase: Add patch to fix quirks with newer Adreno GPU&#8217;s, refresh patches, remove TLS patch on Halium 7.1 targets, temporary fix for SIGBUS crash on Android devices</li>
+<li>qtlocation: refresh patch</li>
+<li>qtscenegraph-adaptation: Bump SRCREV</li>
+<li>qtsensors-sensorfw-plugin: fix build with empty QT_DIR_NAME</li>
+<li>qtvideo-node: fix package content with empty QT_DIR_NAME</li>
+<li>qtwayland: add qwayland-server-surface-extension.h, wayland-surface-extension-server-protocol.h to sync.profile, bring QWaylandExtendedSurface back for luna-next, drop patch applied in 5.9.3, refresh patches for 5.11.2</li>
+<li>qtwebengine: add libpci to RDEPENDS, Drop patch for libEGL and libGLES2, fix filename in SRC_URI, Fix patch for additionalFeatures, refresh patches, Remove PalmServiceBridge, replace EXTRA_QMAKEVARS_CONFIGURE with PACKAGECONFIG, squash a few of chromium patches for easier maintenance</li>
+<li>recipes: drop unnecessary FILES_${PN}-dbg variables, use oe.utils.conditional instead of deprecated base_conditional</li>
+<li>sensorfw: Bump SRCREV and drop patches now merged upstream</li>
+<li>voicecall: Update to latest version from upstream</li>
+<li>webos-systemd-services: Drop installation of luna universalsearchmgr.service</li>
+<li>android-headers: Add headers for Halium-7.1, common recipe for Halium-5.1 headers, make it possible to tweak android-config.h per machine, Use Halium Headers</li>
+<li>android-headers-halium: set preferred version</li>
+<li>android-headers-tenderloin: fix patches to match Halium&#8217;s</li>
+<li>android-kernel-bootimg: dedicated recipe for creating boot.img, minimal support for A/B partitions</li>
+<li>android-system: Add missing groups, also mount /persist when it exists, cleanup old hal-hybris overlay code, don&#8217;t manage ramdisk unpacking, fix lifecycle of lxc container, Remove installation of non-existing files, simplify usage of Halium, start sensorfwd after android container, use pre-start.sh from Halium, wait a bit for the sensors to be ready</li>
+<li>android-system-image: use system.img directly, Change wop into luneos, convert the sparse image if needed, create /userdata, Update halium bits to halium version numbers</li>
+<li>base-files: use system.img directly</li>
+<li>android-tools: remove, since now in meta-oe</li>
+<li>base-files,android-system: Android partitions are now mounted by Halium&#8217;s initrd</li>
+<li>base-files: add /system/lib64 in LD_LIBRARY_PATH</li>
+<li>hammerhead, mako: Add NFC as machine feature<br />
+Include android-kernel-bootimg for each MACHINE that needs it</li>
+<li>initramfs-android-image: make it possible to add content</li>
+<li>libhybris: provide also virtual/mesa and set PREFERRED_PROVIDER for all android devices</li>
+<li>linux-lg-{mako,hammerhead},linux-hp-tenderloin: backport 2 changes to fix build with gcc8</li>
+<li>mako, hammerhead: Use upstream kernels which now have our patches included</li>
+<li>mako: Fix the kernel build</li>
+<li>meta-*: set PREFERRED_PROVIDER for libgl and libgbm for all android devices</li>
+<li>meta-{asus,hp,huawei,lg,motorola,oneplus,xiaomi}: remove fstab overload</li>
+<li>meta-android: initramfs-android-recovery: add inc, remove leftover from android-tools removal</li>
+<li>meta-hp: migrate tenderloin to use Halium&#8217;s init</li>
+<li>meta-oneplus: Fixes for onyx target to make build work</li>
+<li>meta-smartphone: Add meta-huawei layer with Angler target,</li>
+<li>udev-extraconf: Uniform naming scheme for device udev rules and update udev rules</li>
+<li>meta-xiaomi: add initial support for rosy (Redmi 5), Get image for Tissot building, Initial work for Xiaomi A1 (tissot), mido fix persist partition number in fstab, mido use correct wlan module name, tissot: add initramfs-android-recovery, tissot: enable permissive SELinux, tissot: ignore other parameters from bootloader, tissot: switch to cm-14.1 kernel to fix wifi</li>
+<li>Migrate LuneOS targeted machines to using android-kernel-image</li>
+<li>systemd-machine-units: fix bluetooth for hammerhead, fix bluetooth for mako</li>
+</ul>
+<h3>The usual</h3>
+<p>1. <a href="http://issues.webos-ports.org/">Sign up for the bug tracker</a></p>
+<p>2. <a href="http://pivotce.com/2014/09/22/webos-ports-help-wanted/" target="_blank" rel="noopener noreferrer">Get involved</a> and</p>
+<p>3. <a href="http://lists.webos-ports.org/mailman/options/luneos-dev" target="_blank" rel="noopener noreferrer">Join the mailing list</a></p>
+<h3>Download and Install</h3>
+<p>Feel free to <a href="http://build.webos-ports.org/releases/doppio/" target="_blank" rel="noopener noreferrer">download the updated builds</a> to get started. Tenderloin, Mako, Hammerhead and Tissot remain our focus for now, but the emulator, Mido &amp; Rosy work too.</p>
+<p><em><span style="color: #ff0000">Please note that in order to use the latest stable builds Nexus 4 (Mako) and Nexus 5 (Hammerhead) you need to flash the CM 12.1 images first using CWM/TWRP. In order to do so, you might be required to do a &#8220;factory reset&#8221; or at least &#8220;wipe cache&#8221;. CWM/TWRP will indicate when this is needed. After successfully flashing CM 12.1, make sure to boot it at least once before going back to CWM/TWRP to flash the latest LuneOS image! We have provided links to CM 12.1 for these 3 images on our device pages below.</span></em></p>
+<p>Installation instructions for <a href="http://webos-ports.org/wiki/Install_LuneOS_for_Tenderloin" target="_blank" rel="noopener noreferrer">TouchPad (Tenderloin), </a><a href="http://webos-ports.org/wiki/Install_LuneOS_for_Mako" target="_blank" rel="noopener noreferrer">Nexus 4 (Mako)</a>, <a href="http://webos-ports.org/wiki/Install_LuneOS_for_Hammerhead" target="_blank" rel="noopener noreferrer">Nexus 5 (Hammerhead)</a>&nbsp;and&nbsp;<a href="http://webos-ports.org/wiki/Emulator">Emulator&nbsp;</a>are on the <a href="http://webos-ports.org/wiki/Main_Page" target="_blank" rel="noopener noreferrer">wiki</a>. And remember we <a href="http://webos-ports.org/wiki/ETA" target="_blank" rel="noopener noreferrer">don’t do timelines</a>.</p>
+<p>Don’t forget to contact us with any questions and feel free to <a href="https://forums.webosnation.com/luneos/332313-pivotce-luneos-november-stable-release-doppio.html">join the discussion on the webOS Nation forums</a>. Catch us on Twitter <a href="https://twitter.com/webosports" target="_blank" rel="noopener noreferrer">@webosports</a> on IRC: Freenode:#webos-ports or email webos.ports@gmail.com.</p>
+<p>We will see you shortly again with a new release!</p>
+<p>Picture Credit: <a href="https://pixnio.com/food-and-drink/coffee/hot-espresso-coffee-machine-coffee-mugs-beverage-caffeine">Chevanon</a>. Cropped &amp; flipped. Text added.</p>The post <a href="https://pivotce.com/2018/11/28/luneos-november-stable-release-doppio/">LuneOS November Stable Release: Doppio</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2017/07/23/luneos-july-stable-release-cortado/" rel="bookmark" title="LuneOS July Stable Release: Cortado">LuneOS July Stable Release: Cortado</a></li>
+<li><a href="https://pivotce.com/2017/02/24/luneos-february-stable-release-chai-latte/" rel="bookmark" title="LuneOS February Stable Release: Chai Latte">LuneOS February Stable Release: Chai Latte</a></li>
+<li><a href="https://pivotce.com/2017/10/08/luneos-september-stable-release-decaf/" rel="bookmark" title="LuneOS September Stable Release: Decaf">LuneOS September Stable Release: Decaf</a></li>
+</ol>
+</div>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">4454</post-id>	</item>
+		<item>
+		<title>The New Palm phone is revealed.</title>
+		<link>https://pivotce.com/2018/10/16/the-new-palm-phone-is-revealed/</link>
+		
+		<dc:creator><![CDATA[preemptive]]></dc:creator>
+		<pubDate>Tue, 16 Oct 2018 01:35:45 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Android]]></category>
+		<category><![CDATA[Palm]]></category>
+		<category><![CDATA[TCL/Alcatel]]></category>
+		<guid isPermaLink="false">https://pivotce.com/?p=4441</guid>
+
+					<description><![CDATA[<p>There&#8217;s a new Palm phone. It&#8217;s due to be released next month. Now, if you are a long time Palm enthusiast (and reader of this blog) you will no doubt &#8230; <a href="https://pivotce.com/2018/10/16/the-new-palm-phone-is-revealed/" class="more-link">Continue reading <span class="screen-reader-text">The New Palm phone is revealed.</span> <span class="meta-nav">&#8594;</span></a></p>
+The post <a href="https://pivotce.com/2018/10/16/the-new-palm-phone-is-revealed/">The New Palm phone is revealed.</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2018/03/28/tcls-palm-phone-will-run-android-duh/" rel="bookmark" title="TCL&#8217;s Palm phone will run android&#8230;duh">TCL&#8217;s Palm phone will run android&#8230;duh</a></li>
+<li><a href="https://pivotce.com/2016/05/17/hp-is-to-palm-as-lenovo-is-to-motorola-not-good/" rel="bookmark" title="HP is to Palm as Lenovo is to Motorola&#8230;Not Good">HP is to Palm as Lenovo is to Motorola&#8230;Not Good</a></li>
+<li><a href="https://pivotce.com/2017/01/16/tcl-blackberry-palm/" rel="bookmark" title="TCL, Blackberry &amp; Palm">TCL, Blackberry &amp; Palm</a></li>
+</ol>
+</div>
+]]></description>
+										<content:encoded><![CDATA[<p>There&#8217;s a new <a href="https://www.palm.com/product" target="_blank" rel="noopener">Palm phone</a>. It&#8217;s due to be released next month.</p>
+<p>Now, if you are a long time Palm enthusiast (and reader of this blog) you will no doubt be telling your heart not to beat too quickly because to put it mildly, things have not worked out well in the past.</p>
+<p>We already knew that TCL / Alcatel had <a href="https://pivotce.com/2015/01/07/tcl-relaunches-the-palm-brand/" target="_blank" rel="noopener">bought the brand</a> (only). The possibility of a new phone running webOS was dismissed. The speculation on the <a href="https://forums.webosnation.com/upcoming-rumored-webos-devices/332052-palm-smartphone-reboot-reportedly-coming-verizon-later-year.html" target="_blank" rel="noopener">webOs Nation forum</a> was that we would be seeing a standard Android slab with the Palm logo stuck on, though no one could figure out quite how that would be a success.<br />
+<span id="more-4441"></span><br />
+In August, there were some leaks that <a href="https://www.theverge.com/circuitbreaker/2018/8/9/17672068/new-palm-android-pepito-smartphone-photos-specs-leak" target="_blank" rel="noopener">seemed both intriguing and potentially disappointing</a>. A small phone? OK! A low specification? Uh&#8230;</p>
+<p>You don&#8217;t have to wonder any longer. The curtain has been almost fully raised and we can confirm that the new phone is&#8230; both intriguing and potentially disappointing. Here are some bullet points:</p>
+<ul>
+<li>It appears that the new Palm is in fact a startup that approached TCL with their plan.</li>
+<li>TCL backed them and handed them the Palm brand.</li>
+<li>&#8220;Pepito&#8221; was a codename. It&#8217;s just &#8220;Palm&#8221;.</li>
+<li>The reason the specs look like a &#8216;weekend&#8217; phone is because it&#8217;s a weekend phone.</li>
+<li>It is in fact a &#8216;companion&#8217; phone to your other, big phone.</li>
+</ul>
+<p>We are just a little webOS blog, so we have no inside sources or review model. There is <a href="https://www.fastcompany.com/90245288/steph-curry-and-the-new-palm-want-you-to-forget-your-phone" target="_blank" rel="noopener"> an apparently regurgitated press release on Fast Company</a>. You can then read what <a href="https://www.theverge.com/2018/10/15/17974850/new-palm-smartphone-android-lifemode-time-well-spent-verizon" target="_blank" rel="noopener"> Dieter Bohn has to say</a> at The Verge.</p>
+<p>A number of webOS community members have done valuable work in maintaining popular services on our old webOS devices (not to mention keeping them working at all). But given the number of services that no longer work on webOS, using one of the original phones has much the same effect as the &#8216;Life Mode&#8217; (AKA aeroplane mode) offered by this new device. However,  I&#8217;m not going to condemn it.</p>
+<p>The potential criticisms are obvious:</p>
+<ul>
+<li>Why not just sell a smaller phone?</li>
+<li>It&#8217;s only available as an add on device, only on Verizon in the U.S.</li>
+<li>It costs $350.</li>
+</ul>
+<p>It&#8217;s true that there seems to be an increasing desire for phones that are smaller and for services that respect a balanced life rather than attempting to addict us to various feeds. There are few choices available for those that want these options. Within that context, the new Palm phone is different and distinctive. As a &#8216;lifestyle phone&#8217;, it is possible that  it will appeal to trendy and fairly well-off people and actually sell. However, the Verizon exclusivity may limit access even to that particular demographic. If enough are sold to keep Palm in business, they could extend the concept to other networks and countries. It&#8217;s possible that the next model could build on that. Pepito2 could have better specs and be able to stand alone, usable as a companion device or a daily driver.</p>
+<p>Of course, I&#8217;d say that an ideal OS for some kind of synchronizing connectivity across devices would be webOS, but that&#8217;s NEVER GOING TO HAPPEN, unless the boot-loader is unlocked and we install it ourselves.</p>
+<p>So I wish the new Palm luck. In historical terms, there&#8217;s very little about this product that&#8217;s new, but it seems that it could fill a niche that&#8217;s opened up in the current smartphone market. This pricey life-style toy could evolve into the smaller, simpler phone for the many, but only time will tell and yes, I&#8217;m doubtful.</p>
+<p>Those are my thoughts. What are yours? <a href="https://forums.webosnation.com/upcoming-rumored-webos-devices/332267-pivotce-new-palm-phone-revealed.html#post3454342" target="_blank" rel="noopener">Here&#8217;s your comment thread</a>.</p>
+<p>Image credit: <a href="https://www.palm.com" target="_blank" rel="noopener">Palm.com</a></p>The post <a href="https://pivotce.com/2018/10/16/the-new-palm-phone-is-revealed/">The New Palm phone is revealed.</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2018/03/28/tcls-palm-phone-will-run-android-duh/" rel="bookmark" title="TCL&#8217;s Palm phone will run android&#8230;duh">TCL&#8217;s Palm phone will run android&#8230;duh</a></li>
+<li><a href="https://pivotce.com/2016/05/17/hp-is-to-palm-as-lenovo-is-to-motorola-not-good/" rel="bookmark" title="HP is to Palm as Lenovo is to Motorola&#8230;Not Good">HP is to Palm as Lenovo is to Motorola&#8230;Not Good</a></li>
+<li><a href="https://pivotce.com/2017/01/16/tcl-blackberry-palm/" rel="bookmark" title="TCL, Blackberry &amp; Palm">TCL, Blackberry &amp; Palm</a></li>
+</ol>
+</div>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">4441</post-id>	</item>
+		<item>
+		<title>webOS meetup, Chicago, 3rd June</title>
+		<link>https://pivotce.com/2018/05/10/webos-meetup-chicago-3rd-june/</link>
+		
+		<dc:creator><![CDATA[preemptive]]></dc:creator>
+		<pubDate>Thu, 10 May 2018 01:36:08 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Chicago]]></category>
+		<category><![CDATA[LG]]></category>
+		<category><![CDATA[LuneOS]]></category>
+		<category><![CDATA[Meet up]]></category>
+		<category><![CDATA[Palm]]></category>
+		<category><![CDATA[webOS]]></category>
+		<category><![CDATA[webOS OSE]]></category>
+		<guid isPermaLink="false">https://pivotce.com/?p=4412</guid>
+
+					<description><![CDATA[<p>It&#8217;s been over a year since there was a webOS meet up in Chicago, but it&#8217;s happening next month! There are many fun things to do in Schaumburg, but the &#8230; <a href="https://pivotce.com/2018/05/10/webos-meetup-chicago-3rd-june/" class="more-link">Continue reading <span class="screen-reader-text">webOS meetup, Chicago, 3rd June</span> <span class="meta-nav">&#8594;</span></a></p>
+The post <a href="https://pivotce.com/2018/05/10/webos-meetup-chicago-3rd-june/">webOS meetup, Chicago, 3rd June</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2014/11/13/webos-meetup-chicago-23rd-november/" rel="bookmark" title="webOS meetup, Chicago, 23rd November">webOS meetup, Chicago, 23rd November</a></li>
+<li><a href="https://pivotce.com/2016/11/17/webos-meetup-chicago-27th-november/" rel="bookmark" title="webOS meetup, Chicago, 27th November">webOS meetup, Chicago, 27th November</a></li>
+<li><a href="https://pivotce.com/2016/04/08/webos-meetup-chicago-17th-april/" rel="bookmark" title="webOS meetup, Chicago, 17th April">webOS meetup, Chicago, 17th April</a></li>
+</ol>
+</div>
+]]></description>
+										<content:encoded><![CDATA[<p>It&#8217;s been over a year since there was a webOS meet up in Chicago, but it&#8217;s happening next month!</p>
+<p>There are many <a href="http://www.ci.schaumburg.il.us/visitors/default.htm">fun things to do in Schaumburg</a>, but the highlight of your visit will of course be the chance to sit down with fellow webOS enthusiasts to enjoy pizza and good conversation.</p>
+<p>The 2018 webOS meetup will be on Sunday June 3rd 2018 at 7pm. The place is <a href="http://www.morettischicago.com/schaumburg/index.php">Moretti&#8217;s Ristorante and Pizzeria</a>, 1893 Walden Office Square, Schaumburg, IL 60173.<br />
+<span id="more-4412"></span><br />
+Bring your old webOS devices, your new LuneOS devices and your Raspberry Pi running webOS OSE (but maybe leave your webOS TV at home).</p>
+<p><a href="http://www.morettischicago.com/schaumburg/directions.php">Click here for directions to Moretti&#8217;s</a>. Any questions? Here&#8217;s <a href="https://forums.webosnation.com/webos-events/313031-chicago-webos-meetup-5.html#post3453373">the forum</a>.</p>
+<p>The team at pivotCE remind you that if you are planning a meet up, let us know! We are interested in promoting your events (it might even increase attendance!). We are also interested in reports and pictures from webOS events.</p>The post <a href="https://pivotce.com/2018/05/10/webos-meetup-chicago-3rd-june/">webOS meetup, Chicago, 3rd June</a> first appeared on <a href="https://pivotce.com">pivotCE</a>.<div class='yarpp yarpp-related yarpp-related-rss yarpp-template-list'>
+<!-- YARPP List -->
+<h3>Related posts:</h3><ol>
+<li><a href="https://pivotce.com/2014/11/13/webos-meetup-chicago-23rd-november/" rel="bookmark" title="webOS meetup, Chicago, 23rd November">webOS meetup, Chicago, 23rd November</a></li>
+<li><a href="https://pivotce.com/2016/11/17/webos-meetup-chicago-27th-november/" rel="bookmark" title="webOS meetup, Chicago, 27th November">webOS meetup, Chicago, 27th November</a></li>
+<li><a href="https://pivotce.com/2016/04/08/webos-meetup-chicago-17th-april/" rel="bookmark" title="webOS meetup, Chicago, 17th April">webOS meetup, Chicago, 17th April</a></li>
+</ol>
+</div>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">4412</post-id>	</item>
+	</channel>
+</rss>

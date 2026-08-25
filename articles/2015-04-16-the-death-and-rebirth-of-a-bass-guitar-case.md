@@ -1,0 +1,33 @@
+---
+title: The Death and Rebirth of a Bass Guitar Case
+date: 2015-04-16 02:10:17 UTC
+modified: 2015-04-16 02:12:01 UTC
+author: Alan Morford
+author_slug: alanmorford
+categories: [News]
+tags: [Case, bass]
+slug: the-death-and-rebirth-of-a-bass-guitar-case
+source_url: https://pivotce.com/2015/04/16/the-death-and-rebirth-of-a-bass-guitar-case/
+wordpress_id: 2831
+featured_image: ../images/files/2015/04/10838057_10155377074465191_4901126474371327667_o.jpg
+featured_image_source: https://pivotce.com/files/2015/04/10838057_10155377074465191_4901126474371327667_o.jpg
+excerpt: I’m a musician. I’ve played guitar and bass guitar since I was 16. I haven’t played very much in recent years until last year when I started playing for a…
+---
+
+# The Death and Rebirth of a Bass Guitar Case
+
+I’m a musician. I’ve played guitar and bass guitar since I was 16. I haven’t played very much in recent years until last year when I started playing for a local church. I dusted off the bass and started trying to get back into the groove of playing with a band and not in my basement. Alone. With just my webOS phones to keep me company. <shudder>
+
+The band leader made fun of my bass guitar case. It was pretty beat up. I’ve had it for almost 12 years. It’s survived three moves across the country and kept my bass guitar relatively safe all this time. I mean, I didn’t really care. I paid $50 for the bass. But as he pointed out my bass which I bought off a buddy is actually worth about ten times that. Time to protect my unwitting investment.
+
+I purchased a new case which is a lot nicer. A LOT. But I couldn’t bring myself to toss the old one. I mean, it was still a decent case though a bit worse for wear. What to do with it?
+
+I had the [St. Louis webOS Meetup](https://pivotce.com/2015/04/09/st-louis-webos-meetup-recap/) coming up and knew I was taking a slew of devices with me. But how was I going to transport them all? I thought about buying a case with tear away foam. I looked it up on Amazon and wow, that stuff is pricey. Then it hit me, I’ll build a case!
+
+It took about 3 weeks of working on it sporadically for an hour here and there. I only bought more glue and pop rivets. Total cost to me was about $30. I was able to keep the original hinges, clasps, and handle from the case too. I think it turned out pretty well. See for yourself.
+
+[Talk about it.](http://forums.webosnation.com/off-topic-lounge/329603-custom-device-case.html)
+
+#webosforever
+
+    ![The original plan.](../images/files/2015/04/10860993_10155377068575191_2717037939062808454_o.jpg)  The original plan.       ![An early thought on the phones I would use.](../images/files/2015/04/2.jpg)  An early thought on the phones I would use.    ![Getting a rectangle from that shape was trying. Printer paper helped.](../images/files/2015/04/3.jpg)  Getting a rectangle from that shape was trying. Printer paper helped.          ![Top cut out](../images/files/2015/04/4.jpg)  Top cut out       ![Top and bottom cut out](../images/files/2015/04/5.jpg)  Top and bottom cut out       ![Trying to get those years old curves out was near impossible! Two part glue helped.](../images/files/2015/04/6.jpg)  Trying to get those years old curves out was near impossible! Two part glue helped.          ![Gluing the case was the most difficult part.](../images/files/2015/04/7.jpg)  Gluing the case was the most difficult part.       ![Wahlah! The top and bottom are almost done.](../images/files/2015/04/7a.jpg)  Wahlah! The top and bottom are almost done.          ![Cut the cardboard layer and I traced these phones into position.](../images/files/2015/04/8.jpg)  Cut the cardboard layer and I traced these phones into position.       ![The day after I finished, my son pulled it off a shelf splitting this corner. This is my fix for it.](../images/files/2015/04/9a.jpg)  The day after I finished, my son pulled it off a shelf splitting this corner. This is my fix for it.          ![This was tedious. If I had to do it over I would layer cardboard and dremel it out!](../images/files/2015/04/10.jpg)  This was tedious. If I had to do it over I would layer cardboard and dremel it out!    ![I added a separate layer for the bottom and use bubble wrap for added cushion.](../images/files/2015/04/11.jpg)  I added a separate layer for the bottom and use bubble wrap for added cushion.       ![Cutting out the felt.](../images/files/2015/04/12.jpg)  Cutting out the felt.          ![Almost time to glue.](../images/files/2015/04/13.jpg)  Almost time to glue.       ![Starting to get the bottom covered in felt.](../images/files/2015/04/14.jpg)  Starting to get the bottom covered in felt.    ![The bottom is done.](../images/files/2015/04/15.jpg)  The bottom is done.          ![Early magnet layout and top layer design.](../images/files/2015/04/16.jpg)  Early magnet layout and top layer design.       ![The revised magnets in the top layer. Finished the tablet felt.](../images/files/2015/04/17.jpg)  The revised magnets in the top layer. Finished the tablet felt.          ![How it looks closed. I think it retains the character of the original beat up guitar case.](../images/files/2015/04/P3278951.jpg)  How it looks closed. I think it retains the character of the original beat up guitar case.       ![You can see the pop riveted hinges. The hinges are the same ones from the bass case. I tried to use everything I could from the original.](../images/files/2015/04/P3278952.jpg)  You can see the pop riveted hinges. The hinges are the same ones from the bass case. I tried to use everything I could from the original.       ![How it looks when you open the case.](../images/files/2015/04/P3278954.jpg)  How it looks when you open the case.          ![Empty top layer.](../images/files/2015/04/P3278955.jpg)  Empty top layer.    ![The top layer finished and out of the case. You can see the pull tabs I added on the left and right to pull it out of the case.](../images/files/2015/04/P3278957.jpg)  The top layer finished and out of the case. You can see the pull tabs I added on the left and right to pull it out of the case.       ![You can see the cut up shoe string I used for pull tabs to get the phones out.](../images/files/2015/04/P3278958.jpg)  You can see the cut up shoe string I used for pull tabs to get the phones out.          ![Finished bottom layer in the case.](../images/files/2015/04/P3278959.jpg)  Finished bottom layer in the case.       ![The top layer with everything inside.](../images/files/2015/04/11103219_10155377073055191_5079425937654843563_o.jpg)  The top layer with everything inside.    ![I think it turned out pretty great!](../images/files/2015/04/10838057_10155377074465191_4901126474371327667_o.jpg)  I think it turned out pretty great!
