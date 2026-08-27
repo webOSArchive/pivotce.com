@@ -3,7 +3,7 @@
 # Pull, build, publish. Safe to run from cron as often as you like: it does
 # nothing at all unless there is something new to publish.
 #
-#   /home/wosa/pivotce-src     git clone, outside the docroot
+#   /home/wosa/pivot-admin/pivotce-src     git clone, outside the docroot
 #   /home/wosa/wosa-web/pivot  what the web server serves -- build output only
 #
 # Pass --force to rebuild and republish regardless.
@@ -14,7 +14,7 @@ set -eu
 # works however we were invoked.
 SELF=$(cd "$(dirname "$0")" && pwd)/$(basename "$0")
 
-REPO=/home/wosa/pivotce-src
+REPO=/home/wosa/pivot-admin/pivotce-src
 DOCROOT=/home/wosa/wosa-web/pivot
 
 # Find Hugo. The official .deb installs to /usr/local/bin while distro packages
