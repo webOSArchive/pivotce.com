@@ -1,10 +1,12 @@
 #!/bin/sh
 #
 # Pull, build, publish. Safe to run from cron as often as you like: it does
-# nothing at all unless the GitHub repo has actually changed.
+# nothing at all unless there is something new to publish.
 #
 #   /home/wosa/pivotce-src     git clone, outside the docroot
 #   /home/wosa/wosa-web/pivot  what the web server serves -- build output only
+#
+# Pass --force to rebuild and republish regardless.
 #
 set -eu
 
@@ -13,10 +15,17 @@ DOCROOT=/home/wosa/wosa-web/pivot
 HUGO=/usr/bin/hugo
 
 cd "$REPO"
+mkdir -p "$DOCROOT"
 
 git fetch --quiet --depth 1 origin main
-if [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ]; then
-    exit 0                      # nothing new; the normal case on most runs
+
+# Rebuild when the repo has moved, when the docroot has never been populated
+# (the first run after a fresh clone, where HEAD already matches origin), or
+# when asked. Checking only git would leave a fresh clone doing nothing.
+if [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ] \
+   && [ -f "$DOCROOT/index.html" ] \
+   && [ "${1:-}" != "--force" ]; then
+    exit 0                      # nothing to do; the normal case on most runs
 fi
 
 # The server never has local edits, so a hard reset is the honest way to match
@@ -34,3 +43,4 @@ if [ "$count" -lt 500 ]; then
 fi
 
 rsync -a --delete public/ "$DOCROOT/"
+echo "pivotce deploy: published $count pages to $DOCROOT"
