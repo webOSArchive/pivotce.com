@@ -54,7 +54,7 @@ shell's `PATH`, so a mismatch fails only under cron.
 Check the paths at the top of `deploy.sh` match your box, then run it once:
 
 ```sh
-sudo /home/wosa/pivotce-src/deploy.sh
+/home/wosa/pivotce-src/deploy.sh
 ```
 
 **Keeping it current**
