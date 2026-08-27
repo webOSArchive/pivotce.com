@@ -8,22 +8,29 @@
   box, and pulling the editor from a CDN at page load would hand a third party
   write access to the repo through whoever is signed in.
 
-  PINNED TO 0.197.2 ON PURPOSE. Sveltia releases most days, and 0.198-0.201
-  reworked the content editor (slug editor, list drag-and-drop, app language
-  mode, deploy previews). 0.201.1 -- which was hours old when first vendored --
-  threw Svelte effect_update_depth_exceeded on every click in the editor.
-  Upstream has form here: issue #821 records v0.170.6/.7 broken at startup with
-  .5 fine. Do not bump this to "latest"; move up a few releases at a time and
-  actually open the editor afterwards.
+  THE VERSION IS IN THE FILENAME ON PURPOSE. Cloudflare caches .js by extension
+  with a 4-hour TTL, so replacing the contents of a fixed name left browsers on
+  the previous build long after the origin had updated -- which cost an evening
+  of debugging a bug that had already been fixed. A new version is a new URL,
+  which no cache has ever seen. This page itself is served DYNAMIC, so the new
+  reference is picked up at once.
 
-  To update:
-    V=0.197.2
+  PINNED TO 0.197.2. Sveltia releases most days, and 0.198-0.201 reworked the
+  content editor (slug editor, list drag-and-drop, app language mode, deploy
+  previews). 0.201.1 -- hours old when first vendored -- threw Svelte
+  effect_update_depth_exceeded on every click. Upstream has form: issue #821
+  records v0.170.6/.7 broken at startup with .5 fine. Do not chase "latest";
+  move a few releases at a time and actually open the editor afterwards.
+
+  To update, changing BOTH the filename and the src below:
+    V=0.198.0
     curl -fsSL "https://unpkg.com/@sveltia/cms@$V/dist/sveltia-cms.js" \
-      -o static/admin/sveltia-cms.js
+      -o "static/admin/sveltia-cms-$V.js"
     # Drop the sourcemap reference: the .map is 7.5 MB, has no place on a
-    # static site, and without it the browser logs a fetch error on every load.
-    sed -i '' -e 's|^//# sourceMappingURL=.*$||' static/admin/sveltia-cms.js
+    # static site, and without it the browser logs a fetch error every load.
+    sed -i '' -e 's|^//# sourceMappingURL=.*$||' "static/admin/sveltia-cms-$V.js"
+    git rm static/admin/sveltia-cms-<old>.js
 
   Note: no type="module" -- the docs warn it causes unexpected behaviour.
 -->
-<script src="sveltia-cms.js"></script>
+<script src="sveltia-cms-0.197.2.js"></script>
