@@ -10,6 +10,10 @@
 #
 set -eu
 
+# Absolute path to this script, resolved before any cd so the re-exec below
+# works however we were invoked.
+SELF=$(cd "$(dirname "$0")" && pwd)/$(basename "$0")
+
 REPO=/home/wosa/pivotce-src
 DOCROOT=/home/wosa/wosa-web/pivot
 
@@ -57,7 +61,18 @@ fi
 
 # The server never has local edits, so a hard reset is the honest way to match
 # the repo -- it can't leave a half-merged working tree behind.
+#
+# But the reset rewrites THIS script, and /bin/sh reads a script incrementally
+# by byte offset: continuing after the file changes underneath us executes
+# whatever now sits at that offset, with the old variables still set. Re-exec
+# if we changed. This terminates -- on the second pass HEAD already matches
+# origin, so the reset is a no-op and the checksums agree.
+before=$(cksum < "$SELF")
 git reset --hard --quiet origin/main
+if [ "$before" != "$(cksum < "$SELF")" ]; then
+    echo "pivotce deploy: deploy.sh was updated, restarting with the new version"
+    exec "$SELF" "$@"
+fi
 
 "$HUGO" --minify --gc --cleanDestinationDir --quiet
 
