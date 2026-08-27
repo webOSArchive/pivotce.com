@@ -47,9 +47,11 @@ git clone --depth 1 https://github.com/webOSArchive/pivotce.com /home/wosa/pivot
 mkdir -p /home/wosa/wosa-web/pivot
 ```
 
-The `.deb` installs to `/usr/local/bin`, not `/usr/bin`. Set `HUGO=` at the top
-of `deploy.sh` to whatever `which hugo` reports — cron does not share your
-shell's `PATH`, so a mismatch fails only under cron.
+The `.deb` installs to `/usr/local/bin`, not `/usr/bin`, so if you removed a
+packaged Hugo first your shell may still report `bash: /usr/bin/hugo: No such
+file or directory` — that is bash's cached command path, cleared with `hash -r`.
+`deploy.sh` looks in both directories and then `PATH`, so it needs no edit;
+set `HUGO=` in the environment only to force a specific binary.
 
 Check the paths at the top of `deploy.sh` match your box, then run it once:
 

@@ -12,7 +12,20 @@ set -eu
 
 REPO=/home/wosa/pivotce-src
 DOCROOT=/home/wosa/wosa-web/pivot
-HUGO=/usr/bin/hugo
+
+# Find Hugo. The official .deb installs to /usr/local/bin while distro packages
+# use /usr/bin, and cron does not share your shell's PATH -- so look in both
+# rather than hardcode one. Override by setting HUGO= in the environment.
+if [ -z "${HUGO:-}" ]; then
+    for candidate in /usr/local/bin/hugo /usr/bin/hugo; do
+        if [ -x "$candidate" ]; then HUGO=$candidate; break; fi
+    done
+fi
+[ -n "${HUGO:-}" ] || HUGO=$(command -v hugo 2>/dev/null || true)
+if [ -z "${HUGO:-}" ] || [ ! -x "$HUGO" ]; then
+    echo "pivotce deploy: hugo not found in /usr/local/bin, /usr/bin or PATH" >&2
+    exit 1
+fi
 
 cd "$REPO"
 mkdir -p "$DOCROOT"
