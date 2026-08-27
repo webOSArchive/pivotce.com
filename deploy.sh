@@ -10,7 +10,7 @@ set -eu
 
 REPO=/home/wosa/pivotce-src
 DOCROOT=/home/wosa/wosa-web/pivot
-HUGO=/usr/local/bin/hugo
+HUGO=/usr/bin/hugo
 
 cd "$REPO"
 
