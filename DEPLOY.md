@@ -28,14 +28,28 @@ deploy keys, no credentials anywhere.
 
 **One-time setup**
 
-```sh
-# Hugo is a single binary with no runtime dependencies.
-sudo apt install hugo          # or grab the extended release from GitHub
-hugo version                   # needs 0.146+ for the layouts/_markup hooks
+**Hugo 0.146 or newer is required.** Do not use `apt install hugo`: Ubuntu
+22.04 ships 0.92, which predates `hugo.toml` and fails with *"Unable to locate
+config file"*. Worse, anything below 0.146 does not read the render hooks in
+`layouts/_markup/` — it builds without complaint while emitting every
+in-article link and image without the `/pivot` prefix, so all of them point
+outside the subdirectory. `deploy.sh` checks the version and refuses to run
+rather than publish that.
 
-sudo git clone --depth 1 https://github.com/webOSArchive/pivotce.com /home/wosa/pivotce-src
-sudo mkdir -p /home/wosa/wosa-web/pivot
+```sh
+sudo apt remove hugo                       # if a packaged one is installed
+curl -fsSLO https://github.com/gohugoio/hugo/releases/download/v0.165.0/hugo_extended_0.165.0_linux-amd64.deb
+sudo dpkg -i hugo_extended_0.165.0_linux-amd64.deb
+hugo version
+which hugo                                 # usually /usr/local/bin/hugo
+
+git clone --depth 1 https://github.com/webOSArchive/pivotce.com /home/wosa/pivotce-src
+mkdir -p /home/wosa/wosa-web/pivot
 ```
+
+The `.deb` installs to `/usr/local/bin`, not `/usr/bin`. Set `HUGO=` at the top
+of `deploy.sh` to whatever `which hugo` reports — cron does not share your
+shell's `PATH`, so a mismatch fails only under cron.
 
 Check the paths at the top of `deploy.sh` match your box, then run it once:
 
