@@ -208,58 +208,55 @@ git clone https://github.com/vencax/netlify-cms-github-oauth-provider \
 cd /home/wosa/pivot-admin/cms-oauth && npm ci
 ```
 
-All configuration goes in `.env` in that directory — the app loads it itself
-via dotenv, and systemd reads the same file, so there is one place to edit:
+The client credentials go in `.env`; everything else is set in the unit below.
+The app also loads this file itself via dotenv, so it works when run by hand
+with `npm start` too:
 
 ```sh
 cat > /home/wosa/pivot-admin/cms-oauth/.env <<'EOF'
-NODE_ENV=production
-PORT=3000
-ORIGINS=www.webosarchive.org
 OAUTH_CLIENT_ID=...
 OAUTH_CLIENT_SECRET=...
 EOF
 chmod 600 /home/wosa/pivot-admin/cms-oauth/.env
-echo '.env' >> /home/wosa/pivot-admin/cms-oauth/.git/info/exclude
 ```
 
 That last line matters: `.env` sits inside a git clone, and a stray `git add`
 in that directory would otherwise stage your client secret.
 
 ```ini
-# /etc/systemd/system/pivot-oauth.service
+# /etc/systemd/system/pivot-oauth.service   -- as deployed
 [Unit]
-Description=Sveltia CMS OAuth relay for pivotCE
+Description=Pivot CMS OAuth relay
 After=network.target
 
 [Service]
-# app.js is the server. package.json's "main" says index.js, but that file
-# only exports middleware and never calls listen() -- pointing ExecStart at
-# it starts a process that does nothing and exits. `npm start` runs app.js.
-#
-# Absolute path to node, from `which node`. Do NOT use /usr/bin/env node here:
-# systemd runs with a minimal PATH (/usr/local/bin:/usr/bin:/bin) that does not
-# include ~/.nvm/versions/node/*/bin, so an nvm-managed node is invisible to it
-# even though it works fine in your shell. Update this line when you upgrade
-# node -- nvm puts each version in its own directory.
-ExecStart=/home/wosa/.nvm/versions/node/v18.20.8/bin/node app.js
-WorkingDirectory=/home/wosa/pivot-admin/cms-oauth
-
 # Runs as wosa because the code lives under /home/wosa. A dedicated account
-# would be better isolation but needs traverse rights all the way down, which
-# is more moving parts than this earns.
+# would be better isolation but needs traverse rights all the way down.
 User=wosa
-
+WorkingDirectory=/home/wosa/pivot-admin/cms-oauth
+Environment=NODE_ENV=production PORT=3000
+Environment=ORIGINS=www.webosarchive.org
 # systemd reads this as root before dropping privileges, so 600 is fine.
 EnvironmentFile=/home/wosa/pivot-admin/cms-oauth/.env
+
+# app.js is the server. package.json's "main" says index.js, but that file
+# only exports middleware and never calls listen() -- point ExecStart at it
+# and you get a process that does nothing and exits. `npm start` runs app.js.
+#
+# Absolute path to node, from `which node`. NOT /usr/bin/env node: systemd
+# runs with a minimal PATH (/usr/local/bin:/usr/bin:/bin) that excludes
+# ~/.nvm/versions/node/*/bin, so an nvm-managed node resolves in your shell
+# and is invisible here. Update this line when you upgrade node -- nvm puts
+# every version in its own directory.
+ExecStart=/home/wosa/.nvm/versions/node/v18.20.8/bin/node app.js
 Restart=on-failure
 
 NoNewPrivileges=true
 PrivateTmp=true
 ProtectSystem=strict
-# NOT ProtectHome=true: that hides /home entirely, and the service would fail
-# to reach its own WorkingDirectory. read-only still denies writes, which is
-# all this relay needs -- it holds no state.
+# NOT ProtectHome=true: that hides /home entirely and the service cannot reach
+# its own WorkingDirectory. read-only still denies writes, which is all this
+# relay needs -- it holds no state, and PrivateTmp gives it a writable /tmp.
 ProtectHome=read-only
 
 [Install]
@@ -274,12 +271,16 @@ journalctl -u pivot-oauth -n 20 --no-pager
 ```
 
 A healthy start logs `Netlify CMS OAuth provider listening on port 3000`.
-Then check it end to end — this should 302 to github.com:
+Then check it end to end — both should return `302` with a `Location` of
+`https://github.com/login/oauth/authorize?...client_id=...`:
 
 ```sh
 curl -sI localhost:3000/auth | head -1
-curl -sI https://www.webosarchive.org/pivot/oauth/auth | head -1
+curl -sI "https://www.webosarchive.org/pivot/oauth/auth?provider=github" | head -1
 ```
+
+If the first works and the second does not, it is the nginx proxy block in
+§2. If neither does, read `journalctl -u pivot-oauth -n 20`.
 
 Pin the version and read the source before trusting it — Sveltia's docs flag
 third-party OAuth clients as unreviewed. The alternative is their Cloudflare
