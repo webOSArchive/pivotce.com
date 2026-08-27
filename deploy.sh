@@ -17,6 +17,20 @@ HUGO=/usr/bin/hugo
 cd "$REPO"
 mkdir -p "$DOCROOT"
 
+# The render hooks in layouts/_markup/ -- which prefix every in-article link and
+# image with the /pivot subpath -- need Hugo 0.146+. An older Hugo builds with no
+# error and silently emits links that escape the subdirectory, which the page
+# count below cannot detect. Fail loudly instead.
+ver=$("$HUGO" version | sed -n 's/.*hugo v\([0-9][0-9]*\)\.\([0-9][0-9]*\).*/\1 \2/p')
+if [ -n "$ver" ]; then
+    # shellcheck disable=SC2086
+    set -- $ver
+    if [ "$1" -eq 0 ] && [ "$2" -lt 146 ]; then
+        echo "pivotce deploy: Hugo 0.$2 is too old, need 0.146+ (apt ships 0.92)" >&2
+        exit 1
+    fi
+fi
+
 git fetch --quiet --depth 1 origin main
 
 # Rebuild when the repo has moved, when the docroot has never been populated
