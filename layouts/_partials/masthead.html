@@ -1,4 +1,22 @@
+{{/*
+  The pivotCE wordmark, recovered from the original theme at
+  /wp-content/themes/pivotce2/images/logo_klein.png and mirrored locally --
+  like every other image here, it must not depend on pivotce.com.
+
+  This is the light-on-dark variant, which is what the masthead needs. The
+  archive also holds Logo_pivotCE_dunkel_2302.png, but that one is dark-on-
+  transparent and disappears against this background.
+
+  width/height are the intrinsic pixel size so the browser reserves the right
+  box before the image loads; CSS scales it down, which also keeps it sharp on
+  high-density screens.
+*/}}
 <div class="masthead">
-  <h1><a href="{{ site.Home.RelPermalink }}">pivotCE</a></h1>
+  <h1>
+    <a href="{{ site.Home.RelPermalink }}">
+      <img src="{{ partial "url.html" "/img/pivotce-logo.png" }}"
+           alt="pivotCE" width="279" height="96">
+    </a>
+  </h1>
   <p>webOS News, Tips, and Tricks</p>
 </div>

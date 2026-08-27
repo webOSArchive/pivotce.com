@@ -35,9 +35,11 @@ a:hover    { color: #3E0BF9; }
   background-color: rgb(41, 40, 40);
   text-align: center;
 }
-.masthead h1 { margin: 0; font-size: 1.9em; }
-.masthead h1 a, .masthead h1 a:visited { color: rgb(255, 175, 88); text-decoration: none; }
-.masthead p  { margin: 6px 0 0 0; font-size: 0.8em; color: #bbb; }
+.masthead h1 { margin: 0; line-height: 0; }
+.masthead h1 a { display: inline-block; }
+/* Shown at ~55% of its intrinsic 279x96, so it stays sharp on 2x displays. */
+.masthead h1 img { display: block; width: auto; height: 52px; max-width: 100%; }
+.masthead p  { margin: 10px 0 0 0; font-size: 0.8em; color: #bbb; }
 
 /* ---- article -------------------------------------------------------- */
 .post-title { font-size: 1.6em; line-height: 1.25; margin: 0 0 6px 0; }
@@ -145,5 +147,5 @@ footer.site a:hover { color: #fff; }
 
 @media screen and (max-width: 600px) {
   .post-list-item .thumb { float: none; margin: 0 0 10px 0; max-width: 100%; }
-  .masthead h1 { font-size: 1.4em; }
+  .masthead h1 img { height: 38px; }
 }
