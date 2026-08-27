@@ -1,0 +1,11 @@
+{{/*
+  Header for a listing page. Deliberately NOT .post-title: when a listing used
+  the same class as the entries beneath it, the heading read as an article with
+  no body. Styled as the heading bar used across webosarchive.org.
+
+  Call with a dict: (dict "title" "..." "subtitle" "...").
+*/}}
+<div class="page-header">
+  <h1>{{ .title }}</h1>
+  {{ with .subtitle }}<p>{{ . }}</p>{{ end }}
+</div>

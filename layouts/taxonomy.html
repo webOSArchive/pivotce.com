@@ -1,0 +1,22 @@
+{{ define "main" }}
+  {{/* The index of terms (/tags/, /author/). These are not articles, so they
+       get a compact list with counts rather than post cards carrying a date
+       borrowed from whichever post happened to be newest. */}}
+  {{/* The taxonomy is keyed "author" (singular) in hugo.toml because that is
+       the front-matter field name, which makes Hugo title the index page
+       "Author". Say "Authors" here without renaming the field. */}}
+  {{ $plural := .Data.Plural }}
+  {{ $title := .Title }}
+  {{ if eq $plural "author" }}{{ $plural = "authors" }}{{ $title = "Authors" }}{{ end }}
+  {{ partial "page-header.html" (dict
+      "title" $title
+      "subtitle" (printf "%d %s" (len .Pages) $plural)) }}
+  <ul class="term-index">
+    {{ range .Pages.ByTitle }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        <span>{{ len .Pages }}</span>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

@@ -1,0 +1,17 @@
+{{ define "main" }}
+  {{ $n := len .Pages }}
+  {{/* "Alan Morford" alone is ambiguous next to a list of posts; say what the
+       page is. .Data.Singular is the taxonomy name from hugo.toml. */}}
+  {{ $label := .Title }}
+  {{ $s := .Data.Singular }}
+  {{ if eq $s "author" }}{{ $label = printf "Articles by %s" .Title }}
+  {{ else if eq $s "category" }}{{ $label = printf "Category: %s" .Title }}
+  {{ else if eq $s "tag" }}{{ $label = printf "Tagged “%s”" .Title }}
+  {{ end }}
+  {{ partial "page-header.html" (dict
+      "title" $label
+      "subtitle" (printf "%d article%s" $n (cond (eq $n 1) "" "s"))) }}
+  {{ $paginator := .Paginate .Pages }}
+  {{ range $paginator.Pages }}{{ partial "post-card.html" . }}{{ end }}
+  {{ partial "pager.html" $paginator }}
+{{ end }}

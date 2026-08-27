@@ -86,11 +86,32 @@ a:hover    { color: #3E0BF9; }
 
 .featured-image { max-width: 100%; height: auto; display: block; margin: 0 0 20px 0; }
 
+/* ---- listing page header --------------------------------------------- */
+/* The heading bar used for page titles on webosarchive.org, with the
+   masthead's orange as an accent. Visually distinct from .post-title so a
+   listing header can never be mistaken for an entry in the list below it. */
+.page-header {
+  background-color: rgb(41, 40, 40);
+  border-left: 4px solid rgb(255, 175, 88);
+  padding: 10px 15px;
+  margin: 0 0 22px 0;
+}
+.page-header h1 { margin: 0; font-size: 1.3em; line-height: 1.3; }
+.page-header p  { margin: 5px 0 0 0; font-size: 0.72em; color: #9a9a9a; }
+
+.term-index { list-style: none; padding: 0; margin: 0; }
+.term-index li {
+  padding: 7px 2px;
+  border-bottom: 1px solid #2a2a2a;
+}
+.term-index li span { color: #8d8d8d; font-size: 0.78em; margin-left: 8px; }
+
 /* ---- listing -------------------------------------------------------- */
 .post-list-item {
   padding: 16px 0;
   border-bottom: 1px solid #2a2a2a;
 }
+.post-list-item .post-title { font-size: 1.25em; }
 .post-list-item .summary { color: #cfcfcf; font-size: 0.9em; margin: 8px 0 0 0; }
 .post-list-item .thumb {
   float: right;

@@ -1,5 +1,8 @@
 {{ define "main" }}
-  <h1 class="post-title">{{ .Title }}</h1>
+  {{ $n := len .Pages }}
+  {{ partial "page-header.html" (dict
+      "title" .Title
+      "subtitle" (printf "%d article%s" $n (cond (eq $n 1) "" "s"))) }}
   {{ with .Content }}<div class="post-body">{{ . }}</div>{{ end }}
   {{ $paginator := .Paginate .Pages }}
   {{ range $paginator.Pages }}
