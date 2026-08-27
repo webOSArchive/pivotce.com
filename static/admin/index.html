@@ -4,13 +4,26 @@
 <meta name="robots" content="noindex">
 <title>pivotCE Editor</title>
 <!--
-  Sveltia CMS. Vendored rather than hotlinked: this file is served from our own
-  VM, and pulling the editor from a CDN at page load would hand a third party
+  Sveltia CMS, vendored rather than hotlinked: this file is served from our own
+  box, and pulling the editor from a CDN at page load would hand a third party
   write access to the repo through whoever is signed in.
 
+  PINNED TO 0.197.2 ON PURPOSE. Sveltia releases most days, and 0.198-0.201
+  reworked the content editor (slug editor, list drag-and-drop, app language
+  mode, deploy previews). 0.201.1 -- which was hours old when first vendored --
+  threw Svelte effect_update_depth_exceeded on every click in the editor.
+  Upstream has form here: issue #821 records v0.170.6/.7 broken at startup with
+  .5 fine. Do not bump this to "latest"; move up a few releases at a time and
+  actually open the editor afterwards.
+
   To update:
-    curl -fsSL https://unpkg.com/@sveltia/cms@0.201.1/dist/sveltia-cms.js \
+    V=0.197.2
+    curl -fsSL "https://unpkg.com/@sveltia/cms@$V/dist/sveltia-cms.js" \
       -o static/admin/sveltia-cms.js
+    # Drop the sourcemap reference: the .map is 7.5 MB, has no place on a
+    # static site, and without it the browser logs a fetch error on every load.
+    sed -i '' -e 's|^//# sourceMappingURL=.*$||' static/admin/sveltia-cms.js
+
   Note: no type="module" -- the docs warn it causes unexpected behaviour.
 -->
 <script src="sveltia-cms.js"></script>
