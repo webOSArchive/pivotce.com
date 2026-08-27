@@ -198,9 +198,31 @@ following a redirect to https cannot complete it.
 ## 3. OAuth relay
 
 Register a GitHub OAuth app under the **webOSArchive** org with callback
-`https://www.webosarchive.org/pivot/oauth/callback`. Then deploy
+`https://www.webosarchive.org/pivot/oauth/callback`. Then install
 [`vencax/netlify-cms-github-oauth-provider`](https://github.com/vencax/netlify-cms-github-oauth-provider)
-(Decap-protocol compatible, which Sveltia speaks) to `/opt/cms-oauth`:
+(Decap-protocol compatible, which Sveltia speaks) alongside the site clone:
+
+```sh
+git clone https://github.com/vencax/netlify-cms-github-oauth-provider \
+  /home/wosa/pivot-admin/cms-oauth
+cd /home/wosa/pivot-admin/cms-oauth && npm ci --omit=dev
+```
+
+Put the credentials in `.env` in that directory, readable only by you:
+
+```sh
+cat > /home/wosa/pivot-admin/cms-oauth/.env <<'EOF'
+OAUTH_CLIENT_ID=...
+OAUTH_CLIENT_SECRET=...
+EOF
+chmod 600 /home/wosa/pivot-admin/cms-oauth/.env
+```
+
+That file sits inside a git clone, so keep it out of any commit:
+
+```sh
+echo '.env' >> /home/wosa/pivot-admin/cms-oauth/.git/info/exclude
+```
 
 ```ini
 # /etc/systemd/system/cms-oauth.service
@@ -209,20 +231,35 @@ Description=Sveltia CMS OAuth relay
 After=network.target
 
 [Service]
-User=cmsoauth
-WorkingDirectory=/opt/cms-oauth
+# Runs as wosa because the code lives under /home/wosa. A dedicated account
+# would be better isolation but needs traverse rights all the way down, which
+# is more moving parts than this earns.
+User=wosa
+WorkingDirectory=/home/wosa/pivot-admin/cms-oauth
 Environment=NODE_ENV=production PORT=3000
 Environment=ORIGINS=www.webosarchive.org
-EnvironmentFile=/etc/cms-oauth.env      # OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET; chmod 600
+# systemd reads this as root before dropping privileges, so 600 is fine.
+EnvironmentFile=/home/wosa/pivot-admin/cms-oauth/.env
 ExecStart=/usr/bin/node index.js
 Restart=on-failure
+
 NoNewPrivileges=true
-ProtectSystem=strict
-ProtectHome=true
 PrivateTmp=true
+ProtectSystem=strict
+# NOT ProtectHome=true: that hides /home entirely, and the service would fail
+# to reach its own WorkingDirectory. read-only still denies writes, which is
+# all this relay needs -- it holds no state.
+ProtectHome=read-only
 
 [Install]
 WantedBy=multi-user.target
+```
+
+```sh
+sudo systemctl daemon-reload
+sudo systemctl enable --now cms-oauth
+systemctl status cms-oauth
+curl -sI localhost:3000/auth          # expect a redirect to github.com
 ```
 
 Pin the version and read the source before trusting it — Sveltia's docs flag
