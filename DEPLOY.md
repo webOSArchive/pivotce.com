@@ -237,10 +237,12 @@ After=network.target
 # only exports middleware and never calls listen() -- pointing ExecStart at
 # it starts a process that does nothing and exits. `npm start` runs app.js.
 #
-# /usr/bin/env rather than a hardcoded /usr/bin/node: node lands in /usr/bin
-# from apt and /usr/local/bin from nodesource, and systemd's default PATH
-# covers both.
-ExecStart=/usr/bin/env node app.js
+# Absolute path to node, from `which node`. Do NOT use /usr/bin/env node here:
+# systemd runs with a minimal PATH (/usr/local/bin:/usr/bin:/bin) that does not
+# include ~/.nvm/versions/node/*/bin, so an nvm-managed node is invisible to it
+# even though it works fine in your shell. Update this line when you upgrade
+# node -- nvm puts each version in its own directory.
+ExecStart=/home/wosa/.nvm/versions/node/v18.20.8/bin/node app.js
 WorkingDirectory=/home/wosa/pivot-admin/cms-oauth
 
 # Runs as wosa because the code lives under /home/wosa. A dedicated account
