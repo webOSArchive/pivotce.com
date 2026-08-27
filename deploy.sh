@@ -17,6 +17,11 @@ SELF=$(cd "$(dirname "$0")" && pwd)/$(basename "$0")
 REPO=/home/wosa/pivot-admin/pivotce-src
 DOCROOT=/home/wosa/wosa-web/pivot
 
+# Records the commit actually published. Untracked, so `git reset --hard`
+# leaves it alone; kept beside the clone rather than in the docroot, which
+# rsync --delete would wipe.
+STAMP=$REPO/.last-deployed
+
 # Find Hugo. The official .deb installs to /usr/local/bin while distro packages
 # use /usr/bin, and cron does not share your shell's PATH -- so look in both
 # rather than hardcode one. Override by setting HUGO= in the environment.
@@ -48,19 +53,14 @@ if [ -n "$ver" ]; then
     fi
 fi
 
-git fetch --quiet --depth 1 origin main
-
-# Rebuild when the repo has moved, when the docroot has never been populated
-# (the first run after a fresh clone, where HEAD already matches origin), or
-# when asked. Checking only git would leave a fresh clone doing nothing.
-if [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ] \
-   && [ -f "$DOCROOT/index.html" ] \
-   && [ "${1:-}" != "--force" ]; then
-    exit 0                      # nothing to do; the normal case on most runs
-fi
+# Explicit refspec: on a shallow clone `git fetch origin main` can update only
+# FETCH_HEAD, leaving refs/remotes/origin/main stale.
+git fetch --quiet --depth 1 origin main:refs/remotes/origin/main
 
 # The server never has local edits, so a hard reset is the honest way to match
-# the repo -- it can't leave a half-merged working tree behind.
+# the repo -- it can't leave a half-merged working tree behind. Doing this
+# before the decision below keeps the script authoritative: a manual pull can
+# move the tree, but only a real deploy moves the stamp.
 #
 # But the reset rewrites THIS script, and /bin/sh reads a script incrementally
 # by byte offset: continuing after the file changes underneath us executes
@@ -78,6 +78,16 @@ if [ "$before" != "$(cksum < "$SELF")" ]; then
     exec "$SELF" --force
 fi
 
+# Compare against what was last PUBLISHED, not against where git happens to
+# be: a manual `git pull` moves HEAD without deploying anything, and the old
+# HEAD-vs-origin test then reported "nothing to do" forever.
+target=$(git rev-parse HEAD)
+if [ "${1:-}" != "--force" ] \
+   && [ -f "$STAMP" ] && [ "$(cat "$STAMP")" = "$target" ] \
+   && [ -f "$DOCROOT/index.html" ]; then
+    exit 0                      # already published; the normal case on most runs
+fi
+
 "$HUGO" --minify --gc --cleanDestinationDir --quiet
 
 # Never publish a truncated build over the live archive. The archive alone is
@@ -89,4 +99,5 @@ if [ "$count" -lt 500 ]; then
 fi
 
 rsync -a --delete public/ "$DOCROOT/"
-echo "pivotce deploy: published $count pages to $DOCROOT"
+printf '%s\n' "$target" > "$STAMP"
+echo "pivotce deploy: published $count pages to $DOCROOT ($target)"
