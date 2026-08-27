@@ -95,12 +95,53 @@ that, so there is no reason to switch unless you want builds off your own box.
 
 ## 2. Server config
 
-Almost nothing to add. The existing rules already serve static files and PHP;
-`/pivot/` inherits both. Two additions:
+Each site on this host lives in its own directory under `/home/wosa/wosa-web/`,
+and the `www.webosarchive.org` vhost roots at `.../wosa-web/webosarchive.org`.
+The archive sits alongside it at `.../wosa-web/pivot`, outside that root, so the
+`/pivot` URLs need pointing at it explicitly.
+
+Use `root`, not `alias`. The URL prefix and the directory are both named
+`pivot`, so `root /home/wosa/wosa-web` resolves `/pivot/x` to
+`/home/wosa/wosa-web/pivot/x` by plain concatenation. `alias` would work for
+static files but silently breaks PHP: `$document_root` then no longer matches
+the served directory, so `$document_root$fastcgi_script_name` builds a path
+that does not exist and nginx returns 404 for `menu.php` while every static
+file keeps working.
+
+Only URIs beginning with `/pivot` reach these blocks, so the sibling site
+directories stay unreachable.
 
 ```nginx
-# The CMS: https only (OAuth requires it) and not worth indexing.
+# Bare /pivot -> /pivot/, otherwise it misses the prefix location below.
+location = /pivot {
+    return 301 $scheme://$host/pivot/;
+}
+
+location /pivot/ {
+    root /home/wosa/wosa-web;
+    try_files $uri $uri/ /pivot/404.html;
+}
+
+# menu.php. Regex locations beat prefix locations, so this wins over the
+# block above -- the ordering here does not matter.
+location ~ ^/pivot/.*\.php$ {
+    root /home/wosa/wosa-web;
+    include fastcgi_params;
+    fastcgi_pass unix:/run/php/php-fpm.sock;   # copy from the existing PHP block
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+}
+
+# Path-preserving redirect, so deep links survive.
+location ^~ /pivotce/ {
+    rewrite ^/pivotce/(.*)$ /pivot/$1 permanent;
+}
+location = /pivotce {
+    return 301 $scheme://$host/pivot/;
+}
+
+# The CMS: https only (OAuth requires it), and not worth indexing.
 location /pivot/admin/ {
+    root /home/wosa/wosa-web;
     if ($scheme = http) { return 301 https://$host$request_uri; }
     try_files $uri $uri/ /pivot/admin/index.html;
 }
@@ -115,13 +156,13 @@ location /pivot/oauth/ {
 }
 ```
 
-And a 404 for the subtree, so a bad `/pivot/...` URL gets the archive's own
-page rather than the main site's:
+Take `fastcgi_pass` verbatim from whichever block already serves `/menu.php` —
+the socket path varies by PHP version.
 
-```nginx
-location /pivot/ {
-    try_files $uri $uri/ /pivot/404.html;
-}
+```sh
+grep -rn "fastcgi_pass" /etc/nginx/
+sudo nginx -t && sudo systemctl reload nginx
+curl -sI https://www.webosarchive.org/pivot/menu.php     # expect 200
 ```
 
 Keep serving `/pivot/` over plain http as well as https. A large share of this
