@@ -70,8 +70,12 @@ fi
 before=$(cksum < "$SELF")
 git reset --hard --quiet origin/main
 if [ "$before" != "$(cksum < "$SELF")" ]; then
+    # --force, not "$@": the reset above has already moved HEAD to origin/main,
+    # so a plain restart would see "nothing new" plus a populated docroot and
+    # exit without building -- silently skipping the deploy of the very commit
+    # that updated this script.
     echo "pivotce deploy: deploy.sh was updated, restarting with the new version"
-    exec "$SELF" "$@"
+    exec "$SELF" --force
 fi
 
 "$HUGO" --minify --gc --cleanDestinationDir --quiet
