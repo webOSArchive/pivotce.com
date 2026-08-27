@@ -1,0 +1,27 @@
+/*
+ * Placement for the injected webOS Archive top-nav bar (see js/wosa-menu.js,
+ * which is the shared copy -- keep it identical to the one in webos-docs).
+ *
+ * The bar is fixed at 45px, matching .menu-wrapper's height upstream. Space is
+ * reserved only once .wosa-has-menu lands (the injector adds it on success), so
+ * a device that can't load the menu shows no empty gap.
+ */
+#wosa-menu-mount {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 45px;
+  z-index: 500;
+  background: #414141;      /* fallback fill until menu.css paints */
+}
+
+/* Let the menu's hover dropdowns spill below the 45px bar. */
+#wosa-menu-mount .menu-wrapper,
+#wosa-menu-mount .wosaMenu {
+  overflow: visible;
+}
+
+.wosa-has-menu body {
+  padding-top: 45px;
+}

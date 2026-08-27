@@ -1,0 +1,149 @@
+/*
+ * pivotCE archive styles.
+ *
+ * Palette, type and link colours are lifted from www.webosarchive.org/wosa.css
+ * so the blog reads as part of the same site. Deliberately conservative CSS --
+ * no flexbox, grid or custom properties -- because a large share of the
+ * readership is on webOS 2.x/3.x WebKit, which predates all three.
+ */
+* { box-sizing: border-box; }
+
+html, body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #101110;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+a          { color: #7e65d6; }
+a:visited  { color: #7e65d6; }
+a:hover    { color: #3E0BF9; }
+
+.content {
+  max-width: 960px;
+  padding: 20px 14px 40px 14px;
+  margin: auto;
+}
+
+/* ---- masthead ------------------------------------------------------- */
+.masthead {
+  padding: 22px 15px 14px 15px;
+  border-bottom: 4px solid darkorange;
+  background-color: rgb(41, 40, 40);
+  text-align: center;
+}
+.masthead h1 { margin: 0; font-size: 1.9em; }
+.masthead h1 a, .masthead h1 a:visited { color: rgb(255, 175, 88); text-decoration: none; }
+.masthead p  { margin: 6px 0 0 0; font-size: 0.8em; color: #bbb; }
+
+/* ---- article -------------------------------------------------------- */
+.post-title { font-size: 1.6em; line-height: 1.25; margin: 0 0 6px 0; }
+.post-title a, .post-title a:visited { color: #fff; text-decoration: none; }
+.post-title a:hover { color: #7e65d6; }
+
+.post-meta {
+  font-size: 0.75em;
+  color: #9a9a9a;
+  margin: 0 0 18px 0;
+}
+.post-meta a, .post-meta a:visited { color: #9f8ce0; }
+
+.post-body h2, .post-body h3, .post-body h4 {
+  color: rgb(255, 175, 88);
+  margin-top: 1.8em;
+  line-height: 1.3;
+}
+.post-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 18px auto;
+}
+.post-body em img { margin-bottom: 4px; }
+.post-body blockquote {
+  margin: 18px 0;
+  padding: 2px 16px;
+  border-left: 4px solid dimgray;
+  background-color: #1b1b1b;
+  color: #d8d8d8;
+}
+.post-body pre {
+  background-color: #1b1b1b;
+  padding: 12px;
+  overflow-x: auto;          /* long shell lines scroll, page never does */
+  font-size: 0.85em;
+}
+.post-body code { background-color: #1b1b1b; padding: 1px 4px; font-size: 0.9em; }
+.post-body pre code { background: none; padding: 0; }
+.post-body table { border-collapse: collapse; width: 100%; }
+.post-body th, .post-body td { border: 1px solid #3a3a3a; padding: 6px 8px; text-align: left; }
+.post-body hr { border: 0; border-top: 1px solid #3a3a3a; margin: 28px 0; }
+
+.featured-image { max-width: 100%; height: auto; display: block; margin: 0 0 20px 0; }
+
+/* ---- listing -------------------------------------------------------- */
+.post-list-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+.post-list-item .summary { color: #cfcfcf; font-size: 0.9em; margin: 8px 0 0 0; }
+.post-list-item .thumb {
+  float: right;
+  margin: 0 0 10px 16px;
+  max-width: 160px;
+  height: auto;
+}
+.post-list-item:after { content: ""; display: table; clear: both; }
+
+.pager { padding: 24px 0; text-align: center; font-size: 0.85em; }
+.pager a { padding: 0 8px; }
+
+/* ---- archived-comment thread ---------------------------------------- */
+.comments {
+  margin-top: 40px;
+  border-top: 2px solid dimgray;
+  padding-top: 10px;
+}
+.comments h2 { font-size: 1.15em; color: rgb(255, 175, 88); }
+.comments .note { font-size: 0.75em; color: #9a9a9a; margin-top: -6px; }
+/* Replies arrive as nested blockquotes from the WordPress export. */
+.comments blockquote {
+  margin: 12px 0 12px 18px;
+  padding: 2px 14px;
+  border-left: 3px solid #4a4a4a;
+  background-color: #171717;
+}
+
+/* ---- provenance ----------------------------------------------------- */
+.provenance {
+  margin-top: 32px;
+  padding: 10px 14px;
+  background-color: #1b1b1b;
+  border-left: 4px solid rgb(255, 175, 88);
+  font-size: 0.75em;
+  color: #b5b5b5;
+}
+.provenance code { color: #d0d0d0; word-break: break-all; }
+
+/* ---- footer --------------------------------------------------------- */
+/* Static, not fixed like wosa.css -- articles here are far taller than the
+   landing pages that stylesheet was written for. */
+footer.site {
+  background-color: rgb(41, 40, 40);
+  border-top: 2px solid dimgray;
+  text-align: center;
+  color: #fff;
+  font-size: 0.7em;
+  padding: 14px 10px;
+  margin-top: 30px;
+}
+footer.site a, footer.site a:visited { color: lightblue; }
+footer.site a:hover { color: #fff; }
+
+@media screen and (max-width: 600px) {
+  .post-list-item .thumb { float: none; margin: 0 0 10px 0; max-width: 100%; }
+  .masthead h1 { font-size: 1.4em; }
+}

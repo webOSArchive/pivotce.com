@@ -1,0 +1,15 @@
+{{/*
+  Taxonomy links come from .GetTerms, never hand-built from the raw value:
+  Hugo's own URLs transliterate accents ("Sören Müller" -> /author/soren-muller/)
+  and normalise characters like "+", which urlize does not.
+*/}}
+<p class="post-meta">
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+  {{ with .GetTerms "author" }} · by
+    {{ range $i, $t := . }}{{ if $i }}, {{ end }}<a href="{{ $t.RelPermalink }}">{{ $t.LinkTitle }}</a>{{ end }}
+  {{ end }}
+  {{ with .GetTerms "categories" }} ·
+    {{ range $i, $t := . }}{{ if $i }}, {{ end }}<a href="{{ $t.RelPermalink }}">{{ $t.LinkTitle }}</a>{{ end }}
+  {{ end }}
+  {{ if .Params.archived }} · <span title="Recovered from the original pivotCE.com">archived</span>{{ end }}
+</p>

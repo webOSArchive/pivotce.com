@@ -166,6 +166,35 @@ site's own Oct–Nov 2013 traffic. Their captions are preserved in
   written. Attribution instead lives in each article's `author` field and in
   `authors.tsv` (14 authors). `pages/donors.md` is real and names the funders.
 
+## The site
+
+The archive above is the source of truth. `seed_hugo.py` projects it once into
+`content/`, which Hugo builds and which [Sveltia CMS](https://sveltiacms.app)
+edits from then on — so community members can write new articles alongside the
+rescued ones without touching Git directly. See `DEPLOY.md` for the server side.
+
+```sh
+./.venv/bin/python seed_hugo.py   # one-time: articles/ -> content/
+hugo server -D                    # http://localhost:1313/pivot/
+```
+
+The seed is deliberately one-shot; re-running it with `--force` would discard
+anything written since. What it changes on the way through:
+
+| | |
+| --- | --- |
+| Dates | `2013-02-01 18:46:16 UTC` → RFC 3339, which Hugo parses |
+| Duplicate H1 | Removed — every recovered file repeats its title, and the theme renders it |
+| Image paths | `../images/…` → `/images/…`; `images/` is *mounted* at `/images`, not copied |
+| Internal links | 276 `pivotce.com` links repointed at local copies, so the archive stops feeding the ad-injected domain. 5 are left alone: three `/tag/` URLs no surviving post carries, and `/contribute-contact/`, a page that was never recovered |
+| Angle-bracket prose | `<gasp>`, `<sigh>`, `<app name>` escaped — Goldmark would otherwise read them as HTML and drop the words |
+| A stray BOM | One 2014 title contains a literal U+FEFF that WordPress encoded into its URL as `%ef%bb%bf`. Stripped, so that post is served at a clean path; `source_url` still records the original |
+| Comments | The 53 threads become headless pages rendered into their articles — never routed on their own |
+
+Permalinks reproduce every article's original `source_url`, so ten years of
+inbound links and Wayback references still resolve: **278 of 279 exact**, the
+BOM post being the deliberate exception.
+
 ## Regenerating
 
 ```sh

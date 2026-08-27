@@ -1,0 +1,16 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>pivotCE Editor</title>
+<!--
+  Sveltia CMS. Vendored rather than hotlinked: this file is served from our own
+  VM, and pulling the editor from a CDN at page load would hand a third party
+  write access to the repo through whoever is signed in.
+
+  To update:
+    curl -fsSL https://unpkg.com/@sveltia/cms@0.201.1/dist/sveltia-cms.js \
+      -o static/admin/sveltia-cms.js
+  Note: no type="module" -- the docs warn it causes unexpected behaviour.
+-->
+<script src="sveltia-cms.js"></script>

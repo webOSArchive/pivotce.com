@@ -1,0 +1,4 @@
+{{- /* Same reasoning as render-link.html. */ -}}
+{{- $d := .Destination -}}
+{{- if hasPrefix $d "/" -}}{{- $d = path.Join site.Home.RelPermalink $d -}}{{- end -}}
+<img src="{{ $d }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">

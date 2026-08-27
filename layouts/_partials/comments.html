@@ -1,0 +1,16 @@
+{{/*
+  Archived comment threads. The recovered files live in content/comments/ as
+  headless pages (never routed, never listed) so their Markdown -- including
+  the nested blockquotes that carry replies -- renders through Goldmark exactly
+  like article bodies do.
+*/}}
+{{ with .Params.comment_page }}
+  {{ with site.GetPage (printf "/comments/%s" .) }}
+    <div class="comments">
+      <h2>{{ .Params.comment_count }} comment{{ if ne .Params.comment_count 1 }}s{{ end }}</h2>
+      <p class="note">Recovered from the original site. Names and dates only —
+        the public WordPress API does not expose commenter email addresses or IPs.</p>
+      {{ .Content }}
+    </div>
+  {{ end }}
+{{ end }}

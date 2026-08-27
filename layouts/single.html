@@ -1,0 +1,38 @@
+{{ define "main" }}
+<article>
+  <h1 class="post-title">{{ .Title }}</h1>
+  {{ partial "post-meta.html" . }}
+
+  {{ with .Params.featured_image }}
+    <img class="featured-image" src="{{ partial "url.html" . }}" alt="">
+  {{ end }}
+
+  <div class="post-body">
+    {{ .Content }}
+  </div>
+
+  {{ with .GetTerms "tags" }}
+    <p class="post-meta">Tagged
+      {{ range $i, $t := . }}{{ if $i }}, {{ end }}<a href="{{ $t.RelPermalink }}">{{ $t.LinkTitle }}</a>{{ end }}
+    </p>
+  {{ end }}
+
+  {{ partial "comments.html" . }}
+
+  {{ if .Params.archived }}
+    {{ with .Params.source_url }}
+      <p class="provenance">
+        {{ site.Params.archiveNote }}
+        Originally published at <code>{{ . }}</code> — that domain has since been
+        sold and now injects advertising, so this is a plain reference rather
+        than a link.
+      </p>
+    {{ end }}
+  {{ end }}
+
+  <p class="pager">
+    {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
+    {{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
+  </p>
+</article>
+{{ end }}

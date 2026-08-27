@@ -1,0 +1,70 @@
+baseURL           = 'https://www.webosarchive.org/pivot/'
+locale            = 'en-us'
+title             = 'pivotCE'
+enableRobotsTXT   = true
+timeZone          = 'UTC'
+summaryLength     = 40
+
+# The rescued posts are the reason this site exists; keep them all reachable
+# without deep pagination.
+[pagination]
+  pagerSize = 20
+
+[permalinks.page]
+  # Matches every article's original source_url, so ten years of inbound links
+  # and Wayback references keep resolving.
+  posts  = '/:year/:month/:day/:slug/'
+  pages  = '/:slug/'
+  events = '/event/:slug/'
+
+[taxonomies]
+  category = 'categories'
+  tag      = 'tags'
+  author   = 'author'
+
+[markup.goldmark.renderer]
+  # Raw HTML stays off: community posts arrive through a CMS and get rendered
+  # verbatim, so this is the cheapest way to keep the archive un-scriptable.
+  # The archive itself needs no HTML -- seed_hugo.py escapes the handful of
+  # places where authors typed angle brackets as prose.
+  unsafe = false
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel   = 3
+
+# The 613 mirrored images stay where the archive put them; mounting beats
+# moving 254 MB into static/ and losing the original directory structure.
+[module]
+  [[module.mounts]]
+    source = 'content'
+    target = 'content'
+  [[module.mounts]]
+    source = 'layouts'
+    target = 'layouts'
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'
+  [[module.mounts]]
+    source = 'data'
+    target = 'data'
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    source = 'images'
+    target = 'static/images'
+
+[outputs]
+  home    = ['html', 'rss']
+  section = ['html', 'rss']
+
+[services.rss]
+  limit = 20
+
+[params]
+  description  = 'webOS News, Tips, and Tricks — the rescued pivotCE archive'
+  # Which item the shared webOS Archive menu should highlight. The value lives
+  # in static/menu.php's default; this is here for reference only.
+  menuContent  = 'pivotce'
+  archiveNote  = 'This article is part of the rescued pivotCE archive.'

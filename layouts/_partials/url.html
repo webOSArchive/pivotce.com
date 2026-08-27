@@ -1,0 +1,6 @@
+{{- /* Root-absolute path -> path under the site's base (e.g. /pivot/...).
+       path.Join drops a trailing slash, so put it back for directory URLs. */ -}}
+{{- if hasPrefix . "/" -}}
+  {{- $j := path.Join site.Home.RelPermalink . -}}
+  {{- if and (hasSuffix . "/") (not (hasSuffix $j "/")) -}}{{ printf "%s/" $j }}{{- else -}}{{ $j }}{{- end -}}
+{{- else -}}{{ . | relURL }}{{- end -}}

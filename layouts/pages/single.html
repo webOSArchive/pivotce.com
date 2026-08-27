@@ -1,0 +1,14 @@
+{{/* Site pages (About, Donors, ...): no byline, no comments, no pager. */}}
+{{ define "main" }}
+<article>
+  <h1 class="post-title">{{ .Title }}</h1>
+  <div class="post-body">
+    {{ .Content }}
+  </div>
+  {{ if .Params.archived }}
+    {{ with .Params.source_url }}
+      <p class="provenance">Archived page. Originally published at <code>{{ . }}</code>.</p>
+    {{ end }}
+  {{ end }}
+</article>
+{{ end }}

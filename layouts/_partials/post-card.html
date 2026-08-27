@@ -1,0 +1,8 @@
+<div class="post-list-item">
+  {{ with .Params.featured_image }}
+    <img class="thumb" src="{{ partial "url.html" . }}" alt="">
+  {{ end }}
+  <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  {{ partial "post-meta.html" . }}
+  {{ with .Summary }}<p class="summary">{{ . }}</p>{{ end }}
+</div>

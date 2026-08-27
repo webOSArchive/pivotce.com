@@ -1,0 +1,13 @@
+{{- /*
+  Repointed internal links are written into the Markdown as root-absolute paths
+  ("/2013/02/01/slug/"), which must gain the /pivot prefix now that the site is
+  served from a subdirectory of www.webosarchive.org.
+
+  relURL is NOT usable here: it leaves a leading-slash path untouched. Joining
+  onto the home page's own RelPermalink is prefix-agnostic, so moving the site
+  again means changing only baseURL.
+*/ -}}
+{{- $d := .Destination -}}
+{{- if hasPrefix $d "/" -}}{{- $d = path.Join site.Home.RelPermalink $d -}}{{- end -}}
+{{- if and (hasSuffix .Destination "/") (not (hasSuffix $d "/")) -}}{{- $d = printf "%s/" $d -}}{{- end -}}
+<a href="{{ $d }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text }}</a>

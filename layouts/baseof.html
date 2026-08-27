@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }} — webOS News, Tips, and Tricks{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 200 }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
+  {{ with .OutputFormats.Get "rss" }}
+  <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">
+  {{ end }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="stylesheet" href="{{ "css/wosa-menu.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/pivotce.css" | relURL }}">
+</head>
+<body>
+
+  {{ partial "masthead.html" . }}
+
+  <div class="content">
+    {{ block "main" . }}{{ end }}
+  </div>
+
+  {{ partial "footer.html" . }}
+
+  <!--
+    Shared across every webOS Archive property; deployed verbatim from
+    webos-docs. It XHRs this site's own /menu.php (see static/menu.php),
+    which defaults the highlighted item to "pivotce".
+  -->
+  <script src="{{ "js/wosa-menu.js" | relURL }}"></script>
+</body>
+</html>
