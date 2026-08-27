@@ -122,8 +122,11 @@ location /pivot/ {
     try_files $uri $uri/ /pivot/404.html;
 }
 
-# menu.php. Regex locations beat prefix locations, so this wins over the
-# block above -- the ordering here does not matter.
+# menu.php. This MUST appear before the vhost's generic `location ~ \.php$`:
+# nginx tests regex locations in the order they are written and takes the
+# first match, so a generic .php block defined earlier swallows these
+# requests and resolves them against the vhost root -- 404 for menu.php
+# while every static file under /pivot/ keeps working.
 location ~ ^/pivot/.*\.php$ {
     root /home/wosa/wosa-web;
     include fastcgi_params;
