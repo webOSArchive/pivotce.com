@@ -119,7 +119,11 @@ location = /pivot {
 
 location /pivot/ {
     root /home/wosa/wosa-web;
-    try_files $uri $uri/ /pivot/404.html;
+    # error_page, not `try_files ... /pivot/404.html`: naming the file in
+    # try_files serves it with a 200, so every missing article would report
+    # success to crawlers and to anything checking the archive for rot.
+    error_page 404 /pivot/404.html;
+    try_files $uri $uri/ =404;
 }
 
 # menu.php. This MUST appear before the vhost's generic `location ~ \.php$`:
@@ -150,7 +154,9 @@ location /pivot/admin/ {
 }
 
 # OAuth relay. The trailing slash strips the prefix, so Sveltia's
-# <base_url>/auth reaches the relay's /auth.
+# <base_url>/auth reaches the relay's /auth. Without this block the request
+# falls through to `location /pivot/` above and returns the site's own 404
+# page, which looks like a broken login rather than a missing service.
 location /pivot/oauth/ {
     if ($scheme = http) { return 301 https://$host$request_uri; }
     proxy_pass http://127.0.0.1:3000/;

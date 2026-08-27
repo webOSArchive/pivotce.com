@@ -3,8 +3,8 @@
 **[www.webosarchive.org/pivot](https://www.webosarchive.org/pivot/)** — webOS
 News, Tips, and Tricks.
 
-pivotCE ran from 2013 to 2024. Its 279 articles were rescued when the domain
-was sold, and the site is open again for new writing. If you have something to
+pivotCE ran from 2013 to 2024. Its 279 articles were rescued from the dormant
+domain, and the site is open again for new writing. If you have something to
 say about webOS, it belongs here.
 
 ## Writing an article
