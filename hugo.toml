@@ -66,5 +66,5 @@ summaryLength     = 40
   description  = 'webOS News, Tips, and Tricks — the pivotCE archive'
   # Which item the shared webOS Archive menu should highlight. The value lives
   # in static/menu.php's default; this is here for reference only.
-  menuContent  = 'pivotce'
+  menuContent  = 'pivot'
   archiveNote  = 'This article is part of the pivotCE archive.'

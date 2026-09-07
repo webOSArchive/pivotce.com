@@ -20,8 +20,8 @@ if ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ||
     $protocol = "http://";
 }
 
-// Which section to highlight in the menu (defaults to pivotce). Sanitised.
-$content = isset($_GET['content']) ? preg_replace('/[^a-zA-Z0-9_-]/', '', $_GET['content']) : 'pivotce';
+// Which section to highlight in the menu (defaults to pivot). Sanitised.
+$content = isset($_GET['content']) ? preg_replace('/[^a-zA-Z0-9_-]/', '', $_GET['content']) : 'pivot';
 
 header('Content-Type: text/html; charset=UTF-8');
 echo file_get_contents($protocol . "www.webosarchive.org/menu.php?content=" . urlencode($content));
