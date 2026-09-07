@@ -1,172 +1,299 @@
 /*
- * pivotCE archive styles.
+ * pivotCE archive styles, modelled on the 2011 HP webOS Developer Blog theme
+ * (hp_palm_devblog_2011): a vertical grey gradient page, white rounded cards
+ * floating on it, an orange article title, teal links, and a right-hand
+ * sidebar of taxonomy links.
  *
- * Palette, type and link colours are lifted from www.webosarchive.org/wosa.css
- * so the blog reads as part of the same site. Deliberately conservative CSS --
- * no flexbox, grid or custom properties -- because a large share of the
- * readership is on webOS 2.x/3.x WebKit, which predates all three.
+ * Deliberately conservative CSS -- floats rather than flexbox or grid, no
+ * custom properties, old -webkit- gradient syntax alongside the standard one
+ * -- because a large share of the readership is on webOS 2.x/3.x WebKit.
  */
-* { box-sizing: border-box; }
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-html, body {
-  font-family: Verdana, sans-serif;
+html { height: 100%; }
+
+body {
   margin: 0;
   padding: 0;
-  background-color: #101110;
-  color: #fff;
-  font-size: 15px;
-  line-height: 1.6;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.62;
+  color: #444;
+  /* Flat fill first: webOS 2.x paints this if it cannot parse the gradient. */
+  background-color: #b4b4b0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8d8d89), to(#d2d2cd));
+  background-image: -webkit-linear-gradient(top, #8d8d89, #d2d2cd);
+  background-image: linear-gradient(to bottom, #8d8d89, #d2d2cd);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-a          { color: #7e65d6; }
-a:visited  { color: #7e65d6; }
-a:hover    { color: #3E0BF9; }
+a         { color: #2e9cba; text-decoration: none; }
+a:visited { color: #2e9cba; }
+a:hover   { color: #1d7d97; text-decoration: underline; }
 
-.content {
-  max-width: 960px;
-  padding: 20px 14px 40px 14px;
-  margin: auto;
-}
+img { border: 0; }
 
-/* ---- masthead ------------------------------------------------------- */
-.masthead {
-  padding: 22px 15px 14px 15px;
-  border-bottom: 4px solid darkorange;
-  background-color: rgb(41, 40, 40);
-  text-align: center;
+/* ---- page scaffold --------------------------------------------------- */
+.shell {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 14px;
 }
+.row:after { content: ""; display: table; clear: both; }
+
+.col-main { float: left;  width: 75.5%; }
+.col-side { float: right; width: 22.5%; }
+
+/* The white panels the whole design is built from. */
+.card {
+  background-color: #fff;
+  padding: 26px 30px 34px 30px;
+  margin-bottom: 26px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
+}
+.col-side .card { padding: 20px 20px 24px 20px; }
+
+/* ---- masthead band --------------------------------------------------- */
+/* Sits directly on the page gradient, as the HP blog's title band did. */
+.masthead { padding: 16px 0 24px 0; }
+.crumbs {
+  margin: 0 0 14px 0;
+  font-size: 12px;
+  color: #333;
+}
+.crumbs a, .crumbs a:visited { color: #333; }
+.crumbs a:hover { color: #000; }
+.crumbs .sep { color: #d6d6d2; padding: 0 7px; }
 .masthead h1 { margin: 0; line-height: 0; }
 .masthead h1 a { display: inline-block; }
-/* Shown at ~55% of its intrinsic 279x96, so it stays sharp on 2x displays. */
-.masthead h1 img { display: block; width: auto; height: 52px; max-width: 100%; }
-.masthead p  { margin: 10px 0 0 0; font-size: 0.8em; color: #bbb; }
+/* Shown well under its intrinsic 279x96 so it stays sharp on 2x displays. */
+.masthead h1 img { display: block; width: auto; height: 46px; max-width: 100%; }
+.masthead p.tagline {
+  margin: 12px 0 0 0;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.22);
+}
 
-/* ---- article -------------------------------------------------------- */
-.post-title { font-size: 1.6em; line-height: 1.25; margin: 0 0 6px 0; }
-.post-title a, .post-title a:visited { color: #fff; text-decoration: none; }
-.post-title a:hover { color: #7e65d6; }
+/* ---- article --------------------------------------------------------- */
+.post-title {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.15;
+  margin: 0 0 8px 0;
+  color: #f2761b;
+}
+.post-title a, .post-title a:visited { color: #f2761b; text-decoration: none; }
+.post-title a:hover { color: #d3620d; text-decoration: none; }
 
 .post-meta {
-  font-size: 0.75em;
-  color: #9a9a9a;
-  margin: 0 0 18px 0;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6b6b6b;
+  margin: 0 0 20px 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e3e3e3;
 }
-.post-meta a, .post-meta a:visited { color: #9f8ce0; }
+.post-meta a, .post-meta a:visited { color: #2e9cba; }
+.post-meta time { text-transform: uppercase; }
 
+.post-body { font-size: 13.5px; color: #444; }
+.post-body p { margin: 0 0 16px 0; }
 .post-body h2, .post-body h3, .post-body h4 {
-  color: rgb(255, 175, 88);
-  margin-top: 1.8em;
-  line-height: 1.3;
+  color: #555;
+  font-weight: 300;
+  margin: 1.7em 0 0.5em 0;
+  line-height: 1.25;
 }
+.post-body h2 { font-size: 22px; }
+.post-body h3 { font-size: 18px; }
+.post-body h4 { font-size: 15px; font-weight: bold; }
 .post-body img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 18px auto;
+  margin: 16px auto;
 }
 .post-body em img { margin-bottom: 4px; }
 .post-body blockquote {
   margin: 18px 0;
-  padding: 2px 16px;
-  border-left: 4px solid dimgray;
-  background-color: #1b1b1b;
-  color: #d8d8d8;
+  padding: 10px 18px;
+  border-left: 3px solid #ddd;
+  background-color: #f7f7f5;
+  color: #5c5c5c;
 }
 .post-body pre {
-  background-color: #1b1b1b;
+  background-color: #f7f7f5;
+  border: 1px solid #e3e3e3;
   padding: 12px;
   overflow-x: auto;          /* long shell lines scroll, page never does */
-  font-size: 0.85em;
+  font-size: 12px;
+  color: #333;
 }
-.post-body code { background-color: #1b1b1b; padding: 1px 4px; font-size: 0.9em; }
+.post-body code {
+  background-color: #f7f7f5;
+  padding: 1px 4px;
+  font-size: 12px;
+  color: #333;
+}
 .post-body pre code { background: none; padding: 0; }
-.post-body table { border-collapse: collapse; width: 100%; }
-.post-body th, .post-body td { border: 1px solid #3a3a3a; padding: 6px 8px; text-align: left; }
-.post-body hr { border: 0; border-top: 1px solid #3a3a3a; margin: 28px 0; }
+.post-body table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+.post-body th, .post-body td {
+  border: 1px solid #e3e3e3;
+  padding: 6px 9px;
+  text-align: left;
+}
+.post-body th { background-color: #f7f7f5; }
+.post-body hr { border: 0; border-top: 1px solid #e3e3e3; margin: 26px 0; }
 
-.featured-image { max-width: 100%; height: auto; display: block; margin: 0 0 20px 0; }
+.featured-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 0 20px 0;
+}
 
 /* ---- listing page header --------------------------------------------- */
-/* The heading bar used for page titles on webosarchive.org, with the
-   masthead's orange as an accent. Visually distinct from .post-title so a
-   listing header can never be mistaken for an entry in the list below it. */
+/* Inside the card, so it reads as the panel's own heading rather than as an
+   entry in the list below it. */
 .page-header {
-  background-color: rgb(41, 40, 40);
-  border-left: 4px solid rgb(255, 175, 88);
-  padding: 10px 15px;
-  margin: 0 0 22px 0;
+  margin: 0 0 20px 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e3e3e3;
 }
-.page-header h1 { margin: 0; font-size: 1.3em; line-height: 1.3; }
-.page-header p  { margin: 5px 0 0 0; font-size: 0.72em; color: #9a9a9a; }
+.page-header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #f2761b;
+}
+.page-header p {
+  margin: 4px 0 0 0;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6b6b6b;
+}
 
 .term-index { list-style: none; padding: 0; margin: 0; }
 .term-index li {
   padding: 7px 2px;
-  border-bottom: 1px solid #2a2a2a;
+  border-bottom: 1px solid #eee;
 }
-.term-index li span { color: #8d8d8d; font-size: 0.78em; margin-left: 8px; }
+.term-index li span { color: #999; font-size: 11px; margin-left: 8px; }
 
-/* ---- listing -------------------------------------------------------- */
+/* ---- listing --------------------------------------------------------- */
 .post-list-item {
-  padding: 16px 0;
-  border-bottom: 1px solid #2a2a2a;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
 }
-.post-list-item .post-title { font-size: 1.25em; }
-.post-list-item .summary { color: #cfcfcf; font-size: 0.9em; margin: 8px 0 0 0; }
+.post-list-item:first-child { padding-top: 0; }
+.post-list-item:last-child { border-bottom: 0; }
+.post-list-item .post-title { font-size: 21px; }
+.post-list-item .post-meta {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 8px;
+}
+.post-list-item .summary { color: #555; font-size: 13px; margin: 0; }
 .post-list-item .thumb {
   float: right;
   margin: 0 0 10px 16px;
-  max-width: 160px;
+  max-width: 150px;
   height: auto;
 }
 .post-list-item:after { content: ""; display: table; clear: both; }
 
-.pager { padding: 24px 0; text-align: center; font-size: 0.85em; }
+.pager {
+  padding: 22px 0 0 0;
+  margin: 0;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+}
 .pager a { padding: 0 8px; }
 
-/* ---- archived-comment thread ---------------------------------------- */
-.comments {
-  margin-top: 40px;
-  border-top: 2px solid dimgray;
-  padding-top: 10px;
+/* ---- sidebar --------------------------------------------------------- */
+.side-block { margin-bottom: 22px; }
+.side-block:last-child { margin-bottom: 0; }
+.side-block h2 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.2;
 }
-.comments h2 { font-size: 1.15em; color: rgb(255, 175, 88); }
-.comments .note { font-size: 0.75em; color: #9a9a9a; margin-top: -6px; }
+.side-block ul { list-style: none; margin: 0; padding: 0; }
+.side-block li {
+  font-size: 12px;
+  line-height: 1.45;
+  margin: 0 0 5px 0;
+  color: #888;
+}
+.side-block li a { color: #2e9cba; }
+
+/* ---- archived-comment thread ----------------------------------------- */
+.comments {
+  margin-top: 34px;
+  padding-top: 14px;
+  border-top: 1px solid #e3e3e3;
+}
+.comments h2 {
+  font-size: 22px;
+  font-weight: 300;
+  color: #555;
+  margin: 0 0 4px 0;
+}
+.comments .note { font-size: 11px; color: #999; margin: 0 0 12px 0; }
 /* Replies arrive as nested blockquotes from the WordPress export. */
 .comments blockquote {
   margin: 12px 0 12px 18px;
-  padding: 2px 14px;
-  border-left: 3px solid #4a4a4a;
-  background-color: #171717;
+  padding: 8px 14px;
+  border-left: 3px solid #ddd;
+  background-color: #f7f7f5;
 }
 
-/* ---- provenance ----------------------------------------------------- */
+/* ---- provenance ------------------------------------------------------ */
 .provenance {
-  margin-top: 32px;
-  padding: 10px 14px;
-  background-color: #1b1b1b;
-  border-left: 4px solid rgb(255, 175, 88);
-  font-size: 0.75em;
-  color: #b5b5b5;
+  margin-top: 28px;
+  padding: 12px 14px;
+  background-color: #f7f7f5;
+  border-left: 3px solid #f2761b;
+  font-size: 11.5px;
+  color: #6b6b6b;
 }
-.provenance code { color: #d0d0d0; word-break: break-all; }
+.provenance code { color: #444; word-break: break-all; }
 
-/* ---- footer --------------------------------------------------------- */
-/* Static, not fixed like wosa.css -- articles here are far taller than the
-   landing pages that stylesheet was written for. */
+/* ---- footer ---------------------------------------------------------- */
 footer.site {
-  background-color: rgb(41, 40, 40);
-  border-top: 2px solid dimgray;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
   text-align: center;
-  color: #fff;
-  font-size: 0.7em;
-  padding: 14px 10px;
-  margin-top: 30px;
+  color: #f2f2f0;
+  font-size: 11px;
+  padding: 16px 10px 26px 10px;
+  margin-top: 6px;
 }
-footer.site a, footer.site a:visited { color: lightblue; }
+footer.site p { margin: 0; }
+footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; }
 footer.site a:hover { color: #fff; }
 
-@media screen and (max-width: 600px) {
+/* ---- narrow screens -------------------------------------------------- */
+/* The sidebar drops below the article rather than squeezing it; webOS phones
+   are 320px wide and cannot carry two columns. */
+@media screen and (max-width: 760px) {
+  .col-main, .col-side { float: none; width: auto; }
+  .card { padding: 20px 18px 24px 18px; }
+  .post-title { font-size: 24px; }
   .post-list-item .thumb { float: none; margin: 0 0 10px 0; max-width: 100%; }
   .masthead h1 img { height: 38px; }
+  .masthead p { font-size: 17px; }
 }

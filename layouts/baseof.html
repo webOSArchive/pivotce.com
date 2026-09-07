@@ -17,8 +17,15 @@
 
   {{ partial "masthead.html" . }}
 
-  <div class="content">
-    {{ block "main" . }}{{ end }}
+  <div class="shell row">
+    <div class="col-main">
+      <div class="card">
+        {{ block "main" . }}{{ end }}
+      </div>
+    </div>
+    <div class="col-side">
+      {{ partial "sidebar.html" . }}
+    </div>
   </div>
 
   {{ partial "footer.html" . }}

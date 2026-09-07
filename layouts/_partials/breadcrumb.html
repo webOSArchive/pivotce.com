@@ -1,0 +1,33 @@
+{{/*
+  The trail the 2011 HP developer blog carried above its title band
+  ("Home > Forums & Community > Blog").
+
+  Each Hugo page kind needs its own trail: a term page's .CurrentSection is
+  the term itself, so walking sections here would print "Tutorial > Tutorial".
+*/}}
+<p class="crumbs">
+  <a href="{{ site.Home.RelPermalink }}">Home</a>
+
+  {{ if .IsPage }}
+    {{ with .CurrentSection }}
+      {{ if not .IsHome }}
+        <span class="sep">&rsaquo;</span>
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      {{ end }}
+    {{ end }}
+
+  {{ else if eq .Kind "term" }}
+    {{ with .Parent }}
+      {{ if not .IsHome }}
+        <span class="sep">&rsaquo;</span>
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      {{ end }}
+    {{ end }}
+    <span class="sep">&rsaquo;</span>
+    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+
+  {{ else if or (eq .Kind "taxonomy") (eq .Kind "section") }}
+    <span class="sep">&rsaquo;</span>
+    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+  {{ end }}
+</p>

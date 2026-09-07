@@ -1,0 +1,84 @@
+{{/*
+  Hugo's embedded rss.xml, copied verbatim from v0.165.0 with one change: the
+  channel <description>. The embedded template hardcodes "Recent content on
+  pivotCE" and never consults .Description or params.description, so the only
+  way to give the feed a real description is to override the whole template.
+
+  Keep this in step with upstream when Hugo is updated -- diff it against
+  tpl/tplimpl/embedded/templates/rss.xml in the gohugoio/hugo repo at the tag
+  being moved to. The <description> line below is the only intended
+  divergence.
+*/}}
+{{- $authorEmail := "" }}
+{{- with site.Params.author }}
+	{{- if reflect.IsMap . }}
+		{{- with .email }}
+			{{- $authorEmail = . }}
+		{{- end }}
+	{{- end }}
+{{- end }}
+
+{{- $authorName := "" }}
+{{- with site.Params.author }}
+	{{- if reflect.IsMap . }}
+		{{- with .name }}
+			{{- $authorName = . }}
+		{{- end }}
+	{{- else }}
+		{{- $authorName = . }}
+	{{- end }}
+{{- end }}
+
+{{- $pctx := . }}
+{{- if .IsHome }}{{ $pctx = .Site }}{{ end }}
+{{- $pages := slice }}
+{{- if or $.IsHome $.IsSection }}
+	{{- $pages = $pctx.RegularPages }}
+{{- else }}
+	{{- $pages = $pctx.Pages }}
+{{- end }}
+{{- $limit := .Site.Config.Services.RSS.Limit }}
+{{- if ge $limit 1 }}
+	{{- $pages = $pages | first $limit }}
+{{- end }}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+		<link>{{ .Permalink }}</link>
+		{{/* An explicit description wins; the home feed falls back to the site
+		     description rather than Hugo's "Recent content on pivotCE". Term and
+		     section feeds keep the upstream phrasing, which is accurate for
+		     them. */}}
+		{{/* Nested rather than "else if": Hugo's parser rejects else-if on a
+		     with block. */}}
+		<description>{{ with .Description }}{{ . }}{{ else }}{{ if .IsHome }}{{ site.Params.description }}{{ else }}Recent content {{ with .Title }}in {{ . }} {{ end }}on {{ .Site.Title }}{{ end }}{{ end }}</description>
+		<generator>Hugo</generator>
+		<language>{{ site.Language.Locale }}</language>
+		{{ with $authorEmail }}
+			<managingEditor>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>
+		{{ end }}
+		{{ with $authorEmail }}
+			<webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>
+		{{ end }}
+		{{ with .Site.Copyright }}
+			<copyright>{{ . }}</copyright>
+		{{ end }}
+		{{ if not .Date.IsZero }}
+			<lastBuildDate>{{ (index $pages.ByLastmod.Reverse 0).Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+		{{ end }}
+		{{- with .OutputFormats.Get "RSS" }}
+			{{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+		{{- end }}
+		{{- range $pages }}
+			<item>
+				<title>{{ .Title }}</title>
+				<link>{{ .Permalink }}</link>
+				<pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+				{{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
+				<guid>{{ .Permalink }}</guid>
+				<description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
+			</item>
+		{{- end }}
+	</channel>
+</rss>

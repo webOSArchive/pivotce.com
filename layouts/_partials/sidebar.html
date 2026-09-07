@@ -1,0 +1,44 @@
+{{/*
+  The right-hand column of the 2011 HP developer blog: a Categories list with
+  post counts, then Archives by month. Both are built from the site's own
+  taxonomies and page dates, so they stay correct as articles are added.
+
+  Archive months link to Hugo's dated permalinks (/YYYY/MM/), which
+  layouts/pages/ does not generate -- see archives.html for the page that
+  serves them.
+*/}}
+<div class="card">
+  <div class="side-block">
+    <h2>Categories</h2>
+    <ul>
+      {{ range site.Taxonomies.categories.ByCount }}
+        <li><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a> ({{ .Count }})</li>
+      {{ end }}
+    </ul>
+  </div>
+
+  {{ with site.Taxonomies.author }}
+    <div class="side-block">
+      <h2>Authors</h2>
+      <ul>
+        {{ range .ByCount }}
+          <li><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a> ({{ .Count }})</li>
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
+
+  {{/* Top tags only: 157 articles carry tags and the full list would run
+       longer than most articles. */}}
+  {{ with site.Taxonomies.tags }}
+    <div class="side-block">
+      <h2>Tags</h2>
+      <ul>
+        {{ range first 25 .ByCount }}
+          <li><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a> ({{ .Count }})</li>
+        {{ end }}
+      </ul>
+      <p><a href="{{ "tags/" | relURL }}">All tags →</a></p>
+    </div>
+  {{ end }}
+</div>

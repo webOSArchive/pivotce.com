@@ -7,16 +7,22 @@
   archive also holds Logo_pivotCE_dunkel_2302.png, but that one is dark-on-
   transparent and disappears against this background.
 
+  The band sits directly on the page gradient with no fill of its own, as the
+  title band did on the 2011 HP developer blog.
+
   width/height are the intrinsic pixel size so the browser reserves the right
   box before the image loads; CSS scales it down, which also keeps it sharp on
   high-density screens.
 */}}
 <div class="masthead">
-  <h1>
-    <a href="{{ site.Home.RelPermalink }}">
-      <img src="{{ partial "url.html" "/img/pivotce-logo.png" }}"
-           alt="pivotCE" width="279" height="96">
-    </a>
-  </h1>
-  <p>webOS News, Tips, and Tricks</p>
+  <div class="shell">
+    {{ partial "breadcrumb.html" . }}
+    <h1>
+      <a href="{{ site.Home.RelPermalink }}">
+        <img src="{{ partial "url.html" "/img/pivotce-logo.png" }}"
+             alt="pivotCE" width="279" height="96">
+      </a>
+    </h1>
+    <p class="tagline">webOS News, Tips, and Tricks</p>
+  </div>
 </div>
