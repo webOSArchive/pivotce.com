@@ -34,7 +34,19 @@ collections:
       - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss[Z]", picker_utc: true }
       - { label: Author, name: author, widget: string, hint: 'Display name, e.g. "Alan Morford"' }
       - { label: Author slug, name: author_slug, widget: string, required: false }
-      - { label: Categories, name: categories, widget: list, required: false }
+      # A fixed vocabulary, so pick from it rather than retyping it. The bare
+      # list widget this replaced was free text: a value typed but not committed
+      # in the UI saved as `categories: []` with no warning, and the article then
+      # appeared under no category at all. A select cannot be left half-entered,
+      # and it also rules out the case drift ("news" vs "News") that would split
+      # a category in two. Options are the eight already in use across the
+      # archive -- add to this list when a genuinely new section is wanted.
+      - { label: Categories, name: categories, widget: select, multiple: true,
+          required: false,
+          options: [News, Tips, Tutorial, Reviews, Editorial, Interview, pivotCE, Contests],
+          hint: 'Broad section. Most articles are News.' }
+      # Tags stay free text: they are specific and open-ended (TouchPad, LuneOS,
+      # ACL), so a fixed option list would be wrong here.
       - { label: Tags, name: tags, widget: list, required: false }
       - { label: Summary, name: summary, widget: text, required: false,
           hint: 'Shown on the front page and in RSS.' }
