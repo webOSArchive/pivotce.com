@@ -43,9 +43,16 @@ sudo dpkg -i hugo_extended_0.165.0_linux-amd64.deb
 hugo version
 which hugo                                 # usually /usr/local/bin/hugo
 
-git clone --depth 1 https://github.com/webOSArchive/pivotce.com /home/wosa/pivotce-src
+mkdir -p /home/wosa/pivot-admin
+git clone --depth 1 https://github.com/webOSArchive/pivotce.com /home/wosa/pivot-admin/pivotce-src
 mkdir -p /home/wosa/wosa-web/pivot
 ```
+
+The clone lives beside the OAuth relay under `pivot-admin/`, and the paths at
+the top of `deploy.sh` expect it there. Run the cron entry as the user that
+owns the clone: git refuses to operate on a repository owned by someone else
+(*detected dubious ownership*), so a job in root's crontab would fail on every
+run.
 
 The `.deb` installs to `/usr/local/bin`, not `/usr/bin`, so if you removed a
 packaged Hugo first your shell may still report `bash: /usr/bin/hugo: No such
@@ -56,7 +63,7 @@ set `HUGO=` in the environment only to force a specific binary.
 Check the paths at the top of `deploy.sh` match your box, then run it once:
 
 ```sh
-/home/wosa/pivotce-src/deploy.sh
+/home/wosa/pivot-admin/pivotce-src/deploy.sh
 ```
 
 **Keeping it current**
@@ -65,7 +72,7 @@ Articles written through the CMS land in GitHub, not on your server, so
 something has to bring them across. A cron entry is enough:
 
 ```cron
-*/5 * * * * /home/wosa/pivotce-src/deploy.sh
+*/5 * * * * /home/wosa/pivot-admin/pivotce-src/deploy.sh
 ```
 
 `deploy.sh` exits immediately when the repo hasn't changed, so this costs

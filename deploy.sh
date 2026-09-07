@@ -59,12 +59,17 @@ fi
 # The leading "+" is required, not cosmetic. In a --depth 1 clone every fetched
 # commit is parentless, so the new tip is not a descendant of the old one in the
 # local object graph. Git therefore treats the update as non-fast-forward and
-# REJECTS it -- `! [rejected] main -> origin/main (non-fast-forward)`, which
-# --quiet swallows -- returning 1 and aborting this script under `set -e`. The
-# deploy then never runs, and only a manual `git pull` (which has a full history
-# to reason about) moves the tree. "+" forces the ref update, which is always
-# safe here: this clone is a disposable mirror of origin, never a work tree.
-git fetch --quiet --depth 1 origin +main:refs/remotes/origin/main
+# REJECTS it -- `! [rejected] main -> origin/main (non-fast-forward)` --
+# returning 1 and aborting this script under `set -e`. The deploy then never
+# runs, and only a manual `git pull` (which has a full history to reason about)
+# moves the tree. "+" forces the ref update, which is always safe here: this
+# clone is a disposable mirror of origin, never a work tree.
+#
+# Deliberately NOT --quiet. That flag suppresses the ref-update summary, which
+# is where a rejection is reported, so the failure above stayed invisible for
+# eleven days. --no-progress keeps the transfer chatter out of cron mail while
+# leaving anything that actually went wrong on stderr.
+git fetch --no-progress --depth 1 origin +main:refs/remotes/origin/main
 
 # The server never has local edits, so a hard reset is the honest way to match
 # the repo -- it can't leave a half-merged working tree behind. Doing this
