@@ -23,7 +23,7 @@ For more than a decade, the community kept the articles coming, with news, tips 
 
 For those who haven't met me (or chatted me on Discord), I'm codepoet, and I've been archiving webOS content since 2018. 
 
-Things started with refurbishing the [App Museum](https://appcatalog.webosarchive.org), linking community preserved content spread across JSON documents and FTP servers, into a common repository of preserved content for historical purposes. That made it easier to find what I'd missed after the platform shut down.
+Things started with refurbishing the [App Museum](https://appcatalog.webosarchive.org), linking community preserved content spread across JSON documents and FTP servers into a common repository of preserved content for historical purposes. That made it easier to find what I'd missed after the platform shut down.
 
 After tinkering with other people's apps, I got interested in developing my own. While the SDK could still be found, the online documentation was in disarray -- partially recovered documents, stale links, and bit rot made it difficult to learn to develop for the platform. It became clear that the pre-requisite to learning to develop for webOS was restoring the [webOS SDK](https://sdk.webosarchive.org).
 
@@ -35,4 +35,6 @@ In short order, we had replacement crypto libraries for our aging comms stack, a
 
 Now seems to be the right time to pull archived PivotCE articles, the restored Pivot magazine, and the exciting and fun new and repaired App Catalog content together in retro-friendly new blog. 
 
-I'll be posting articles about development, restoration and preservation efforts, specific to webOS. Previous authors are welcome here too, as is information about LuneOS and other alternatives to the Google/Apple duopoly that controls our digital lives so pervasively. Check back regularly, or subscribe to the RSS feed, to keep up-to-date on all the exciting new things happening -- **webOS Lives**!
+I'll be posting articles about development, restoration and preservation efforts, specific to webOS. Previous authors are welcome here too, as is information about LuneOS and other alternatives to the Google/Apple duopoly that controls our digital lives so pervasively. 
+
+Check back regularly, or subscribe to the RSS feed, to keep up-to-date on all the exciting new things happening -- **webOS Lives**!
