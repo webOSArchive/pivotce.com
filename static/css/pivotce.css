@@ -194,8 +194,9 @@ img { border: 0; }
 
 /* ---- listing --------------------------------------------------------- */
 .post-list-item {
-  padding: 18px 0;
-  border-bottom: 1px solid #b1b1b1;
+  padding: 8px 0 28px;
+  border-bottom: 1px solid #acabab;
+  margin-top: 18px;
 }
 .post-list-item:first-child { padding-top: 0; }
 .post-list-item:last-child { border-bottom: 0; }
