@@ -72,6 +72,32 @@ img { border: 0; }
 .masthead h1 a { display: inline-block; }
 /* Shown well under its intrinsic 279x96 so it stays sharp on 2x displays. */
 .masthead h1 img { display: block; width: auto; height: 46px; max-width: 100%; }
+.masthead .shell:after { content: ""; display: table; clear: both; }
+
+/* Feed links, floated across from the wordmark and centred on its 46px box. */
+.masthead .feeds {
+  float: right;
+  margin: 0 0 0 20px;
+  padding-top: 15px;
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+.masthead .feeds a, .masthead .feeds a:visited {
+  display: inline-block;
+  margin-left: 14px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.22);
+}
+.masthead .feeds a:hover { text-decoration: underline; }
+.masthead .feeds img {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: top;
+  margin-right: 5px;
+}
 .masthead p.tagline {
   margin: 12px 0 0 0;
   color: #fff;
@@ -297,4 +323,12 @@ footer.site a:hover { color: #fff; }
   .post-list-item .thumb { float: none; margin: 0 0 10px 0; max-width: 100%; }
   .masthead h1 img { height: 38px; }
   .masthead p { font-size: 17px; }
+  .masthead .feeds { padding-top: 11px; margin-left: 12px; }
+  .masthead .feeds a { margin-left: 10px; }
+}
+/* Phone-width: the three labels no longer fit beside the wordmark, so the
+   icons stand alone (each link keeps its title attribute). */
+@media screen and (max-width: 400px) {
+  .masthead .feeds a span { display: none; }
+  .masthead .feeds img { margin-right: 0; }
 }

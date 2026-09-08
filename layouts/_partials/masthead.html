@@ -17,6 +17,22 @@
 <div class="masthead">
   <div class="shell">
     {{ partial "breadcrumb.html" . }}
+
+    {{/*
+      Feed links, floated across from the wordmark. The first is this site's
+      own feed (root-relative, so it follows whichever protocol the reader
+      arrived on -- legacy devices come in over plain http). The icon ships
+      at 32px and is shown at 16px: ~2x keeps old WebKit's scaler from
+      aliasing it.
+    */}}
+    <div class="feeds">
+      {{ with site.Home.OutputFormats.Get "rss" }}
+      <a href="{{ .RelPermalink }}" title="pivotCE news feed" type="application/rss+xml"><img src="{{ partial "url.html" "/img/rss.png" }}" alt="" width="16" height="16"><span>News</span></a>
+      {{ end }}
+      <a href="http://appcatalog.webosarchive.org/feed.php" title="App Museum feed: new and updated apps" type="application/rss+xml"><img src="{{ partial "url.html" "/img/rss.png" }}" alt="" width="16" height="16"><span>App Museum</span></a>
+      <a href="https://palm.weboslives.eu/users/webosarchive.rss" title="webOS Archive on Mastodon" type="application/rss+xml"><img src="{{ partial "url.html" "/img/rss.png" }}" alt="" width="16" height="16"><span>Mastodon</span></a>
+    </div>
+
     <h1>
       <a href="{{ site.Home.RelPermalink }}">
         <img src="{{ partial "url.html" "/img/pivotce-logo.png" }}"
