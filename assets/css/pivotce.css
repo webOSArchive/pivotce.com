@@ -237,8 +237,8 @@ img { border: 0; }
   float: right;
   margin: 0 0 10px 16px;
   max-width: 150px;
-  height: auto;
 }
+.post-list-item .thumb img { display: block; max-width: 100%; height: auto; }
 .post-list-item:after { content: ""; display: table; clear: both; }
 
 .pager {

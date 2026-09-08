@@ -27,18 +27,4 @@
       </ul>
     </div>
   {{ end }}
-
-  {{/* Top tags only: 157 articles carry tags and the full list would run
-       longer than most articles. */}}
-  {{ with site.Taxonomies.tags }}
-    <div class="side-block">
-      <h2>Tags</h2>
-      <ul>
-        {{ range first 25 .ByCount }}
-          <li><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a> ({{ .Count }})</li>
-        {{ end }}
-      </ul>
-      <p><a href="{{ "tags/" | relURL }}">All tags →</a></p>
-    </div>
-  {{ end }}
 </div>
