@@ -1,18 +1,20 @@
 ---
 title: LuneOS project still progressing
-date: '2018-03-15T17:23:15Z'
-lastmod: '2018-10-24T12:35:38Z'
+date: 2018-03-15T17:23:00Z
 author: webosports
 author_slug: webosports
 categories:
-- News
-slug: luneos-project-still-progressing
+  - News
+tags: []
 summary: It’s been quite a while since our last release and we’ve been keeping quiet lately. Some of the team members have also enjoyed some well deserved time off in the…
-featured_image: /images/files/2018/03/20180212002610.png
+featured_image: /uploads/20180212002610-square.png
+slug: luneos-project-still-progressing
+archived: true
 source_url: https://pivotce.com/2018/03/15/luneos-project-still-progressing/
 wordpress_id: 4331
+lastmod: 2018-10-24T12:35:00Z
+comment_page: ''
 featured_image_source: https://pivotce.com/files/2018/03/20180212002610.png
-archived: true
 ---
 
 It’s been quite a while since our last release and we’ve been keeping quiet lately. Some of the team members have also enjoyed some well deserved time off in the meanwhile as well. The majority of what we’ve been working on hasn’t been and isn’t ready for public consumption.
