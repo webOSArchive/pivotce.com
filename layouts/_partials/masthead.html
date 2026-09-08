@@ -27,10 +27,10 @@
     */}}
     <div class="feeds">
       {{ with site.Home.OutputFormats.Get "rss" }}
-      <a href="{{ .RelPermalink }}" title="pivotCE news feed" type="application/rss+xml"><img src="{{ partial "url.html" "/img/rss.png" }}" alt="" width="16" height="16"><span>News</span></a>
+      <a href="{{ .RelPermalink }}" title="pivotCE news feed" type="application/rss+xml"><img src="{{ partial "url.html" "/img/rss.png" }}" alt="" width="16" height="16"><span>News Feed</span></a>
       {{ end }}
-      <a href="http://appcatalog.webosarchive.org/feed.php" title="App Museum feed: new and updated apps" type="application/rss+xml"><img src="{{ partial "url.html" "/img/rss.png" }}" alt="" width="16" height="16"><span>App Museum</span></a>
-      <a href="https://palm.weboslives.eu/users/webosarchive.rss" title="webOS Archive on Mastodon" type="application/rss+xml"><img src="{{ partial "url.html" "/img/rss.png" }}" alt="" width="16" height="16"><span>Mastodon</span></a>
+      <a href="https://palm.weboslives.eu/users/webosarchive" title="Follow in the Fediverse"><img src="{{ partial "url.html" "/img/fediverse.png" }}" alt="" width="16" height="16"><span>Fediverse</span></a>
+      <a href="https://bsky.app/profile/webosarchive.org" title="Follow on Bluesky"><img src="{{ partial "url.html" "/img/bsky.png" }}" alt="" width="16" height="16"><span>Bluesky</span></a>
     </div>
 
     <h1>
