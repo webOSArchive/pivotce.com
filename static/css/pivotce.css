@@ -195,7 +195,7 @@ img { border: 0; }
 /* ---- listing --------------------------------------------------------- */
 .post-list-item {
   padding: 18px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #b1b1b1;
 }
 .post-list-item:first-child { padding-top: 0; }
 .post-list-item:last-child { border-bottom: 0; }
