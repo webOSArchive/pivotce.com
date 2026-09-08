@@ -11,7 +11,14 @@
   {{ end }}
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="stylesheet" href="{{ "css/wosa-menu.css" | relURL }}">
-  <link rel="stylesheet" href="{{ "css/pivotce.css" | relURL }}">
+  {{/*
+    Fingerprinted so the URL changes with the content: the site sits behind
+    Cloudflare, which caches /pivot/css/* for four hours, and a plain
+    css/pivotce.css kept serving the previous stylesheet after a deploy.
+  */}}
+  {{ with resources.Get "css/pivotce.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{ end }}
 </head>
 <body>
 
