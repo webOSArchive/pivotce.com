@@ -6,7 +6,7 @@ author_slug: codepoet
 categories:
   - News
 tags: []
-summary: The original HP Pivot magazine, and the Pivot Community Edition have both been rescued, and are under new management!
+summary: The original HP Pivot magazine and the Pivot Community Edition blog have both been rescued, and are under new management!
 featured_image: /uploads/landscape-bg.jpg
 slug: ''
 archived: false
