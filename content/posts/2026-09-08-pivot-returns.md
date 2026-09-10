@@ -17,7 +17,7 @@ comment_page: ''
 featured_image_source: ''
 ---
 
-The TouchPad App Catalog included Pivot: a curated digital magazine, highlighting new and interesting apps available for the platform. Alas, the magazine and the platform both met their fate shortly afterware.
+The TouchPad App Catalog included [Pivot: a curated digital magazine](https://web.archive.org/web/20111111143940/https://developer.palm.com/content/resources/distribute/introducing_pivot.html), highlighting new and interesting apps available for the platform. Alas, the magazine and the platform both met their fate shortly afterware.
 
 For more than a decade, the community kept the articles coming, with news, tips and reviews at PivotCE.com. While posts have trickled in over the years, the management of that site hasn't responded to an email in over a year. The fate of the community content was in doubt, so webOS Archive did what we do: we archived it.
 
