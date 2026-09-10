@@ -21,7 +21,7 @@ The TouchPad App Catalog included Pivot: a curated digital magazine, highlightin
 
 For more than a decade, the community kept the articles coming, with news, tips and reviews at PivotCE.com. While posts have trickled in over the years, the management of that site hasn't responded to an email in over a year. The fate of the community content was in doubt, so webOS Archive did what we do: we archived it.
 
-For those who haven't met me (or chatted me on Discord), I'm codepoet, and I've been archiving webOS content since 2018. 
+For those who haven't met me (or chatted with me on Discord), I'm codepoet, and I've been archiving webOS content since 2018. 
 
 Things started with refurbishing the [App Museum](https://appcatalog.webosarchive.org), linking community preserved content spread across JSON documents and FTP servers into a common repository of preserved content for historical purposes. That made it easier to find what I'd missed after the platform shut down.
 
