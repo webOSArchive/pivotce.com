@@ -40,7 +40,7 @@ In recent AI-assisted efforts, I've been successful in fulfilling simple parts o
 
 ![](/uploads/NotATouchpad.png)
 
-**One of these tablets is NOT a TouchPad!**
+_One of these tablets is NOT a TouchPad!_
 
 For SDK apps (those based on web technology) this is a simple proposition on its surface -- make the webOS web frameworks (Mojo and Enyo) work on Android. It's obviously more complicated than that, since webOS also provides non-web capabilities, and a service bus for inter-process communication. But the principle holds. PDK apps will be a little (lot) harder, but we'll get there.
 
