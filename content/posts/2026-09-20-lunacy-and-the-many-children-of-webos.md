@@ -38,6 +38,10 @@ webOS and Android share a lot of similarities, but had different ways of buildin
 
 In recent AI-assisted efforts, I've been successful in fulfilling simple parts of the Android app contract on legacy webOS, enabling ports of early Android games like Where's My Water, or Temple Run 2. Lunacy does something similar in reverse: it provides the webOS app contract on top of Android.
 
+![](/uploads/NotATouchpad.png)
+
+**One of these tablets is NOT a TouchPad!**
+
 For SDK apps (those based on web technology) this is a simple proposition on its surface -- make the webOS web frameworks (Mojo and Enyo) work on Android. It's obviously more complicated than that, since webOS also provides non-web capabilities, and a service bus for inter-process communication. But the principle holds. PDK apps will be a little (lot) harder, but we'll get there.
 
 So Lunacy is three things right now:
