@@ -52,7 +52,7 @@ So Lunacy is three things right now:
 
 The end result is something that hopefully looks and feels like webOS, and runs many webOS apps -- at full speed, without interpretation or emulation.
 
-This then, a new third-generation descendant of Palm and HP's mobile webOS! The family tree looks like this...
+This then, is a new third-generation descendant of Palm and HP's mobile webOS! The family tree looks like this...
 
 - **Palm**'s webOS begat **HP**'s webOS
 - HP's webOS gave us **Open WebOS** and LG's commercial **webOS for TV**s (which sometimes contributes to **webOSE**)
