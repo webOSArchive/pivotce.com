@@ -10,7 +10,7 @@ tags:
   - webOS
   - Android
 summary: ''
-featured_image: /uploads/webOS-FamilyTree.png
+featured_image: /uploads/Lunacy-256.png
 slug: lunacy-a-new-child-of-webos
 archived: false
 source_url: ''
@@ -21,8 +21,6 @@ featured_image_source: ''
 ---
 
 The question came up recently on the Discord chat: what's with all these new versions of webOS? How do I know which is right for me? Today's announcement only adds to that confusion, so it seems worth some explanation -- but first the news!
-
-[![Lunacy logo - a moon inside the Android robot logo](/uploads/Lunacy-128.png)](https://github.com/webOSArchive/Lunacy)
 
 [**Lunacy**](https://github.com/webOSArchive/Lunacy) is a new project to bring a webOS environment to Android devices.
 
