@@ -9,7 +9,8 @@ PHP proxy and a small OAuth relay.
 Living under www rather than on its own host removes work:
 
 - `/pivot/menu.php` is handled by the PHP already configured for the site — no
-  new FPM pool, no new vhost.
+  new FPM pool, no new vhost. So is `/pivot/search.php`, the sidebar search,
+  which only redirects to DuckDuckGo Lite with a `site:` restriction added.
 - TLS, http fallback for legacy webOS devices, and Matomo all come from the
   existing server config.
 - `wosa-menu.js` needs no change: it derives its root from its own script URL,

@@ -7,11 +7,22 @@
   layouts/pages/ does not generate -- see archives.html for the page that
   serves them.
 
+  Search goes first: a plain GET form to static/search.php, which adds the
+  site: restriction and redirects to DuckDuckGo Lite. No script involved, so
+  it works in any browser.
+
   Below them, Pivot Magazine. The reader is published separately from
   webOSArchive/PivotMagazine-WOSA to /pivot/magazine/, so this block links
   only to the two URLs that build keeps stable -- latest.html and cover.jpg
   always mean the newest issue -- and a new issue needs no change here.
 */}}
+<div class="card">
+  <form class="side-search" action="{{ partial "url.html" "/search.php" }}" method="get" role="search">
+    <input type="text" name="q" placeholder="Search pivotCE" aria-label="Search pivotCE">
+    <button type="submit">Search</button>
+  </form>
+</div>
+
 <div class="card">
   <div class="side-block">
     <h2>Categories</h2>
