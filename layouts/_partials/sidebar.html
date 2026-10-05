@@ -7,22 +7,11 @@
   layouts/pages/ does not generate -- see archives.html for the page that
   serves them.
 
-  Above them, Pivot Magazine. The reader is published separately from
+  Below them, Pivot Magazine. The reader is published separately from
   webOSArchive/PivotMagazine-WOSA to /pivot/magazine/, so this block links
   only to the two URLs that build keeps stable -- latest.html and cover.jpg
   always mean the newest issue -- and a new issue needs no change here.
 */}}
-<div class="card">
-  <div class="side-block magazine">
-    <h2>Pivot Magazine</h2>
-    <a href="{{ partial "url.html" "/magazine/latest.html" }}"><img src="{{ partial "url.html" "/magazine/cover.jpg" }}" alt="Cover of the latest issue of Pivot Magazine" width="384" height="474"></a>
-    <ul>
-      <li><a href="{{ partial "url.html" "/magazine/latest.html" }}">Read the latest issue</a></li>
-      <li><a href="{{ partial "url.html" "/magazine/" }}">All issues</a></li>
-    </ul>
-  </div>
-</div>
-
 <div class="card">
   <div class="side-block">
     <h2>Categories</h2>
@@ -43,4 +32,15 @@
       </ul>
     </div>
   {{ end }}
+</div>
+
+<div class="card">
+  <div class="side-block magazine">
+    <h2>Pivot Magazine</h2>
+    <a href="{{ partial "url.html" "/magazine/latest.html" }}"><img src="{{ partial "url.html" "/magazine/cover.jpg" }}" alt="Cover of the latest issue of Pivot Magazine" width="384" height="474"></a>
+    <ul>
+      <li><a href="{{ partial "url.html" "/magazine/latest.html" }}">Read the latest issue</a></li>
+      <li><a href="{{ partial "url.html" "/magazine/" }}">All issues</a></li>
+    </ul>
+  </div>
 </div>
