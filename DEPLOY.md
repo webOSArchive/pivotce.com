@@ -202,6 +202,32 @@ server {
 Keeping `$scheme` rather than forcing https matters here: an http-only device
 following a redirect to https cannot complete it.
 
+### Pivot Magazine at `/pivot/magazine/`
+
+The sidebar's Pivot Magazine block links into a web reader that is built and
+deployed from
+[webOSArchive/PivotMagazine-WOSA](https://github.com/webOSArchive/PivotMagazine-WOSA),
+not from this repo — its `Tools/README.md` has the full setup (one clone, one
+cron entry). It publishes to `/home/wosa/wosa-web/pivot-magazine`, a sibling of
+`pivot/` rather than a child, because `deploy.sh` here rsyncs into `pivot/`
+with `--delete` and would erase it. So it needs its own block:
+
+```nginx
+location ^~ /pivot/magazine/ {
+    alias /home/wosa/wosa-web/pivot-magazine/;
+}
+location = /pivot/magazine {
+    return 301 $scheme://$host/pivot/magazine/;
+}
+```
+
+`^~` keeps any vhost-wide regex location (a cache rule for `.js` or `.jpg`, say)
+from capturing the reader's assets and resolving them against the wrong root.
+The sidebar only links to `magazine/latest.html` and `magazine/cover.jpg`, which
+that build keeps pointing at the newest issue, so publishing an issue needs no
+change here. Until the reader is deployed, those links 404 and the cover is a
+broken image.
+
 ## 3. OAuth relay
 
 Register a GitHub OAuth app under the **webOSArchive** org with callback

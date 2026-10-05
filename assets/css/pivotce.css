@@ -267,6 +267,15 @@ img { border: 0; }
   color: #888;
 }
 .side-block li a { color: #2e9cba; }
+.side-block.magazine img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 10px 0;
+  border: 0;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
+}
 
 /* ---- archived-comment thread ----------------------------------------- */
 .comments {
