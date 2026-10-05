@@ -11,7 +11,7 @@
   site: restriction and redirects to DuckDuckGo Lite. No script involved, so
   it works in any browser.
 
-  Below them, Pivot Magazine. The reader is published separately from
+  Then Pivot Magazine, above Categories. The reader is published separately from
   webOSArchive/PivotMagazine-WOSA to /pivot/magazine/, so this block links
   only to the two URLs that build keeps stable -- latest.html and cover.jpg
   always mean the newest issue -- and a new issue needs no change here.
@@ -21,6 +21,17 @@
     <input type="text" name="q" placeholder="Search pivotCE" aria-label="Search pivotCE">
     <button type="submit">Search</button>
   </form>
+</div>
+
+<div class="card">
+  <div class="side-block magazine">
+    <h2>Pivot Magazine</h2>
+    <a href="{{ partial "url.html" "/magazine/latest.html" }}"><img src="{{ partial "url.html" "/magazine/cover.jpg" }}" alt="Cover of the latest issue of Pivot Magazine" width="384" height="474"></a>
+    <ul>
+      <li><a href="{{ partial "url.html" "/magazine/latest.html" }}">Read the latest issue</a></li>
+      <li><a href="{{ partial "url.html" "/magazine/" }}">All issues</a></li>
+    </ul>
+  </div>
 </div>
 
 <div class="card">
@@ -43,15 +54,4 @@
       </ul>
     </div>
   {{ end }}
-</div>
-
-<div class="card">
-  <div class="side-block magazine">
-    <h2>Pivot Magazine</h2>
-    <a href="{{ partial "url.html" "/magazine/latest.html" }}"><img src="{{ partial "url.html" "/magazine/cover.jpg" }}" alt="Cover of the latest issue of Pivot Magazine" width="384" height="474"></a>
-    <ul>
-      <li><a href="{{ partial "url.html" "/magazine/latest.html" }}">Read the latest issue</a></li>
-      <li><a href="{{ partial "url.html" "/magazine/" }}">All issues</a></li>
-    </ul>
-  </div>
 </div>
