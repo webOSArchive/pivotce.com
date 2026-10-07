@@ -7,7 +7,7 @@
   <title>{{ if .IsHome }}{{ site.Title }} — webOS News, Tips, and Tricks{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 200 }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
   {{ with .OutputFormats.Get "rss" }}
-  <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">
+  <link rel="alternate" type="application/rss+xml" title="webOS Archive News" href="http://www.webosarchive.org/feed.php">
   {{ end }}
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="stylesheet" href="{{ "css/wosa-menu.css" | relURL }}">
