@@ -3,11 +3,13 @@
   channel <description>. The embedded template hardcodes "Recent content on
   pivotCE" and never consults .Description or params.description, so the only
   way to give the feed a real description is to override the whole template.
+  Since it is overridden anyway, items also carry their featured_image, which
+  upstream ignores.
 
   Keep this in step with upstream when Hugo is updated -- diff it against
   tpl/tplimpl/embedded/templates/rss.xml in the gohugoio/hugo repo at the tag
-  being moved to. The <description> line below is the only intended
-  divergence.
+  being moved to. The channel <description>, the media namespace, and the
+  item image handling are the only intended divergences.
 */}}
 {{- $authorEmail := "" }}
 {{- with site.Params.author }}
@@ -42,7 +44,7 @@
 	{{- $pages = $pages | first $limit }}
 {{- end }}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
 	<channel>
 		<title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
 		<link>{{ .Permalink }}</link>
@@ -77,7 +79,19 @@
 				<pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
 				{{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
 				<guid>{{ .Permalink }}</guid>
-				<description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
+				{{- /* Readers differ: most take the thumbnail from media:content,
+				       the rest only render the description, so the image goes in
+				       both. featured_image is root-relative (/images/..., /uploads/...);
+				       absURL needs it without the slash to keep the /pivot/ base. */}}
+				{{- $desc := .Summary }}
+				{{- with .Params.featured_image }}
+					{{- $img := strings.TrimPrefix "/" . | absURL }}
+					{{- $ext := path.Ext . | lower }}
+					{{- $type := cond (eq $ext ".png") "image/png" (cond (eq $ext ".gif") "image/gif" "image/jpeg") }}
+				<media:content url="{{ $img }}" medium="image" type="{{ $type }}" />
+					{{- $desc = printf "<p><img src=%q alt=\"\"></p>%s" $img $desc }}
+				{{- end }}
+				<description>{{ $desc | transform.XMLEscape | safeHTML }}</description>
 			</item>
 		{{- end }}
 	</channel>
