@@ -267,33 +267,39 @@ img { border: 0; }
   color: #888;
 }
 .side-block li a { color: #2e9cba; }
-/* Input and button share one row; -webkit-box for the webOS browsers. */
+/* Input and button share one row. No flexbox: the webOS browsers' -webkit-box
+   would not shrink the input below its default width, so it overflowed the
+   card. The button is pinned right and the form's padding reserves its room. */
 .side-search {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
+  position: relative;
   margin: 0;
+  padding-right: 74px;
+}
+.side-search input,
+.side-search button {
+  height: 28px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  font-size: 13px;
 }
 .side-search input {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  flex: 1;
-  min-width: 0;
-  margin: 0 6px 0 0;
-  padding: 5px 7px;
+  display: block;
+  width: 100%;
+  padding: 0 7px;
   border: 1px solid #ccc;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  font-size: 13px;
 }
 .side-search button {
-  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 68px;
+  padding: 0;
   border: 1px solid #2e9cba;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
   background-color: #2e9cba;
   color: #fff;
-  font-size: 13px;
   cursor: pointer;
 }
 .side-search button:hover { background-color: #2788a3; }
@@ -351,6 +357,13 @@ footer.site {
 footer.site p { margin: 0; }
 footer.site a, footer.site a:visited { color: #6b6b6b; text-decoration: underline; }
 footer.site a:hover { color: #2e9cba; }
+
+/* Two columns but a slim sidebar (TouchPad portrait is 768px): too narrow for
+   the search input and button side by side, so the button drops below. */
+@media screen and (min-width: 761px) and (max-width: 899px) {
+  .side-search { padding-right: 0; }
+  .side-search button { position: static; display: block; margin-top: 6px; }
+}
 
 /* ---- narrow screens -------------------------------------------------- */
 /* The sidebar drops below the article rather than squeezing it; webOS phones
