@@ -15,7 +15,7 @@ slug: lunacy-a-new-child-of-webos
 archived: false
 source_url: ''
 wordpress_id: null
-lastmod: ''
+lastmod: 2026-10-14T23:31:00Z
 comment_page: ''
 featured_image_source: ''
 ---
@@ -69,3 +69,5 @@ LuneOS has been around a long time, but has been dramatically accelerated recent
 Lunacy brings a webOS compatibility environment to Android devices via an app -- no unlocking required. Its just an app!
 
 For now, Lunacy is available for Android 5.0.1 tablet devices -- but development is still very early, and we plan to target phones and more modern versions of Android over time. If you want to help, check out the project on GitHub: [https://github.com/webOSArchive/Lunacy](https://github.com/webOSArchive/Lunacy)
+
+**Update 10/14/2026**: Lunacy now supports Android 5.0.1 through 17, on phones and tablets!
