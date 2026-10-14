@@ -12,7 +12,7 @@ slug: ''
 archived: false
 source_url: ''
 wordpress_id: null
-lastmod: ''
+lastmod: 2026-10-14T23:29:00Z
 comment_page: ''
 featured_image_source: ''
 ---
@@ -33,7 +33,7 @@ The "**webOS Chat Enabler**" for AIM can be found in Preware, and re-connects _a
 
 ![](/uploads/ChatEnabler.png)
 
-You'll need a webOS Community Account, which you can create on a TouchPad or Android device running Lunacy -- download the app from the App Catalog.
+You'll need a [webOS Community Account](https://appcatalog.webosarchive.org/app/webOSCommunityAccountManager), which you can create on a [TouchPad](https://shop.webosarchive.org/) or Android device running **Lunacy** -- download the app from the App Catalog.
 
 Older (non-CE) OSes will also need a pass phrase. Because AOL's old chat protocol pre-dates any modern security, you'll have to [sign in to your account on a modern device ](https://appcatalog.webosarchive.org/admin/account.php)and generate that pass phrase, which you'll use as the password in the Account setup on classic webOS.
 **Lunacy** and **webOS CE** users need no other security -- just use the webOS Community Account signed-in on your device, and webOS Chat enabled in Accounts.
