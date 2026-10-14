@@ -29,7 +29,7 @@ But one thing we lost -- one thing that's really changed on the Internet in the 
 
 My friends and I mostly used ICQ, although I dabbled in the other two big ones over the years. That "uh-oh" sound will forever been ingrained on my subconscious brain -- it signaled a message from a friend, and sent me running to my computer to see what was up. I figured it was high time to bring it back to our favorite retro platform!
 
-The "**webOS Chat Enabler**" for AIM can be found in Preware, and re-connects _any_ webOS device -- from the original Pre to the TouchPad -- to a re-implemented Oscar service running on the webOS Archive Server.
+The "**webOS Chat Enabler**" for AIM can be found in Preware, and re-connects _any_ webOS device -- from the original Pre to the TouchPad -- to a [re-implemented Oscar service](https://github.com/webOSArchive/Oscar-AIM-for-webOS/) running on the webOS Archive Server.
 
 ![](/uploads/ChatEnabler.png)
 
