@@ -25,9 +25,9 @@ featured_image_source: ''
 
 In socializing recent innovations for the platform, I began to realize that there are people out there who don't really know what webOS _was_. I guess I've lived with it so long that it never occurred to me that the rest of the world has moved on. While I had intended to write a post about the future for the platform, maybe a little primer on the past is in order -- for the more casual explorer...
 
-![Palm Pilot](/uploads/palm-pilot.png)
-
 Long before the iPhone, the Palm Pilot was the "it" gadget that everyone wanted to have. Palm's own OS made these devices useful and responsive, but by 2004, both the company and its platform were in a tough place. Efforts began to re-imagine both, and a completely new "webOS" was a contemporary of the original iPhone.
+
+![Palm Pilot](/uploads/palm-pilot.png)
 
 Under Apple alum [Jon Rubinstein](https://www.youtube.com/watch?v=Gen_FHi4hx8), Palm attracted some of the best designers and developers (many even from Apple), to create a fluid and beautiful new experience on limited hardware, by leveraging open technologies, like Linux, WebKit and JavaScript. The original Palm Pre, with its slide-out keyboard, was followed up by the Pre 2, Pixi while they were still Palm, but the valiant efforts of the team were not enough to take on Google and Apple. They needed a new home, with a bigger wallet.
 
