@@ -13,7 +13,7 @@ tags:
   - LG
   - LuneOS
 summary: ''
-featured_image: ''
+featured_image: /uploads/hp-touchpad.png
 slug: ''
 archived: false
 source_url: ''
