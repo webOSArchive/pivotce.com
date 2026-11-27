@@ -25,7 +25,7 @@ featured_image_source: ''
 
 In socializing recent innovations for the platform, I began to realize that there are people out there who don't really know what webOS _was_. I guess I've lived with it so long that it never occurred to me that the rest of the world has moved on. While I had intended to write a post about the future for the platform, maybe a little primer on the past is in order -- for the more casual explorer...
 
-Long before the iPhone, the Palm Pilot was the "it" gadget that everyone wanted to have. Palm's own OS made these devices useful and responsive, but by 2004, both the company and its platform were in a tough place. Efforts began to re-imagine both, and a completely new "webOS" was a contemporary of the original iPhone.
+Long before the iPhone, the Palm Pilot was the "it" gadget that everyone wanted to have. Palm's own OS made these devices useful and responsive, but by 2004, both the company and its platform were in a tough place. Efforts began to re-imagine both, and a completely new "web OS" was created to be contemporary of the original iPhone.
 
 ![Palm Pilot](/uploads/palm-pilot.png)
 
