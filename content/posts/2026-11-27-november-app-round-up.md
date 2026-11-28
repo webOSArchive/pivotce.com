@@ -74,7 +74,7 @@ Mostly because developers never updated them after webOS 2.x or 3.0.5 was releas
 
 [Password Maker](https://appcatalog.webosarchive.org/app/PasswordMaker)
 
-[pivotCE]( https://appcatalog.webosarchive.org/app/pivotCE) 
+[pivotCE](https://appcatalog.webosarchive.org/app/pivotCE)
 
 [Telegram](https://appcatalog.webosarchive.org/app/Telegram)
 
