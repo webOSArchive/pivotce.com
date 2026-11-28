@@ -40,6 +40,8 @@ Mostly because developers never updated them after webOS 2.x or 3.0.5 was releas
 
 [Wordsel](https://appcatalog.webosarchive.org/app/Wordsel) - added dark mode
 
+[Sound Cloud Player](https://appcatalog.webosarchive.org/app/SoundCloudPlayer) - volume fix
+
 [webCal Sync](https://appcatalog.webosarchive.org/app/webCalSync) - event duplication fixes
 
 [MLB At Bat 11](https://appcatalog.webosarchive.org/app/MLBAtBat11) - rotation fixes
